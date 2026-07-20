@@ -1,0 +1,649 @@
+City,MLB Team,Year,Murder Rate (per 100k)
+Phoenix,Arizona Diamondbacks,2003,6.53
+Phoenix,Arizona Diamondbacks,2004,7.12
+Phoenix,Arizona Diamondbacks,2005,6.62
+Phoenix,Arizona Diamondbacks,2006,6.23
+Phoenix,Arizona Diamondbacks,2007,6.46
+Phoenix,Arizona Diamondbacks,2008,6.34
+Phoenix,Arizona Diamondbacks,2009,5.61
+Phoenix,Arizona Diamondbacks,2010,6.05
+Phoenix,Arizona Diamondbacks,2011,5.66
+Phoenix,Arizona Diamondbacks,2012,5.2
+Phoenix,Arizona Diamondbacks,2013,5.87
+Phoenix,Arizona Diamondbacks,2014,5.41
+Phoenix,Arizona Diamondbacks,2015,5.36
+Phoenix,Arizona Diamondbacks,2016,5.28
+Phoenix,Arizona Diamondbacks,2017,5.61
+Phoenix,Arizona Diamondbacks,2018,6.11
+Phoenix,Arizona Diamondbacks,2019,5.93
+Phoenix,Arizona Diamondbacks,2020,8.8
+Phoenix,Arizona Diamondbacks,2021,9.33
+Phoenix,Arizona Diamondbacks,2022,8.93
+Phoenix,Arizona Diamondbacks,2023,8.3
+Phoenix,Arizona Diamondbacks,2024,7.47
+Phoenix,Arizona Diamondbacks,2025,7.44
+Phoenix,Arizona Diamondbacks,2026,7.0
+Atlanta,Atlanta Braves,2003,19.53
+Atlanta,Atlanta Braves,2004,18.27
+Atlanta,Atlanta Braves,2005,20.29
+Atlanta,Atlanta Braves,2006,21.46
+Atlanta,Atlanta Braves,2007,17.28
+Atlanta,Atlanta Braves,2008,18.28
+Atlanta,Atlanta Braves,2009,18.39
+Atlanta,Atlanta Braves,2010,18.62
+Atlanta,Atlanta Braves,2011,16.73
+Atlanta,Atlanta Braves,2012,17.4
+Atlanta,Atlanta Braves,2013,17.56
+Atlanta,Atlanta Braves,2014,17.66
+Atlanta,Atlanta Braves,2015,18.83
+Atlanta,Atlanta Braves,2016,17.1
+Atlanta,Atlanta Braves,2017,17.34
+Atlanta,Atlanta Braves,2018,17.74
+Atlanta,Atlanta Braves,2019,18.6
+Atlanta,Atlanta Braves,2020,25.74
+Atlanta,Atlanta Braves,2021,28.1
+Atlanta,Atlanta Braves,2022,28.64
+Atlanta,Atlanta Braves,2023,24.29
+Atlanta,Atlanta Braves,2024,22.41
+Atlanta,Atlanta Braves,2025,22.28
+Atlanta,Atlanta Braves,2026,21.1
+Baltimore,Baltimore Orioles,2003,50.87
+Baltimore,Baltimore Orioles,2004,46.9
+Baltimore,Baltimore Orioles,2005,44.95
+Baltimore,Baltimore Orioles,2006,48.53
+Baltimore,Baltimore Orioles,2007,43.79
+Baltimore,Baltimore Orioles,2008,46.65
+Baltimore,Baltimore Orioles,2009,46.64
+Baltimore,Baltimore Orioles,2010,42.98
+Baltimore,Baltimore Orioles,2011,45.23
+Baltimore,Baltimore Orioles,2012,43.59
+Baltimore,Baltimore Orioles,2013,41.82
+Baltimore,Baltimore Orioles,2014,43.8
+Baltimore,Baltimore Orioles,2015,43.57
+Baltimore,Baltimore Orioles,2016,46.46
+Baltimore,Baltimore Orioles,2017,45.75
+Baltimore,Baltimore Orioles,2018,48.12
+Baltimore,Baltimore Orioles,2019,46.66
+Baltimore,Baltimore Orioles,2020,62.99
+Baltimore,Baltimore Orioles,2021,76.04
+Baltimore,Baltimore Orioles,2022,65.39
+Baltimore,Baltimore Orioles,2023,61.86
+Baltimore,Baltimore Orioles,2024,61.45
+Baltimore,Baltimore Orioles,2025,57.11
+Baltimore,Baltimore Orioles,2026,51.19
+Boston,Boston Red Sox,2003,4.35
+Boston,Boston Red Sox,2004,4.08
+Boston,Boston Red Sox,2005,4.37
+Boston,Boston Red Sox,2006,4.33
+Boston,Boston Red Sox,2007,4.19
+Boston,Boston Red Sox,2008,4.28
+Boston,Boston Red Sox,2009,3.95
+Boston,Boston Red Sox,2010,3.95
+Boston,Boston Red Sox,2011,4.05
+Boston,Boston Red Sox,2012,3.88
+Boston,Boston Red Sox,2013,3.71
+Boston,Boston Red Sox,2014,3.75
+Boston,Boston Red Sox,2015,3.88
+Boston,Boston Red Sox,2016,4.02
+Boston,Boston Red Sox,2017,4.04
+Boston,Boston Red Sox,2018,4.05
+Boston,Boston Red Sox,2019,4.1
+Boston,Boston Red Sox,2020,5.83
+Boston,Boston Red Sox,2021,6.64
+Boston,Boston Red Sox,2022,6.43
+Boston,Boston Red Sox,2023,6.1
+Boston,Boston Red Sox,2024,5.7
+Boston,Boston Red Sox,2025,5.33
+Boston,Boston Red Sox,2026,4.59
+Chicago,Chicago Cubs / White Sox,2003,21.95
+Chicago,Chicago Cubs / White Sox,2004,22.89
+Chicago,Chicago Cubs / White Sox,2005,21.55
+Chicago,Chicago Cubs / White Sox,2006,21.82
+Chicago,Chicago Cubs / White Sox,2007,20.51
+Chicago,Chicago Cubs / White Sox,2008,21.04
+Chicago,Chicago Cubs / White Sox,2009,18.83
+Chicago,Chicago Cubs / White Sox,2010,21.27
+Chicago,Chicago Cubs / White Sox,2011,18.33
+Chicago,Chicago Cubs / White Sox,2012,18.49
+Chicago,Chicago Cubs / White Sox,2013,18.74
+Chicago,Chicago Cubs / White Sox,2014,17.33
+Chicago,Chicago Cubs / White Sox,2015,19.07
+Chicago,Chicago Cubs / White Sox,2016,20.09
+Chicago,Chicago Cubs / White Sox,2017,21.35
+Chicago,Chicago Cubs / White Sox,2018,18.12
+Chicago,Chicago Cubs / White Sox,2019,23.29
+Chicago,Chicago Cubs / White Sox,2020,27.44
+Chicago,Chicago Cubs / White Sox,2021,30.49
+Chicago,Chicago Cubs / White Sox,2022,30.06
+Chicago,Chicago Cubs / White Sox,2023,29.16
+Chicago,Chicago Cubs / White Sox,2024,25.64
+Chicago,Chicago Cubs / White Sox,2025,24.95
+Chicago,Chicago Cubs / White Sox,2026,22.76
+Cincinnati,Cincinnati Reds,2003,13.9
+Cincinnati,Cincinnati Reds,2004,11.84
+Cincinnati,Cincinnati Reds,2005,12.6
+Cincinnati,Cincinnati Reds,2006,10.85
+Cincinnati,Cincinnati Reds,2007,12.97
+Cincinnati,Cincinnati Reds,2008,12.49
+Cincinnati,Cincinnati Reds,2009,12.4
+Cincinnati,Cincinnati Reds,2010,11.14
+Cincinnati,Cincinnati Reds,2011,10.98
+Cincinnati,Cincinnati Reds,2012,11.14
+Cincinnati,Cincinnati Reds,2013,10.95
+Cincinnati,Cincinnati Reds,2014,9.98
+Cincinnati,Cincinnati Reds,2015,11.44
+Cincinnati,Cincinnati Reds,2016,12.65
+Cincinnati,Cincinnati Reds,2017,11.42
+Cincinnati,Cincinnati Reds,2018,11.36
+Cincinnati,Cincinnati Reds,2019,13.84
+Cincinnati,Cincinnati Reds,2020,16.85
+Cincinnati,Cincinnati Reds,2021,18.29
+Cincinnati,Cincinnati Reds,2022,17.17
+Cincinnati,Cincinnati Reds,2023,17.46
+Cincinnati,Cincinnati Reds,2024,16.27
+Cincinnati,Cincinnati Reds,2025,14.68
+Cincinnati,Cincinnati Reds,2026,13.25
+Cleveland,Cleveland Guardians,2003,24.56
+Cleveland,Cleveland Guardians,2004,22.85
+Cleveland,Cleveland Guardians,2005,24.0
+Cleveland,Cleveland Guardians,2006,22.68
+Cleveland,Cleveland Guardians,2007,21.95
+Cleveland,Cleveland Guardians,2008,24.07
+Cleveland,Cleveland Guardians,2009,21.61
+Cleveland,Cleveland Guardians,2010,23.97
+Cleveland,Cleveland Guardians,2011,18.82
+Cleveland,Cleveland Guardians,2012,21.11
+Cleveland,Cleveland Guardians,2013,22.05
+Cleveland,Cleveland Guardians,2014,20.82
+Cleveland,Cleveland Guardians,2015,20.72
+Cleveland,Cleveland Guardians,2016,22.42
+Cleveland,Cleveland Guardians,2017,23.32
+Cleveland,Cleveland Guardians,2018,22.6
+Cleveland,Cleveland Guardians,2019,26.13
+Cleveland,Cleveland Guardians,2020,29.38
+Cleveland,Cleveland Guardians,2021,33.53
+Cleveland,Cleveland Guardians,2022,35.04
+Cleveland,Cleveland Guardians,2023,33.36
+Cleveland,Cleveland Guardians,2024,31.59
+Cleveland,Cleveland Guardians,2025,29.08
+Cleveland,Cleveland Guardians,2026,26.76
+Denver,Colorado Rockies,2003,5.05
+Denver,Colorado Rockies,2004,4.96
+Denver,Colorado Rockies,2005,5.08
+Denver,Colorado Rockies,2006,4.81
+Denver,Colorado Rockies,2007,4.28
+Denver,Colorado Rockies,2008,4.91
+Denver,Colorado Rockies,2009,4.52
+Denver,Colorado Rockies,2010,4.52
+Denver,Colorado Rockies,2011,4.54
+Denver,Colorado Rockies,2012,4.39
+Denver,Colorado Rockies,2013,4.05
+Denver,Colorado Rockies,2014,4.2
+Denver,Colorado Rockies,2015,4.59
+Denver,Colorado Rockies,2016,4.33
+Denver,Colorado Rockies,2017,4.6
+Denver,Colorado Rockies,2018,4.76
+Denver,Colorado Rockies,2019,4.75
+Denver,Colorado Rockies,2020,6.15
+Denver,Colorado Rockies,2021,7.32
+Denver,Colorado Rockies,2022,6.7
+Denver,Colorado Rockies,2023,6.42
+Denver,Colorado Rockies,2024,5.93
+Denver,Colorado Rockies,2025,5.92
+Denver,Colorado Rockies,2026,5.25
+Detroit,Detroit Tigers,2003,41.33
+Detroit,Detroit Tigers,2004,41.58
+Detroit,Detroit Tigers,2005,40.44
+Detroit,Detroit Tigers,2006,38.13
+Detroit,Detroit Tigers,2007,42.86
+Detroit,Detroit Tigers,2008,33.71
+Detroit,Detroit Tigers,2009,39.32
+Detroit,Detroit Tigers,2010,38.94
+Detroit,Detroit Tigers,2011,36.08
+Detroit,Detroit Tigers,2012,36.38
+Detroit,Detroit Tigers,2013,35.35
+Detroit,Detroit Tigers,2014,35.6
+Detroit,Detroit Tigers,2015,37.18
+Detroit,Detroit Tigers,2016,36.99
+Detroit,Detroit Tigers,2017,40.27
+Detroit,Detroit Tigers,2018,43.03
+Detroit,Detroit Tigers,2019,42.69
+Detroit,Detroit Tigers,2020,54.59
+Detroit,Detroit Tigers,2021,54.94
+Detroit,Detroit Tigers,2022,56.46
+Detroit,Detroit Tigers,2023,52.24
+Detroit,Detroit Tigers,2024,51.72
+Detroit,Detroit Tigers,2025,51.07
+Detroit,Detroit Tigers,2026,41.07
+Houston,Houston Astros,2003,11.27
+Houston,Houston Astros,2004,11.47
+Houston,Houston Astros,2005,10.1
+Houston,Houston Astros,2006,10.65
+Houston,Houston Astros,2007,12.31
+Houston,Houston Astros,2008,11.8
+Houston,Houston Astros,2009,10.59
+Houston,Houston Astros,2010,11.2
+Houston,Houston Astros,2011,10.76
+Houston,Houston Astros,2012,9.96
+Houston,Houston Astros,2013,9.53
+Houston,Houston Astros,2014,9.95
+Houston,Houston Astros,2015,10.6
+Houston,Houston Astros,2016,10.84
+Houston,Houston Astros,2017,10.86
+Houston,Houston Astros,2018,12.08
+Houston,Houston Astros,2019,10.89
+Houston,Houston Astros,2020,16.85
+Houston,Houston Astros,2021,17.26
+Houston,Houston Astros,2022,15.93
+Houston,Houston Astros,2023,15.53
+Houston,Houston Astros,2024,14.67
+Houston,Houston Astros,2025,13.47
+Houston,Houston Astros,2026,12.24
+Kansas City,Kansas City Royals,2003,24.75
+Kansas City,Kansas City Royals,2004,23.58
+Kansas City,Kansas City Royals,2005,22.26
+Kansas City,Kansas City Royals,2006,23.7
+Kansas City,Kansas City Royals,2007,23.19
+Kansas City,Kansas City Royals,2008,21.28
+Kansas City,Kansas City Royals,2009,21.91
+Kansas City,Kansas City Royals,2010,21.95
+Kansas City,Kansas City Royals,2011,21.23
+Kansas City,Kansas City Royals,2012,20.57
+Kansas City,Kansas City Royals,2013,19.19
+Kansas City,Kansas City Royals,2014,20.5
+Kansas City,Kansas City Royals,2015,20.24
+Kansas City,Kansas City Royals,2016,24.24
+Kansas City,Kansas City Royals,2017,21.88
+Kansas City,Kansas City Royals,2018,22.07
+Kansas City,Kansas City Royals,2019,24.59
+Kansas City,Kansas City Royals,2020,34.16
+Kansas City,Kansas City Royals,2021,35.86
+Kansas City,Kansas City Royals,2022,33.48
+Kansas City,Kansas City Royals,2023,30.44
+Kansas City,Kansas City Royals,2024,30.33
+Kansas City,Kansas City Royals,2025,28.44
+Kansas City,Kansas City Royals,2026,24.56
+Los Angeles,Los Angeles Angels / Dodgers,2003,7.3
+Los Angeles,Los Angeles Angels / Dodgers,2004,7.92
+Los Angeles,Los Angeles Angels / Dodgers,2005,7.55
+Los Angeles,Los Angeles Angels / Dodgers,2006,7.36
+Los Angeles,Los Angeles Angels / Dodgers,2007,7.56
+Los Angeles,Los Angeles Angels / Dodgers,2008,7.57
+Los Angeles,Los Angeles Angels / Dodgers,2009,7.12
+Los Angeles,Los Angeles Angels / Dodgers,2010,6.49
+Los Angeles,Los Angeles Angels / Dodgers,2011,6.51
+Los Angeles,Los Angeles Angels / Dodgers,2012,7.12
+Los Angeles,Los Angeles Angels / Dodgers,2013,6.31
+Los Angeles,Los Angeles Angels / Dodgers,2014,6.28
+Los Angeles,Los Angeles Angels / Dodgers,2015,6.88
+Los Angeles,Los Angeles Angels / Dodgers,2016,6.96
+Los Angeles,Los Angeles Angels / Dodgers,2017,6.5
+Los Angeles,Los Angeles Angels / Dodgers,2018,6.14
+Los Angeles,Los Angeles Angels / Dodgers,2019,6.23
+Los Angeles,Los Angeles Angels / Dodgers,2020,10.5
+Los Angeles,Los Angeles Angels / Dodgers,2021,10.98
+Los Angeles,Los Angeles Angels / Dodgers,2022,10.17
+Los Angeles,Los Angeles Angels / Dodgers,2023,10.37
+Los Angeles,Los Angeles Angels / Dodgers,2024,9.26
+Los Angeles,Los Angeles Angels / Dodgers,2025,8.15
+Los Angeles,Los Angeles Angels / Dodgers,2026,7.9
+Miami,Miami Marlins,2003,10.57
+Miami,Miami Marlins,2004,10.17
+Miami,Miami Marlins,2005,11.27
+Miami,Miami Marlins,2006,10.84
+Miami,Miami Marlins,2007,10.46
+Miami,Miami Marlins,2008,10.6
+Miami,Miami Marlins,2009,10.61
+Miami,Miami Marlins,2010,9.86
+Miami,Miami Marlins,2011,9.84
+Miami,Miami Marlins,2012,8.25
+Miami,Miami Marlins,2013,9.11
+Miami,Miami Marlins,2014,8.51
+Miami,Miami Marlins,2015,10.11
+Miami,Miami Marlins,2016,10.19
+Miami,Miami Marlins,2017,9.34
+Miami,Miami Marlins,2018,9.7
+Miami,Miami Marlins,2019,9.61
+Miami,Miami Marlins,2020,13.49
+Miami,Miami Marlins,2021,15.63
+Miami,Miami Marlins,2022,15.71
+Miami,Miami Marlins,2023,13.54
+Miami,Miami Marlins,2024,12.89
+Miami,Miami Marlins,2025,13.18
+Miami,Miami Marlins,2026,10.86
+Milwaukee,Milwaukee Brewers,2003,14.99
+Milwaukee,Milwaukee Brewers,2004,15.59
+Milwaukee,Milwaukee Brewers,2005,14.4
+Milwaukee,Milwaukee Brewers,2006,15.45
+Milwaukee,Milwaukee Brewers,2007,16.9
+Milwaukee,Milwaukee Brewers,2008,16.1
+Milwaukee,Milwaukee Brewers,2009,16.14
+Milwaukee,Milwaukee Brewers,2010,13.39
+Milwaukee,Milwaukee Brewers,2011,12.78
+Milwaukee,Milwaukee Brewers,2012,13.17
+Milwaukee,Milwaukee Brewers,2013,12.98
+Milwaukee,Milwaukee Brewers,2014,13.26
+Milwaukee,Milwaukee Brewers,2015,15.34
+Milwaukee,Milwaukee Brewers,2016,14.5
+Milwaukee,Milwaukee Brewers,2017,14.87
+Milwaukee,Milwaukee Brewers,2018,15.73
+Milwaukee,Milwaukee Brewers,2019,15.69
+Milwaukee,Milwaukee Brewers,2020,21.47
+Milwaukee,Milwaukee Brewers,2021,25.03
+Milwaukee,Milwaukee Brewers,2022,21.69
+Milwaukee,Milwaukee Brewers,2023,20.2
+Milwaukee,Milwaukee Brewers,2024,20.07
+Milwaukee,Milwaukee Brewers,2025,18.67
+Milwaukee,Milwaukee Brewers,2026,16.24
+Minneapolis,Minnesota Twins,2003,8.15
+Minneapolis,Minnesota Twins,2004,7.8
+Minneapolis,Minnesota Twins,2005,7.59
+Minneapolis,Minnesota Twins,2006,7.46
+Minneapolis,Minnesota Twins,2007,7.9
+Minneapolis,Minnesota Twins,2008,7.96
+Minneapolis,Minnesota Twins,2009,7.81
+Minneapolis,Minnesota Twins,2010,7.28
+Minneapolis,Minnesota Twins,2011,7.72
+Minneapolis,Minnesota Twins,2012,6.53
+Minneapolis,Minnesota Twins,2013,6.79
+Minneapolis,Minnesota Twins,2014,7.22
+Minneapolis,Minnesota Twins,2015,7.31
+Minneapolis,Minnesota Twins,2016,7.68
+Minneapolis,Minnesota Twins,2017,6.69
+Minneapolis,Minnesota Twins,2018,7.48
+Minneapolis,Minnesota Twins,2019,7.05
+Minneapolis,Minnesota Twins,2020,10.69
+Minneapolis,Minnesota Twins,2021,12.38
+Minneapolis,Minnesota Twins,2022,11.07
+Minneapolis,Minnesota Twins,2023,10.28
+Minneapolis,Minnesota Twins,2024,9.9
+Minneapolis,Minnesota Twins,2025,8.83
+Minneapolis,Minnesota Twins,2026,8.91
+New York City,New York Mets / Yankees,2003,3.81
+New York City,New York Mets / Yankees,2004,3.76
+New York City,New York Mets / Yankees,2005,4.04
+New York City,New York Mets / Yankees,2006,4.25
+New York City,New York Mets / Yankees,2007,3.75
+New York City,New York Mets / Yankees,2008,3.52
+New York City,New York Mets / Yankees,2009,3.41
+New York City,New York Mets / Yankees,2010,3.56
+New York City,New York Mets / Yankees,2011,3.88
+New York City,New York Mets / Yankees,2012,3.51
+New York City,New York Mets / Yankees,2013,3.29
+New York City,New York Mets / Yankees,2014,3.64
+New York City,New York Mets / Yankees,2015,3.42
+New York City,New York Mets / Yankees,2016,3.51
+New York City,New York Mets / Yankees,2017,3.66
+New York City,New York Mets / Yankees,2018,3.79
+New York City,New York Mets / Yankees,2019,3.96
+New York City,New York Mets / Yankees,2020,5.27
+New York City,New York Mets / Yankees,2021,5.54
+New York City,New York Mets / Yankees,2022,5.31
+New York City,New York Mets / Yankees,2023,5.23
+New York City,New York Mets / Yankees,2024,4.74
+New York City,New York Mets / Yankees,2025,4.77
+New York City,New York Mets / Yankees,2026,4.13
+Oakland,Oakland Athletics,2003,21.27
+Oakland,Oakland Athletics,2004,21.04
+Oakland,Oakland Athletics,2005,19.16
+Oakland,Oakland Athletics,2006,18.05
+Oakland,Oakland Athletics,2007,17.5
+Oakland,Oakland Athletics,2008,18.6
+Oakland,Oakland Athletics,2009,18.91
+Oakland,Oakland Athletics,2010,17.0
+Oakland,Oakland Athletics,2011,18.14
+Oakland,Oakland Athletics,2012,16.62
+Oakland,Oakland Athletics,2013,17.09
+Oakland,Oakland Athletics,2014,17.1
+Oakland,Oakland Athletics,2015,16.38
+Oakland,Oakland Athletics,2016,18.37
+Oakland,Oakland Athletics,2017,18.73
+Oakland,Oakland Athletics,2018,19.18
+Oakland,Oakland Athletics,2019,19.91
+Oakland,Oakland Athletics,2020,25.47
+Oakland,Oakland Athletics,2021,28.6
+Oakland,Oakland Athletics,2022,29.26
+Oakland,Oakland Athletics,2023,26.46
+Oakland,Oakland Athletics,2024,23.09
+Oakland,Oakland Athletics,2025,24.06
+Oakland,Oakland Athletics,2026,20.51
+Philadelphia,Philadelphia Phillies,2003,21.2
+Philadelphia,Philadelphia Phillies,2004,21.78
+Philadelphia,Philadelphia Phillies,2005,19.68
+Philadelphia,Philadelphia Phillies,2006,21.34
+Philadelphia,Philadelphia Phillies,2007,21.58
+Philadelphia,Philadelphia Phillies,2008,18.27
+Philadelphia,Philadelphia Phillies,2009,19.32
+Philadelphia,Philadelphia Phillies,2010,17.89
+Philadelphia,Philadelphia Phillies,2011,20.85
+Philadelphia,Philadelphia Phillies,2012,20.06
+Philadelphia,Philadelphia Phillies,2013,17.78
+Philadelphia,Philadelphia Phillies,2014,16.16
+Philadelphia,Philadelphia Phillies,2015,18.55
+Philadelphia,Philadelphia Phillies,2016,18.26
+Philadelphia,Philadelphia Phillies,2017,18.69
+Philadelphia,Philadelphia Phillies,2018,19.88
+Philadelphia,Philadelphia Phillies,2019,20.65
+Philadelphia,Philadelphia Phillies,2020,28.49
+Philadelphia,Philadelphia Phillies,2021,32.81
+Philadelphia,Philadelphia Phillies,2022,27.99
+Philadelphia,Philadelphia Phillies,2023,26.71
+Philadelphia,Philadelphia Phillies,2024,27.14
+Philadelphia,Philadelphia Phillies,2025,23.69
+Philadelphia,Philadelphia Phillies,2026,22.05
+Pittsburgh,Pittsburgh Pirates,2003,14.32
+Pittsburgh,Pittsburgh Pirates,2004,12.78
+Pittsburgh,Pittsburgh Pirates,2005,13.38
+Pittsburgh,Pittsburgh Pirates,2006,14.25
+Pittsburgh,Pittsburgh Pirates,2007,12.73
+Pittsburgh,Pittsburgh Pirates,2008,13.93
+Pittsburgh,Pittsburgh Pirates,2009,12.3
+Pittsburgh,Pittsburgh Pirates,2010,12.48
+Pittsburgh,Pittsburgh Pirates,2011,11.87
+Pittsburgh,Pittsburgh Pirates,2012,11.22
+Pittsburgh,Pittsburgh Pirates,2013,12.19
+Pittsburgh,Pittsburgh Pirates,2014,11.31
+Pittsburgh,Pittsburgh Pirates,2015,12.34
+Pittsburgh,Pittsburgh Pirates,2016,13.77
+Pittsburgh,Pittsburgh Pirates,2017,12.41
+Pittsburgh,Pittsburgh Pirates,2018,12.58
+Pittsburgh,Pittsburgh Pirates,2019,13.74
+Pittsburgh,Pittsburgh Pirates,2020,17.95
+Pittsburgh,Pittsburgh Pirates,2021,20.64
+Pittsburgh,Pittsburgh Pirates,2022,18.57
+Pittsburgh,Pittsburgh Pirates,2023,17.43
+Pittsburgh,Pittsburgh Pirates,2024,17.24
+Pittsburgh,Pittsburgh Pirates,2025,16.7
+Pittsburgh,Pittsburgh Pirates,2026,16.26
+San Diego,San Diego Padres,2003,3.6
+San Diego,San Diego Padres,2004,3.37
+San Diego,San Diego Padres,2005,3.64
+San Diego,San Diego Padres,2006,3.24
+San Diego,San Diego Padres,2007,3.17
+San Diego,San Diego Padres,2008,3.41
+San Diego,San Diego Padres,2009,3.42
+San Diego,San Diego Padres,2010,2.84
+San Diego,San Diego Padres,2011,3.13
+San Diego,San Diego Padres,2012,2.93
+San Diego,San Diego Padres,2013,3.09
+San Diego,San Diego Padres,2014,2.76
+San Diego,San Diego Padres,2015,3.33
+San Diego,San Diego Padres,2016,3.27
+San Diego,San Diego Padres,2017,3.32
+San Diego,San Diego Padres,2018,3.4
+San Diego,San Diego Padres,2019,3.07
+San Diego,San Diego Padres,2020,4.4
+San Diego,San Diego Padres,2021,4.98
+San Diego,San Diego Padres,2022,4.87
+San Diego,San Diego Padres,2023,4.52
+San Diego,San Diego Padres,2024,3.97
+San Diego,San Diego Padres,2025,3.75
+San Diego,San Diego Padres,2026,3.96
+San Francisco,San Francisco Giants,2003,6.17
+San Francisco,San Francisco Giants,2004,6.09
+San Francisco,San Francisco Giants,2005,5.42
+San Francisco,San Francisco Giants,2006,5.76
+San Francisco,San Francisco Giants,2007,5.5
+San Francisco,San Francisco Giants,2008,5.3
+San Francisco,San Francisco Giants,2009,5.65
+San Francisco,San Francisco Giants,2010,5.53
+San Francisco,San Francisco Giants,2011,5.15
+San Francisco,San Francisco Giants,2012,5.15
+San Francisco,San Francisco Giants,2013,4.98
+San Francisco,San Francisco Giants,2014,5.22
+San Francisco,San Francisco Giants,2015,5.71
+San Francisco,San Francisco Giants,2016,4.78
+San Francisco,San Francisco Giants,2017,5.52
+San Francisco,San Francisco Giants,2018,5.34
+San Francisco,San Francisco Giants,2019,6.14
+San Francisco,San Francisco Giants,2020,7.59
+San Francisco,San Francisco Giants,2021,8.45
+San Francisco,San Francisco Giants,2022,7.52
+San Francisco,San Francisco Giants,2023,7.35
+San Francisco,San Francisco Giants,2024,7.51
+San Francisco,San Francisco Giants,2025,6.87
+San Francisco,San Francisco Giants,2026,6.19
+Seattle,Seattle Mariners,2003,4.75
+Seattle,Seattle Mariners,2004,4.58
+Seattle,Seattle Mariners,2005,4.33
+Seattle,Seattle Mariners,2006,4.61
+Seattle,Seattle Mariners,2007,4.32
+Seattle,Seattle Mariners,2008,4.31
+Seattle,Seattle Mariners,2009,4.32
+Seattle,Seattle Mariners,2010,4.33
+Seattle,Seattle Mariners,2011,4.08
+Seattle,Seattle Mariners,2012,4.2
+Seattle,Seattle Mariners,2013,4.08
+Seattle,Seattle Mariners,2014,3.66
+Seattle,Seattle Mariners,2015,3.8
+Seattle,Seattle Mariners,2016,3.98
+Seattle,Seattle Mariners,2017,4.08
+Seattle,Seattle Mariners,2018,3.91
+Seattle,Seattle Mariners,2019,4.7
+Seattle,Seattle Mariners,2020,6.1
+Seattle,Seattle Mariners,2021,6.74
+Seattle,Seattle Mariners,2022,6.08
+Seattle,Seattle Mariners,2023,5.79
+Seattle,Seattle Mariners,2024,5.79
+Seattle,Seattle Mariners,2025,5.45
+Seattle,Seattle Mariners,2026,4.59
+St. Louis,St. Louis Cardinals,2003,61.76
+St. Louis,St. Louis Cardinals,2004,59.91
+St. Louis,St. Louis Cardinals,2005,59.33
+St. Louis,St. Louis Cardinals,2006,51.88
+St. Louis,St. Louis Cardinals,2007,59.3
+St. Louis,St. Louis Cardinals,2008,51.28
+St. Louis,St. Louis Cardinals,2009,54.89
+St. Louis,St. Louis Cardinals,2010,54.48
+St. Louis,St. Louis Cardinals,2011,55.05
+St. Louis,St. Louis Cardinals,2012,52.48
+St. Louis,St. Louis Cardinals,2013,51.0
+St. Louis,St. Louis Cardinals,2014,45.72
+St. Louis,St. Louis Cardinals,2015,54.02
+St. Louis,St. Louis Cardinals,2016,52.3
+St. Louis,St. Louis Cardinals,2017,57.47
+St. Louis,St. Louis Cardinals,2018,56.6
+St. Louis,St. Louis Cardinals,2019,58.86
+St. Louis,St. Louis Cardinals,2020,81.75
+St. Louis,St. Louis Cardinals,2021,90.38
+St. Louis,St. Louis Cardinals,2022,83.42
+St. Louis,St. Louis Cardinals,2023,75.32
+St. Louis,St. Louis Cardinals,2024,71.69
+St. Louis,St. Louis Cardinals,2025,68.13
+St. Louis,St. Louis Cardinals,2026,64.89
+Tampa,Tampa Bay Rays,2003,7.03
+Tampa,Tampa Bay Rays,2004,7.88
+Tampa,Tampa Bay Rays,2005,7.21
+Tampa,Tampa Bay Rays,2006,6.6
+Tampa,Tampa Bay Rays,2007,6.6
+Tampa,Tampa Bay Rays,2008,6.35
+Tampa,Tampa Bay Rays,2009,6.77
+Tampa,Tampa Bay Rays,2010,6.53
+Tampa,Tampa Bay Rays,2011,5.79
+Tampa,Tampa Bay Rays,2012,6.02
+Tampa,Tampa Bay Rays,2013,5.6
+Tampa,Tampa Bay Rays,2014,5.26
+Tampa,Tampa Bay Rays,2015,6.02
+Tampa,Tampa Bay Rays,2016,5.38
+Tampa,Tampa Bay Rays,2017,6.78
+Tampa,Tampa Bay Rays,2018,6.67
+Tampa,Tampa Bay Rays,2019,6.15
+Tampa,Tampa Bay Rays,2020,8.97
+Tampa,Tampa Bay Rays,2021,9.85
+Tampa,Tampa Bay Rays,2022,9.38
+Tampa,Tampa Bay Rays,2023,8.41
+Tampa,Tampa Bay Rays,2024,8.36
+Tampa,Tampa Bay Rays,2025,8.51
+Tampa,Tampa Bay Rays,2026,7.15
+Arlington,Texas Rangers,2003,4.47
+Arlington,Texas Rangers,2004,4.33
+Arlington,Texas Rangers,2005,4.66
+Arlington,Texas Rangers,2006,4.24
+Arlington,Texas Rangers,2007,4.3
+Arlington,Texas Rangers,2008,4.22
+Arlington,Texas Rangers,2009,4.34
+Arlington,Texas Rangers,2010,3.8
+Arlington,Texas Rangers,2011,3.84
+Arlington,Texas Rangers,2012,3.4
+Arlington,Texas Rangers,2013,4.03
+Arlington,Texas Rangers,2014,3.79
+Arlington,Texas Rangers,2015,3.97
+Arlington,Texas Rangers,2016,3.64
+Arlington,Texas Rangers,2017,3.87
+Arlington,Texas Rangers,2018,3.9
+Arlington,Texas Rangers,2019,4.35
+Arlington,Texas Rangers,2020,6.09
+Arlington,Texas Rangers,2021,6.66
+Arlington,Texas Rangers,2022,6.12
+Arlington,Texas Rangers,2023,6.04
+Arlington,Texas Rangers,2024,5.68
+Arlington,Texas Rangers,2025,4.66
+Arlington,Texas Rangers,2026,5.07
+Toronto,Toronto Blue Jays,2003,1.7
+Toronto,Toronto Blue Jays,2004,1.71
+Toronto,Toronto Blue Jays,2005,1.63
+Toronto,Toronto Blue Jays,2006,1.81
+Toronto,Toronto Blue Jays,2007,1.66
+Toronto,Toronto Blue Jays,2008,1.75
+Toronto,Toronto Blue Jays,2009,1.74
+Toronto,Toronto Blue Jays,2010,1.68
+Toronto,Toronto Blue Jays,2011,1.6
+Toronto,Toronto Blue Jays,2012,1.38
+Toronto,Toronto Blue Jays,2013,1.43
+Toronto,Toronto Blue Jays,2014,1.52
+Toronto,Toronto Blue Jays,2015,1.63
+Toronto,Toronto Blue Jays,2016,1.58
+Toronto,Toronto Blue Jays,2017,1.71
+Toronto,Toronto Blue Jays,2018,1.67
+Toronto,Toronto Blue Jays,2019,1.82
+Toronto,Toronto Blue Jays,2020,2.32
+Toronto,Toronto Blue Jays,2021,2.56
+Toronto,Toronto Blue Jays,2022,2.41
+Toronto,Toronto Blue Jays,2023,2.21
+Toronto,Toronto Blue Jays,2024,2.2
+Toronto,Toronto Blue Jays,2025,2.21
+Toronto,Toronto Blue Jays,2026,1.95
+Washington D.C.,Washington Nationals,2003,23.02
+Washington D.C.,Washington Nationals,2004,25.02
+Washington D.C.,Washington Nationals,2005,24.8
+Washington D.C.,Washington Nationals,2006,20.7
+Washington D.C.,Washington Nationals,2007,22.11
+Washington D.C.,Washington Nationals,2008,22.63
+Washington D.C.,Washington Nationals,2009,20.29
+Washington D.C.,Washington Nationals,2010,22.1
+Washington D.C.,Washington Nationals,2011,21.86
+Washington D.C.,Washington Nationals,2012,21.63
+Washington D.C.,Washington Nationals,2013,22.19
+Washington D.C.,Washington Nationals,2014,19.86
+Washington D.C.,Washington Nationals,2015,19.19
+Washington D.C.,Washington Nationals,2016,21.26
+Washington D.C.,Washington Nationals,2017,22.56
+Washington D.C.,Washington Nationals,2018,22.66
+Washington D.C.,Washington Nationals,2019,23.66
+Washington D.C.,Washington Nationals,2020,31.09
+Washington D.C.,Washington Nationals,2021,35.29
+Washington D.C.,Washington Nationals,2022,32.58
+Washington D.C.,Washington Nationals,2023,32.76
+Washington D.C.,Washington Nationals,2024,30.72
+Washington D.C.,Washington Nationals,2025,26.98
+Washington D.C.,Washington Nationals,2026,26.08

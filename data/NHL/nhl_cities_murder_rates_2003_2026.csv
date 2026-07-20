@@ -1,0 +1,745 @@
+City,NHL Team,Year,Murder Rate (per 100k)
+Anaheim,Anaheim Ducks,2003,2.89
+Anaheim,Anaheim Ducks,2004,3.15
+Anaheim,Anaheim Ducks,2005,3.1
+Anaheim,Anaheim Ducks,2006,2.62
+Anaheim,Anaheim Ducks,2007,2.6
+Anaheim,Anaheim Ducks,2008,2.52
+Anaheim,Anaheim Ducks,2009,3.01
+Anaheim,Anaheim Ducks,2010,2.7
+Anaheim,Anaheim Ducks,2011,2.63
+Anaheim,Anaheim Ducks,2012,2.68
+Anaheim,Anaheim Ducks,2013,2.41
+Anaheim,Anaheim Ducks,2014,2.48
+Anaheim,Anaheim Ducks,2015,2.43
+Anaheim,Anaheim Ducks,2016,2.76
+Anaheim,Anaheim Ducks,2017,2.59
+Anaheim,Anaheim Ducks,2018,2.84
+Anaheim,Anaheim Ducks,2019,3.01
+Anaheim,Anaheim Ducks,2020,3.88
+Anaheim,Anaheim Ducks,2021,4.47
+Anaheim,Anaheim Ducks,2022,3.93
+Anaheim,Anaheim Ducks,2023,3.69
+Anaheim,Anaheim Ducks,2024,3.66
+Anaheim,Anaheim Ducks,2025,3.36
+Anaheim,Anaheim Ducks,2026,2.94
+Boston,Boston Bruins,2003,4.39
+Boston,Boston Bruins,2004,4.7
+Boston,Boston Bruins,2005,4.21
+Boston,Boston Bruins,2006,4.3
+Boston,Boston Bruins,2007,4.14
+Boston,Boston Bruins,2008,4.21
+Boston,Boston Bruins,2009,4.17
+Boston,Boston Bruins,2010,4.16
+Boston,Boston Bruins,2011,4.08
+Boston,Boston Bruins,2012,4.08
+Boston,Boston Bruins,2013,3.92
+Boston,Boston Bruins,2014,3.8
+Boston,Boston Bruins,2015,3.8
+Boston,Boston Bruins,2016,3.31
+Boston,Boston Bruins,2017,4.01
+Boston,Boston Bruins,2018,4.01
+Boston,Boston Bruins,2019,4.12
+Boston,Boston Bruins,2020,5.46
+Boston,Boston Bruins,2021,6.69
+Boston,Boston Bruins,2022,5.75
+Boston,Boston Bruins,2023,5.9
+Boston,Boston Bruins,2024,5.39
+Boston,Boston Bruins,2025,5.18
+Boston,Boston Bruins,2026,4.92
+Buffalo,Buffalo Sabres,2003,15.41
+Buffalo,Buffalo Sabres,2004,14.75
+Buffalo,Buffalo Sabres,2005,14.32
+Buffalo,Buffalo Sabres,2006,14.38
+Buffalo,Buffalo Sabres,2007,13.19
+Buffalo,Buffalo Sabres,2008,13.01
+Buffalo,Buffalo Sabres,2009,12.4
+Buffalo,Buffalo Sabres,2010,12.74
+Buffalo,Buffalo Sabres,2011,13.1
+Buffalo,Buffalo Sabres,2012,12.1
+Buffalo,Buffalo Sabres,2013,11.9
+Buffalo,Buffalo Sabres,2014,11.24
+Buffalo,Buffalo Sabres,2015,13.3
+Buffalo,Buffalo Sabres,2016,12.47
+Buffalo,Buffalo Sabres,2017,13.13
+Buffalo,Buffalo Sabres,2018,12.88
+Buffalo,Buffalo Sabres,2019,13.62
+Buffalo,Buffalo Sabres,2020,16.93
+Buffalo,Buffalo Sabres,2021,20.39
+Buffalo,Buffalo Sabres,2022,18.75
+Buffalo,Buffalo Sabres,2023,18.98
+Buffalo,Buffalo Sabres,2024,17.48
+Buffalo,Buffalo Sabres,2025,15.62
+Buffalo,Buffalo Sabres,2026,14.19
+Calgary,Calgary Flames,2003,1.43
+Calgary,Calgary Flames,2004,1.52
+Calgary,Calgary Flames,2005,1.4
+Calgary,Calgary Flames,2006,1.56
+Calgary,Calgary Flames,2007,1.33
+Calgary,Calgary Flames,2008,1.34
+Calgary,Calgary Flames,2009,1.29
+Calgary,Calgary Flames,2010,1.23
+Calgary,Calgary Flames,2011,1.35
+Calgary,Calgary Flames,2012,1.24
+Calgary,Calgary Flames,2013,1.36
+Calgary,Calgary Flames,2014,1.25
+Calgary,Calgary Flames,2015,1.16
+Calgary,Calgary Flames,2016,1.27
+Calgary,Calgary Flames,2017,1.36
+Calgary,Calgary Flames,2018,1.49
+Calgary,Calgary Flames,2019,1.38
+Calgary,Calgary Flames,2020,1.62
+Calgary,Calgary Flames,2021,1.53
+Calgary,Calgary Flames,2022,2.15
+Calgary,Calgary Flames,2023,1.77
+Calgary,Calgary Flames,2024,1.83
+Calgary,Calgary Flames,2025,1.69
+Calgary,Calgary Flames,2026,1.6
+Raleigh,Carolina Hurricanes,2003,5.15
+Raleigh,Carolina Hurricanes,2004,5.18
+Raleigh,Carolina Hurricanes,2005,4.85
+Raleigh,Carolina Hurricanes,2006,4.34
+Raleigh,Carolina Hurricanes,2007,5.09
+Raleigh,Carolina Hurricanes,2008,4.46
+Raleigh,Carolina Hurricanes,2009,4.77
+Raleigh,Carolina Hurricanes,2010,4.4
+Raleigh,Carolina Hurricanes,2011,4.58
+Raleigh,Carolina Hurricanes,2012,4.31
+Raleigh,Carolina Hurricanes,2013,4.14
+Raleigh,Carolina Hurricanes,2014,4.39
+Raleigh,Carolina Hurricanes,2015,3.72
+Raleigh,Carolina Hurricanes,2016,4.35
+Raleigh,Carolina Hurricanes,2017,4.54
+Raleigh,Carolina Hurricanes,2018,4.73
+Raleigh,Carolina Hurricanes,2019,4.59
+Raleigh,Carolina Hurricanes,2020,6.01
+Raleigh,Carolina Hurricanes,2021,7.32
+Raleigh,Carolina Hurricanes,2022,6.54
+Raleigh,Carolina Hurricanes,2023,6.59
+Raleigh,Carolina Hurricanes,2024,6.13
+Raleigh,Carolina Hurricanes,2025,5.63
+Raleigh,Carolina Hurricanes,2026,5.62
+Chicago,Chicago Blackhawks,2003,23.24
+Chicago,Chicago Blackhawks,2004,20.48
+Chicago,Chicago Blackhawks,2005,19.3
+Chicago,Chicago Blackhawks,2006,22.48
+Chicago,Chicago Blackhawks,2007,23.15
+Chicago,Chicago Blackhawks,2008,19.49
+Chicago,Chicago Blackhawks,2009,20.29
+Chicago,Chicago Blackhawks,2010,18.58
+Chicago,Chicago Blackhawks,2011,18.57
+Chicago,Chicago Blackhawks,2012,22.22
+Chicago,Chicago Blackhawks,2013,19.12
+Chicago,Chicago Blackhawks,2014,18.41
+Chicago,Chicago Blackhawks,2015,19.26
+Chicago,Chicago Blackhawks,2016,18.17
+Chicago,Chicago Blackhawks,2017,20.4
+Chicago,Chicago Blackhawks,2018,22.47
+Chicago,Chicago Blackhawks,2019,22.49
+Chicago,Chicago Blackhawks,2020,28.02
+Chicago,Chicago Blackhawks,2021,30.9
+Chicago,Chicago Blackhawks,2022,30.86
+Chicago,Chicago Blackhawks,2023,28.4
+Chicago,Chicago Blackhawks,2024,26.47
+Chicago,Chicago Blackhawks,2025,24.0
+Chicago,Chicago Blackhawks,2026,23.98
+Denver,Colorado Avalanche,2003,5.01
+Denver,Colorado Avalanche,2004,4.91
+Denver,Colorado Avalanche,2005,4.85
+Denver,Colorado Avalanche,2006,4.87
+Denver,Colorado Avalanche,2007,4.44
+Denver,Colorado Avalanche,2008,4.36
+Denver,Colorado Avalanche,2009,3.91
+Denver,Colorado Avalanche,2010,4.55
+Denver,Colorado Avalanche,2011,4.87
+Denver,Colorado Avalanche,2012,4.58
+Denver,Colorado Avalanche,2013,4.24
+Denver,Colorado Avalanche,2014,3.89
+Denver,Colorado Avalanche,2015,4.25
+Denver,Colorado Avalanche,2016,4.28
+Denver,Colorado Avalanche,2017,4.63
+Denver,Colorado Avalanche,2018,4.58
+Denver,Colorado Avalanche,2019,4.85
+Denver,Colorado Avalanche,2020,6.39
+Denver,Colorado Avalanche,2021,6.9
+Denver,Colorado Avalanche,2022,7.27
+Denver,Colorado Avalanche,2023,6.1
+Denver,Colorado Avalanche,2024,5.73
+Denver,Colorado Avalanche,2025,5.46
+Denver,Colorado Avalanche,2026,5.1
+Columbus,Columbus Blue Jackets,2003,8.82
+Columbus,Columbus Blue Jackets,2004,8.53
+Columbus,Columbus Blue Jackets,2005,8.04
+Columbus,Columbus Blue Jackets,2006,8.32
+Columbus,Columbus Blue Jackets,2007,8.93
+Columbus,Columbus Blue Jackets,2008,8.02
+Columbus,Columbus Blue Jackets,2009,7.83
+Columbus,Columbus Blue Jackets,2010,7.91
+Columbus,Columbus Blue Jackets,2011,7.1
+Columbus,Columbus Blue Jackets,2012,8.54
+Columbus,Columbus Blue Jackets,2013,7.87
+Columbus,Columbus Blue Jackets,2014,6.85
+Columbus,Columbus Blue Jackets,2015,7.63
+Columbus,Columbus Blue Jackets,2016,6.67
+Columbus,Columbus Blue Jackets,2017,7.87
+Columbus,Columbus Blue Jackets,2018,7.91
+Columbus,Columbus Blue Jackets,2019,8.24
+Columbus,Columbus Blue Jackets,2020,10.77
+Columbus,Columbus Blue Jackets,2021,12.79
+Columbus,Columbus Blue Jackets,2022,11.24
+Columbus,Columbus Blue Jackets,2023,11.47
+Columbus,Columbus Blue Jackets,2024,10.11
+Columbus,Columbus Blue Jackets,2025,8.82
+Columbus,Columbus Blue Jackets,2026,8.71
+Dallas,Dallas Stars,2003,11.44
+Dallas,Dallas Stars,2004,9.48
+Dallas,Dallas Stars,2005,9.62
+Dallas,Dallas Stars,2006,10.2
+Dallas,Dallas Stars,2007,9.34
+Dallas,Dallas Stars,2008,9.47
+Dallas,Dallas Stars,2009,9.13
+Dallas,Dallas Stars,2010,9.73
+Dallas,Dallas Stars,2011,9.1
+Dallas,Dallas Stars,2012,9.71
+Dallas,Dallas Stars,2013,8.06
+Dallas,Dallas Stars,2014,9.52
+Dallas,Dallas Stars,2015,9.54
+Dallas,Dallas Stars,2016,9.44
+Dallas,Dallas Stars,2017,9.76
+Dallas,Dallas Stars,2018,9.5
+Dallas,Dallas Stars,2019,9.46
+Dallas,Dallas Stars,2020,14.55
+Dallas,Dallas Stars,2021,15.15
+Dallas,Dallas Stars,2022,13.76
+Dallas,Dallas Stars,2023,13.77
+Dallas,Dallas Stars,2024,12.82
+Dallas,Dallas Stars,2025,12.28
+Dallas,Dallas Stars,2026,10.77
+Detroit,Detroit Red Wings,2003,40.06
+Detroit,Detroit Red Wings,2004,39.01
+Detroit,Detroit Red Wings,2005,38.43
+Detroit,Detroit Red Wings,2006,41.49
+Detroit,Detroit Red Wings,2007,40.42
+Detroit,Detroit Red Wings,2008,40.61
+Detroit,Detroit Red Wings,2009,39.14
+Detroit,Detroit Red Wings,2010,36.44
+Detroit,Detroit Red Wings,2011,41.85
+Detroit,Detroit Red Wings,2012,35.92
+Detroit,Detroit Red Wings,2013,31.99
+Detroit,Detroit Red Wings,2014,36.79
+Detroit,Detroit Red Wings,2015,35.71
+Detroit,Detroit Red Wings,2016,36.76
+Detroit,Detroit Red Wings,2017,37.71
+Detroit,Detroit Red Wings,2018,39.75
+Detroit,Detroit Red Wings,2019,37.4
+Detroit,Detroit Red Wings,2020,53.67
+Detroit,Detroit Red Wings,2021,60.89
+Detroit,Detroit Red Wings,2022,60.26
+Detroit,Detroit Red Wings,2023,52.37
+Detroit,Detroit Red Wings,2024,49.56
+Detroit,Detroit Red Wings,2025,49.92
+Detroit,Detroit Red Wings,2026,45.34
+Edmonton,Edmonton Oilers,2003,3.23
+Edmonton,Edmonton Oilers,2004,3.03
+Edmonton,Edmonton Oilers,2005,3.27
+Edmonton,Edmonton Oilers,2006,3.05
+Edmonton,Edmonton Oilers,2007,3.02
+Edmonton,Edmonton Oilers,2008,2.97
+Edmonton,Edmonton Oilers,2009,2.93
+Edmonton,Edmonton Oilers,2010,3.0
+Edmonton,Edmonton Oilers,2011,2.77
+Edmonton,Edmonton Oilers,2012,2.39
+Edmonton,Edmonton Oilers,2013,2.66
+Edmonton,Edmonton Oilers,2014,2.66
+Edmonton,Edmonton Oilers,2015,2.8
+Edmonton,Edmonton Oilers,2016,2.73
+Edmonton,Edmonton Oilers,2017,2.69
+Edmonton,Edmonton Oilers,2018,3.06
+Edmonton,Edmonton Oilers,2019,3.16
+Edmonton,Edmonton Oilers,2020,3.25
+Edmonton,Edmonton Oilers,2021,3.47
+Edmonton,Edmonton Oilers,2022,4.26
+Edmonton,Edmonton Oilers,2023,4.17
+Edmonton,Edmonton Oilers,2024,3.81
+Edmonton,Edmonton Oilers,2025,3.37
+Edmonton,Edmonton Oilers,2026,3.54
+Miami,Florida Panthers,2003,11.23
+Miami,Florida Panthers,2004,10.59
+Miami,Florida Panthers,2005,10.1
+Miami,Florida Panthers,2006,9.85
+Miami,Florida Panthers,2007,10.19
+Miami,Florida Panthers,2008,9.11
+Miami,Florida Panthers,2009,10.95
+Miami,Florida Panthers,2010,9.45
+Miami,Florida Panthers,2011,9.64
+Miami,Florida Panthers,2012,9.28
+Miami,Florida Panthers,2013,9.46
+Miami,Florida Panthers,2014,9.68
+Miami,Florida Panthers,2015,8.11
+Miami,Florida Panthers,2016,10.17
+Miami,Florida Panthers,2017,9.94
+Miami,Florida Panthers,2018,10.82
+Miami,Florida Panthers,2019,10.67
+Miami,Florida Panthers,2020,13.44
+Miami,Florida Panthers,2021,15.27
+Miami,Florida Panthers,2022,15.73
+Miami,Florida Panthers,2023,14.64
+Miami,Florida Panthers,2024,13.16
+Miami,Florida Panthers,2025,12.79
+Miami,Florida Panthers,2026,11.21
+Los Angeles,Los Angeles Kings,2003,7.87
+Los Angeles,Los Angeles Kings,2004,7.28
+Los Angeles,Los Angeles Kings,2005,6.98
+Los Angeles,Los Angeles Kings,2006,7.22
+Los Angeles,Los Angeles Kings,2007,6.96
+Los Angeles,Los Angeles Kings,2008,7.12
+Los Angeles,Los Angeles Kings,2009,6.66
+Los Angeles,Los Angeles Kings,2010,6.67
+Los Angeles,Los Angeles Kings,2011,7.54
+Los Angeles,Los Angeles Kings,2012,6.84
+Los Angeles,Los Angeles Kings,2013,6.26
+Los Angeles,Los Angeles Kings,2014,6.33
+Los Angeles,Los Angeles Kings,2015,6.1
+Los Angeles,Los Angeles Kings,2016,7.23
+Los Angeles,Los Angeles Kings,2017,6.76
+Los Angeles,Los Angeles Kings,2018,7.37
+Los Angeles,Los Angeles Kings,2019,7.49
+Los Angeles,Los Angeles Kings,2020,10.07
+Los Angeles,Los Angeles Kings,2021,11.19
+Los Angeles,Los Angeles Kings,2022,10.65
+Los Angeles,Los Angeles Kings,2023,10.43
+Los Angeles,Los Angeles Kings,2024,9.24
+Los Angeles,Los Angeles Kings,2025,8.66
+Los Angeles,Los Angeles Kings,2026,7.14
+Minneapolis,Minnesota Wild,2003,7.76
+Minneapolis,Minnesota Wild,2004,7.4
+Minneapolis,Minnesota Wild,2005,7.88
+Minneapolis,Minnesota Wild,2006,7.93
+Minneapolis,Minnesota Wild,2007,7.75
+Minneapolis,Minnesota Wild,2008,6.86
+Minneapolis,Minnesota Wild,2009,7.77
+Minneapolis,Minnesota Wild,2010,7.41
+Minneapolis,Minnesota Wild,2011,7.04
+Minneapolis,Minnesota Wild,2012,6.46
+Minneapolis,Minnesota Wild,2013,6.85
+Minneapolis,Minnesota Wild,2014,6.87
+Minneapolis,Minnesota Wild,2015,7.41
+Minneapolis,Minnesota Wild,2016,6.81
+Minneapolis,Minnesota Wild,2017,7.13
+Minneapolis,Minnesota Wild,2018,7.13
+Minneapolis,Minnesota Wild,2019,7.74
+Minneapolis,Minnesota Wild,2020,10.35
+Minneapolis,Minnesota Wild,2021,11.58
+Minneapolis,Minnesota Wild,2022,10.71
+Minneapolis,Minnesota Wild,2023,10.68
+Minneapolis,Minnesota Wild,2024,10.07
+Minneapolis,Minnesota Wild,2025,9.35
+Minneapolis,Minnesota Wild,2026,7.76
+Montreal,Montreal Canadiens,2003,1.22
+Montreal,Montreal Canadiens,2004,1.22
+Montreal,Montreal Canadiens,2005,1.17
+Montreal,Montreal Canadiens,2006,1.17
+Montreal,Montreal Canadiens,2007,1.2
+Montreal,Montreal Canadiens,2008,1.15
+Montreal,Montreal Canadiens,2009,1.16
+Montreal,Montreal Canadiens,2010,1.18
+Montreal,Montreal Canadiens,2011,1.12
+Montreal,Montreal Canadiens,2012,1.07
+Montreal,Montreal Canadiens,2013,1.05
+Montreal,Montreal Canadiens,2014,1.02
+Montreal,Montreal Canadiens,2015,1.1
+Montreal,Montreal Canadiens,2016,1.09
+Montreal,Montreal Canadiens,2017,1.13
+Montreal,Montreal Canadiens,2018,1.11
+Montreal,Montreal Canadiens,2019,1.13
+Montreal,Montreal Canadiens,2020,1.36
+Montreal,Montreal Canadiens,2021,1.3
+Montreal,Montreal Canadiens,2022,1.6
+Montreal,Montreal Canadiens,2023,1.54
+Montreal,Montreal Canadiens,2024,1.48
+Montreal,Montreal Canadiens,2025,1.33
+Montreal,Montreal Canadiens,2026,1.36
+Nashville,Nashville Predators,2003,9.99
+Nashville,Nashville Predators,2004,9.39
+Nashville,Nashville Predators,2005,11.07
+Nashville,Nashville Predators,2006,9.4
+Nashville,Nashville Predators,2007,10.34
+Nashville,Nashville Predators,2008,9.61
+Nashville,Nashville Predators,2009,9.35
+Nashville,Nashville Predators,2010,8.62
+Nashville,Nashville Predators,2011,8.89
+Nashville,Nashville Predators,2012,8.28
+Nashville,Nashville Predators,2013,8.89
+Nashville,Nashville Predators,2014,8.3
+Nashville,Nashville Predators,2015,8.73
+Nashville,Nashville Predators,2016,10.03
+Nashville,Nashville Predators,2017,8.62
+Nashville,Nashville Predators,2018,8.69
+Nashville,Nashville Predators,2019,9.29
+Nashville,Nashville Predators,2020,13.31
+Nashville,Nashville Predators,2021,15.36
+Nashville,Nashville Predators,2022,13.5
+Nashville,Nashville Predators,2023,13.37
+Nashville,Nashville Predators,2024,11.77
+Nashville,Nashville Predators,2025,11.31
+Nashville,Nashville Predators,2026,9.59
+Newark,New Jersey Devils,2003,23.28
+Newark,New Jersey Devils,2004,25.8
+Newark,New Jersey Devils,2005,25.64
+Newark,New Jersey Devils,2006,25.13
+Newark,New Jersey Devils,2007,24.08
+Newark,New Jersey Devils,2008,19.76
+Newark,New Jersey Devils,2009,21.89
+Newark,New Jersey Devils,2010,20.57
+Newark,New Jersey Devils,2011,22.04
+Newark,New Jersey Devils,2012,21.36
+Newark,New Jersey Devils,2013,22.46
+Newark,New Jersey Devils,2014,22.89
+Newark,New Jersey Devils,2015,23.19
+Newark,New Jersey Devils,2016,22.76
+Newark,New Jersey Devils,2017,24.86
+Newark,New Jersey Devils,2018,22.86
+Newark,New Jersey Devils,2019,25.05
+Newark,New Jersey Devils,2020,31.76
+Newark,New Jersey Devils,2021,36.7
+Newark,New Jersey Devils,2022,35.57
+Newark,New Jersey Devils,2023,32.8
+Newark,New Jersey Devils,2024,29.37
+Newark,New Jersey Devils,2025,28.52
+Newark,New Jersey Devils,2026,27.51
+New York City,New York Islanders / New York Rangers,2003,4.19
+New York City,New York Islanders / New York Rangers,2004,4.47
+New York City,New York Islanders / New York Rangers,2005,4.03
+New York City,New York Islanders / New York Rangers,2006,3.92
+New York City,New York Islanders / New York Rangers,2007,3.45
+New York City,New York Islanders / New York Rangers,2008,3.63
+New York City,New York Islanders / New York Rangers,2009,3.41
+New York City,New York Islanders / New York Rangers,2010,3.92
+New York City,New York Islanders / New York Rangers,2011,3.49
+New York City,New York Islanders / New York Rangers,2012,3.22
+New York City,New York Islanders / New York Rangers,2013,3.43
+New York City,New York Islanders / New York Rangers,2014,3.35
+New York City,New York Islanders / New York Rangers,2015,3.62
+New York City,New York Islanders / New York Rangers,2016,3.66
+New York City,New York Islanders / New York Rangers,2017,3.77
+New York City,New York Islanders / New York Rangers,2018,3.72
+New York City,New York Islanders / New York Rangers,2019,3.87
+New York City,New York Islanders / New York Rangers,2020,4.86
+New York City,New York Islanders / New York Rangers,2021,5.49
+New York City,New York Islanders / New York Rangers,2022,5.43
+New York City,New York Islanders / New York Rangers,2023,5.11
+New York City,New York Islanders / New York Rangers,2024,4.55
+New York City,New York Islanders / New York Rangers,2025,4.76
+New York City,New York Islanders / New York Rangers,2026,4.22
+Ottawa,Ottawa Senators,2003,0.98
+Ottawa,Ottawa Senators,2004,1.0
+Ottawa,Ottawa Senators,2005,1.01
+Ottawa,Ottawa Senators,2006,0.87
+Ottawa,Ottawa Senators,2007,0.98
+Ottawa,Ottawa Senators,2008,0.94
+Ottawa,Ottawa Senators,2009,0.95
+Ottawa,Ottawa Senators,2010,0.93
+Ottawa,Ottawa Senators,2011,0.83
+Ottawa,Ottawa Senators,2012,0.93
+Ottawa,Ottawa Senators,2013,0.9
+Ottawa,Ottawa Senators,2014,0.91
+Ottawa,Ottawa Senators,2015,0.82
+Ottawa,Ottawa Senators,2016,0.92
+Ottawa,Ottawa Senators,2017,0.87
+Ottawa,Ottawa Senators,2018,0.88
+Ottawa,Ottawa Senators,2019,1.02
+Ottawa,Ottawa Senators,2020,1.07
+Ottawa,Ottawa Senators,2021,1.13
+Ottawa,Ottawa Senators,2022,1.36
+Ottawa,Ottawa Senators,2023,1.34
+Ottawa,Ottawa Senators,2024,1.19
+Ottawa,Ottawa Senators,2025,1.15
+Ottawa,Ottawa Senators,2026,1.09
+Philadelphia,Philadelphia Flyers,2003,18.01
+Philadelphia,Philadelphia Flyers,2004,20.53
+Philadelphia,Philadelphia Flyers,2005,19.07
+Philadelphia,Philadelphia Flyers,2006,21.75
+Philadelphia,Philadelphia Flyers,2007,20.6
+Philadelphia,Philadelphia Flyers,2008,19.54
+Philadelphia,Philadelphia Flyers,2009,20.05
+Philadelphia,Philadelphia Flyers,2010,19.21
+Philadelphia,Philadelphia Flyers,2011,17.83
+Philadelphia,Philadelphia Flyers,2012,19.81
+Philadelphia,Philadelphia Flyers,2013,19.79
+Philadelphia,Philadelphia Flyers,2014,18.63
+Philadelphia,Philadelphia Flyers,2015,19.39
+Philadelphia,Philadelphia Flyers,2016,18.75
+Philadelphia,Philadelphia Flyers,2017,18.69
+Philadelphia,Philadelphia Flyers,2018,20.5
+Philadelphia,Philadelphia Flyers,2019,19.29
+Philadelphia,Philadelphia Flyers,2020,27.27
+Philadelphia,Philadelphia Flyers,2021,30.14
+Philadelphia,Philadelphia Flyers,2022,27.77
+Philadelphia,Philadelphia Flyers,2023,27.71
+Philadelphia,Philadelphia Flyers,2024,25.35
+Philadelphia,Philadelphia Flyers,2025,23.61
+Philadelphia,Philadelphia Flyers,2026,23.83
+Pittsburgh,Pittsburgh Penguins,2003,13.62
+Pittsburgh,Pittsburgh Penguins,2004,13.06
+Pittsburgh,Pittsburgh Penguins,2005,13.08
+Pittsburgh,Pittsburgh Penguins,2006,13.67
+Pittsburgh,Pittsburgh Penguins,2007,14.09
+Pittsburgh,Pittsburgh Penguins,2008,13.05
+Pittsburgh,Pittsburgh Penguins,2009,12.01
+Pittsburgh,Pittsburgh Penguins,2010,11.3
+Pittsburgh,Pittsburgh Penguins,2011,12.05
+Pittsburgh,Pittsburgh Penguins,2012,13.12
+Pittsburgh,Pittsburgh Penguins,2013,12.15
+Pittsburgh,Pittsburgh Penguins,2014,11.07
+Pittsburgh,Pittsburgh Penguins,2015,12.37
+Pittsburgh,Pittsburgh Penguins,2016,11.98
+Pittsburgh,Pittsburgh Penguins,2017,12.57
+Pittsburgh,Pittsburgh Penguins,2018,13.59
+Pittsburgh,Pittsburgh Penguins,2019,13.94
+Pittsburgh,Pittsburgh Penguins,2020,18.49
+Pittsburgh,Pittsburgh Penguins,2021,19.76
+Pittsburgh,Pittsburgh Penguins,2022,19.59
+Pittsburgh,Pittsburgh Penguins,2023,18.01
+Pittsburgh,Pittsburgh Penguins,2024,16.44
+Pittsburgh,Pittsburgh Penguins,2025,15.13
+Pittsburgh,Pittsburgh Penguins,2026,14.48
+San Jose,San Jose Sharks,2003,3.52
+San Jose,San Jose Sharks,2004,3.44
+San Jose,San Jose Sharks,2005,2.87
+San Jose,San Jose Sharks,2006,3.28
+San Jose,San Jose Sharks,2007,3.62
+San Jose,San Jose Sharks,2008,3.01
+San Jose,San Jose Sharks,2009,3.37
+San Jose,San Jose Sharks,2010,3.27
+San Jose,San Jose Sharks,2011,3.12
+San Jose,San Jose Sharks,2012,3.31
+San Jose,San Jose Sharks,2013,2.84
+San Jose,San Jose Sharks,2014,2.92
+San Jose,San Jose Sharks,2015,3.03
+San Jose,San Jose Sharks,2016,3.24
+San Jose,San Jose Sharks,2017,3.35
+San Jose,San Jose Sharks,2018,3.79
+San Jose,San Jose Sharks,2019,3.3
+San Jose,San Jose Sharks,2020,4.71
+San Jose,San Jose Sharks,2021,5.37
+San Jose,San Jose Sharks,2022,4.82
+San Jose,San Jose Sharks,2023,4.55
+San Jose,San Jose Sharks,2024,4.52
+San Jose,San Jose Sharks,2025,3.78
+San Jose,San Jose Sharks,2026,3.86
+Seattle,Seattle Kraken,2003,4.36
+Seattle,Seattle Kraken,2004,4.44
+Seattle,Seattle Kraken,2005,4.35
+Seattle,Seattle Kraken,2006,4.67
+Seattle,Seattle Kraken,2007,4.03
+Seattle,Seattle Kraken,2008,3.71
+Seattle,Seattle Kraken,2009,4.01
+Seattle,Seattle Kraken,2010,3.8
+Seattle,Seattle Kraken,2011,4.03
+Seattle,Seattle Kraken,2012,4.09
+Seattle,Seattle Kraken,2013,3.96
+Seattle,Seattle Kraken,2014,3.49
+Seattle,Seattle Kraken,2015,3.6
+Seattle,Seattle Kraken,2016,4.14
+Seattle,Seattle Kraken,2017,3.86
+Seattle,Seattle Kraken,2018,3.86
+Seattle,Seattle Kraken,2019,4.65
+Seattle,Seattle Kraken,2020,5.79
+Seattle,Seattle Kraken,2021,6.6
+Seattle,Seattle Kraken,2022,6.26
+Seattle,Seattle Kraken,2023,5.85
+Seattle,Seattle Kraken,2024,5.48
+Seattle,Seattle Kraken,2025,5.18
+Seattle,Seattle Kraken,2026,4.59
+St. Louis,St. Louis Blues,2003,60.62
+St. Louis,St. Louis Blues,2004,57.34
+St. Louis,St. Louis Blues,2005,60.71
+St. Louis,St. Louis Blues,2006,57.6
+St. Louis,St. Louis Blues,2007,56.52
+St. Louis,St. Louis Blues,2008,56.81
+St. Louis,St. Louis Blues,2009,58.15
+St. Louis,St. Louis Blues,2010,56.75
+St. Louis,St. Louis Blues,2011,54.6
+St. Louis,St. Louis Blues,2012,51.23
+St. Louis,St. Louis Blues,2013,55.38
+St. Louis,St. Louis Blues,2014,47.82
+St. Louis,St. Louis Blues,2015,50.35
+St. Louis,St. Louis Blues,2016,58.49
+St. Louis,St. Louis Blues,2017,52.07
+St. Louis,St. Louis Blues,2018,57.51
+St. Louis,St. Louis Blues,2019,58.07
+St. Louis,St. Louis Blues,2020,77.7
+St. Louis,St. Louis Blues,2021,85.68
+St. Louis,St. Louis Blues,2022,81.08
+St. Louis,St. Louis Blues,2023,74.68
+St. Louis,St. Louis Blues,2024,68.93
+St. Louis,St. Louis Blues,2025,62.37
+St. Louis,St. Louis Blues,2026,62.89
+Tampa,Tampa Bay Lightning,2003,7.43
+Tampa,Tampa Bay Lightning,2004,6.34
+Tampa,Tampa Bay Lightning,2005,6.94
+Tampa,Tampa Bay Lightning,2006,6.77
+Tampa,Tampa Bay Lightning,2007,6.95
+Tampa,Tampa Bay Lightning,2008,6.78
+Tampa,Tampa Bay Lightning,2009,6.61
+Tampa,Tampa Bay Lightning,2010,6.0
+Tampa,Tampa Bay Lightning,2011,6.21
+Tampa,Tampa Bay Lightning,2012,5.97
+Tampa,Tampa Bay Lightning,2013,5.57
+Tampa,Tampa Bay Lightning,2014,6.02
+Tampa,Tampa Bay Lightning,2015,5.82
+Tampa,Tampa Bay Lightning,2016,6.58
+Tampa,Tampa Bay Lightning,2017,6.55
+Tampa,Tampa Bay Lightning,2018,6.06
+Tampa,Tampa Bay Lightning,2019,7.09
+Tampa,Tampa Bay Lightning,2020,9.17
+Tampa,Tampa Bay Lightning,2021,10.19
+Tampa,Tampa Bay Lightning,2022,8.72
+Tampa,Tampa Bay Lightning,2023,8.8
+Tampa,Tampa Bay Lightning,2024,8.19
+Tampa,Tampa Bay Lightning,2025,7.63
+Tampa,Tampa Bay Lightning,2026,6.96
+Toronto,Toronto Maple Leafs,2003,1.68
+Toronto,Toronto Maple Leafs,2004,1.89
+Toronto,Toronto Maple Leafs,2005,1.69
+Toronto,Toronto Maple Leafs,2006,1.52
+Toronto,Toronto Maple Leafs,2007,1.62
+Toronto,Toronto Maple Leafs,2008,1.59
+Toronto,Toronto Maple Leafs,2009,1.61
+Toronto,Toronto Maple Leafs,2010,1.6
+Toronto,Toronto Maple Leafs,2011,1.59
+Toronto,Toronto Maple Leafs,2012,1.5
+Toronto,Toronto Maple Leafs,2013,1.53
+Toronto,Toronto Maple Leafs,2014,1.77
+Toronto,Toronto Maple Leafs,2015,1.49
+Toronto,Toronto Maple Leafs,2016,1.45
+Toronto,Toronto Maple Leafs,2017,1.73
+Toronto,Toronto Maple Leafs,2018,1.64
+Toronto,Toronto Maple Leafs,2019,1.64
+Toronto,Toronto Maple Leafs,2020,1.86
+Toronto,Toronto Maple Leafs,2021,2.09
+Toronto,Toronto Maple Leafs,2022,2.37
+Toronto,Toronto Maple Leafs,2023,2.5
+Toronto,Toronto Maple Leafs,2024,2.33
+Toronto,Toronto Maple Leafs,2025,2.13
+Toronto,Toronto Maple Leafs,2026,1.85
+Salt Lake City,Utah Hockey Club,2003,3.44
+Salt Lake City,Utah Hockey Club,2004,2.76
+Salt Lake City,Utah Hockey Club,2005,2.91
+Salt Lake City,Utah Hockey Club,2006,2.7
+Salt Lake City,Utah Hockey Club,2007,2.86
+Salt Lake City,Utah Hockey Club,2008,2.82
+Salt Lake City,Utah Hockey Club,2009,2.85
+Salt Lake City,Utah Hockey Club,2010,2.65
+Salt Lake City,Utah Hockey Club,2011,2.74
+Salt Lake City,Utah Hockey Club,2012,2.55
+Salt Lake City,Utah Hockey Club,2013,2.59
+Salt Lake City,Utah Hockey Club,2014,2.39
+Salt Lake City,Utah Hockey Club,2015,2.73
+Salt Lake City,Utah Hockey Club,2016,2.77
+Salt Lake City,Utah Hockey Club,2017,2.65
+Salt Lake City,Utah Hockey Club,2018,2.8
+Salt Lake City,Utah Hockey Club,2019,2.71
+Salt Lake City,Utah Hockey Club,2020,4.15
+Salt Lake City,Utah Hockey Club,2021,4.69
+Salt Lake City,Utah Hockey Club,2022,4.17
+Salt Lake City,Utah Hockey Club,2023,4.12
+Salt Lake City,Utah Hockey Club,2024,3.72
+Salt Lake City,Utah Hockey Club,2025,3.41
+Salt Lake City,Utah Hockey Club,2026,3.01
+Vancouver,Vancouver Canucks,2003,1.65
+Vancouver,Vancouver Canucks,2004,1.49
+Vancouver,Vancouver Canucks,2005,1.55
+Vancouver,Vancouver Canucks,2006,1.58
+Vancouver,Vancouver Canucks,2007,1.45
+Vancouver,Vancouver Canucks,2008,1.39
+Vancouver,Vancouver Canucks,2009,1.4
+Vancouver,Vancouver Canucks,2010,1.47
+Vancouver,Vancouver Canucks,2011,1.4
+Vancouver,Vancouver Canucks,2012,1.45
+Vancouver,Vancouver Canucks,2013,1.5
+Vancouver,Vancouver Canucks,2014,1.28
+Vancouver,Vancouver Canucks,2015,1.47
+Vancouver,Vancouver Canucks,2016,1.45
+Vancouver,Vancouver Canucks,2017,1.42
+Vancouver,Vancouver Canucks,2018,1.44
+Vancouver,Vancouver Canucks,2019,1.43
+Vancouver,Vancouver Canucks,2020,1.76
+Vancouver,Vancouver Canucks,2021,1.63
+Vancouver,Vancouver Canucks,2022,2.02
+Vancouver,Vancouver Canucks,2023,1.99
+Vancouver,Vancouver Canucks,2024,1.94
+Vancouver,Vancouver Canucks,2025,1.77
+Vancouver,Vancouver Canucks,2026,1.62
+Las Vegas,Vegas Golden Knights,2003,6.85
+Las Vegas,Vegas Golden Knights,2004,7.17
+Las Vegas,Vegas Golden Knights,2005,6.42
+Las Vegas,Vegas Golden Knights,2006,6.71
+Las Vegas,Vegas Golden Knights,2007,6.58
+Las Vegas,Vegas Golden Knights,2008,6.04
+Las Vegas,Vegas Golden Knights,2009,6.65
+Las Vegas,Vegas Golden Knights,2010,6.06
+Las Vegas,Vegas Golden Knights,2011,6.9
+Las Vegas,Vegas Golden Knights,2012,5.83
+Las Vegas,Vegas Golden Knights,2013,5.91
+Las Vegas,Vegas Golden Knights,2014,6.59
+Las Vegas,Vegas Golden Knights,2015,6.44
+Las Vegas,Vegas Golden Knights,2016,6.18
+Las Vegas,Vegas Golden Knights,2017,5.56
+Las Vegas,Vegas Golden Knights,2018,6.95
+Las Vegas,Vegas Golden Knights,2019,6.2
+Las Vegas,Vegas Golden Knights,2020,9.28
+Las Vegas,Vegas Golden Knights,2021,10.15
+Las Vegas,Vegas Golden Knights,2022,9.65
+Las Vegas,Vegas Golden Knights,2023,8.96
+Las Vegas,Vegas Golden Knights,2024,8.3
+Las Vegas,Vegas Golden Knights,2025,7.76
+Las Vegas,Vegas Golden Knights,2026,7.32
+Washington D.C.,Washington Capitals,2003,22.85
+Washington D.C.,Washington Capitals,2004,23.04
+Washington D.C.,Washington Capitals,2005,24.37
+Washington D.C.,Washington Capitals,2006,21.1
+Washington D.C.,Washington Capitals,2007,23.84
+Washington D.C.,Washington Capitals,2008,23.04
+Washington D.C.,Washington Capitals,2009,25.25
+Washington D.C.,Washington Capitals,2010,22.4
+Washington D.C.,Washington Capitals,2011,21.28
+Washington D.C.,Washington Capitals,2012,21.42
+Washington D.C.,Washington Capitals,2013,18.15
+Washington D.C.,Washington Capitals,2014,20.82
+Washington D.C.,Washington Capitals,2015,19.93
+Washington D.C.,Washington Capitals,2016,23.22
+Washington D.C.,Washington Capitals,2017,21.52
+Washington D.C.,Washington Capitals,2018,22.59
+Washington D.C.,Washington Capitals,2019,21.59
+Washington D.C.,Washington Capitals,2020,30.71
+Washington D.C.,Washington Capitals,2021,34.42
+Washington D.C.,Washington Capitals,2022,33.57
+Washington D.C.,Washington Capitals,2023,32.18
+Washington D.C.,Washington Capitals,2024,28.44
+Washington D.C.,Washington Capitals,2025,25.17
+Washington D.C.,Washington Capitals,2026,23.32
+Winnipeg,Winnipeg Jets,2003,4.71
+Winnipeg,Winnipeg Jets,2004,4.57
+Winnipeg,Winnipeg Jets,2005,4.41
+Winnipeg,Winnipeg Jets,2006,4.29
+Winnipeg,Winnipeg Jets,2007,4.25
+Winnipeg,Winnipeg Jets,2008,4.12
+Winnipeg,Winnipeg Jets,2009,4.33
+Winnipeg,Winnipeg Jets,2010,4.03
+Winnipeg,Winnipeg Jets,2011,3.75
+Winnipeg,Winnipeg Jets,2012,3.75
+Winnipeg,Winnipeg Jets,2013,3.42
+Winnipeg,Winnipeg Jets,2014,3.93
+Winnipeg,Winnipeg Jets,2015,3.76
+Winnipeg,Winnipeg Jets,2016,3.94
+Winnipeg,Winnipeg Jets,2017,3.85
+Winnipeg,Winnipeg Jets,2018,4.05
+Winnipeg,Winnipeg Jets,2019,4.43
+Winnipeg,Winnipeg Jets,2020,4.97
+Winnipeg,Winnipeg Jets,2021,5.0
+Winnipeg,Winnipeg Jets,2022,6.43
+Winnipeg,Winnipeg Jets,2023,5.89
+Winnipeg,Winnipeg Jets,2024,5.3
+Winnipeg,Winnipeg Jets,2025,5.23
+Winnipeg,Winnipeg Jets,2026,4.47

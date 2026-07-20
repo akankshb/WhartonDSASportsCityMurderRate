@@ -1,0 +1,721 @@
+City,NFL Team,Year,Murder Rate (per 100k)
+Phoenix,Arizona Cardinals,2003,6.66
+Phoenix,Arizona Cardinals,2004,6.36
+Phoenix,Arizona Cardinals,2005,6.52
+Phoenix,Arizona Cardinals,2006,6.7
+Phoenix,Arizona Cardinals,2007,6.03
+Phoenix,Arizona Cardinals,2008,5.94
+Phoenix,Arizona Cardinals,2009,6.43
+Phoenix,Arizona Cardinals,2010,6.07
+Phoenix,Arizona Cardinals,2011,5.57
+Phoenix,Arizona Cardinals,2012,5.8
+Phoenix,Arizona Cardinals,2013,5.37
+Phoenix,Arizona Cardinals,2014,5.28
+Phoenix,Arizona Cardinals,2015,5.73
+Phoenix,Arizona Cardinals,2016,5.16
+Phoenix,Arizona Cardinals,2017,5.35
+Phoenix,Arizona Cardinals,2018,5.86
+Phoenix,Arizona Cardinals,2019,5.85
+Phoenix,Arizona Cardinals,2020,8.55
+Phoenix,Arizona Cardinals,2021,9.13
+Phoenix,Arizona Cardinals,2022,8.45
+Phoenix,Arizona Cardinals,2023,8.86
+Phoenix,Arizona Cardinals,2024,7.79
+Phoenix,Arizona Cardinals,2025,7.37
+Phoenix,Arizona Cardinals,2026,6.36
+Atlanta,Atlanta Falcons,2003,19.46
+Atlanta,Atlanta Falcons,2004,19.81
+Atlanta,Atlanta Falcons,2005,18.25
+Atlanta,Atlanta Falcons,2006,19.48
+Atlanta,Atlanta Falcons,2007,18.2
+Atlanta,Atlanta Falcons,2008,18.21
+Atlanta,Atlanta Falcons,2009,17.6
+Atlanta,Atlanta Falcons,2010,19.75
+Atlanta,Atlanta Falcons,2011,17.59
+Atlanta,Atlanta Falcons,2012,16.24
+Atlanta,Atlanta Falcons,2013,17.82
+Atlanta,Atlanta Falcons,2014,15.48
+Atlanta,Atlanta Falcons,2015,17.61
+Atlanta,Atlanta Falcons,2016,15.84
+Atlanta,Atlanta Falcons,2017,16.87
+Atlanta,Atlanta Falcons,2018,18.8
+Atlanta,Atlanta Falcons,2019,19.74
+Atlanta,Atlanta Falcons,2020,26.17
+Atlanta,Atlanta Falcons,2021,28.88
+Atlanta,Atlanta Falcons,2022,27.1
+Atlanta,Atlanta Falcons,2023,24.32
+Atlanta,Atlanta Falcons,2024,23.48
+Atlanta,Atlanta Falcons,2025,22.14
+Atlanta,Atlanta Falcons,2026,22.06
+Baltimore,Baltimore Ravens,2003,50.86
+Baltimore,Baltimore Ravens,2004,44.84
+Baltimore,Baltimore Ravens,2005,49.31
+Baltimore,Baltimore Ravens,2006,46.79
+Baltimore,Baltimore Ravens,2007,45.31
+Baltimore,Baltimore Ravens,2008,47.78
+Baltimore,Baltimore Ravens,2009,48.08
+Baltimore,Baltimore Ravens,2010,47.08
+Baltimore,Baltimore Ravens,2011,41.9
+Baltimore,Baltimore Ravens,2012,42.48
+Baltimore,Baltimore Ravens,2013,43.33
+Baltimore,Baltimore Ravens,2014,44.19
+Baltimore,Baltimore Ravens,2015,42.3
+Baltimore,Baltimore Ravens,2016,44.04
+Baltimore,Baltimore Ravens,2017,42.73
+Baltimore,Baltimore Ravens,2018,43.51
+Baltimore,Baltimore Ravens,2019,49.53
+Baltimore,Baltimore Ravens,2020,68.39
+Baltimore,Baltimore Ravens,2021,72.32
+Baltimore,Baltimore Ravens,2022,71.01
+Baltimore,Baltimore Ravens,2023,65.4
+Baltimore,Baltimore Ravens,2024,58.89
+Baltimore,Baltimore Ravens,2025,57.4
+Baltimore,Baltimore Ravens,2026,56.35
+Buffalo,Buffalo Bills,2003,13.97
+Buffalo,Buffalo Bills,2004,14.89
+Buffalo,Buffalo Bills,2005,11.75
+Buffalo,Buffalo Bills,2006,13.95
+Buffalo,Buffalo Bills,2007,13.22
+Buffalo,Buffalo Bills,2008,12.74
+Buffalo,Buffalo Bills,2009,12.8
+Buffalo,Buffalo Bills,2010,11.14
+Buffalo,Buffalo Bills,2011,12.17
+Buffalo,Buffalo Bills,2012,12.36
+Buffalo,Buffalo Bills,2013,12.93
+Buffalo,Buffalo Bills,2014,11.33
+Buffalo,Buffalo Bills,2015,11.61
+Buffalo,Buffalo Bills,2016,12.11
+Buffalo,Buffalo Bills,2017,13.38
+Buffalo,Buffalo Bills,2018,13.25
+Buffalo,Buffalo Bills,2019,12.93
+Buffalo,Buffalo Bills,2020,18.56
+Buffalo,Buffalo Bills,2021,20.37
+Buffalo,Buffalo Bills,2022,19.86
+Buffalo,Buffalo Bills,2023,17.57
+Buffalo,Buffalo Bills,2024,16.71
+Buffalo,Buffalo Bills,2025,15.55
+Buffalo,Buffalo Bills,2026,13.68
+Charlotte,Carolina Panthers,2003,7.61
+Charlotte,Carolina Panthers,2004,7.49
+Charlotte,Carolina Panthers,2005,7.28
+Charlotte,Carolina Panthers,2006,7.07
+Charlotte,Carolina Panthers,2007,6.52
+Charlotte,Carolina Panthers,2008,6.78
+Charlotte,Carolina Panthers,2009,6.7
+Charlotte,Carolina Panthers,2010,6.41
+Charlotte,Carolina Panthers,2011,6.54
+Charlotte,Carolina Panthers,2012,6.64
+Charlotte,Carolina Panthers,2013,7.08
+Charlotte,Carolina Panthers,2014,6.33
+Charlotte,Carolina Panthers,2015,6.62
+Charlotte,Carolina Panthers,2016,6.65
+Charlotte,Carolina Panthers,2017,6.11
+Charlotte,Carolina Panthers,2018,6.97
+Charlotte,Carolina Panthers,2019,7.15
+Charlotte,Carolina Panthers,2020,10.67
+Charlotte,Carolina Panthers,2021,10.8
+Charlotte,Carolina Panthers,2022,10.39
+Charlotte,Carolina Panthers,2023,9.66
+Charlotte,Carolina Panthers,2024,8.64
+Charlotte,Carolina Panthers,2025,8.9
+Charlotte,Carolina Panthers,2026,8.16
+Chicago,Chicago Bears,2003,22.87
+Chicago,Chicago Bears,2004,20.67
+Chicago,Chicago Bears,2005,22.88
+Chicago,Chicago Bears,2006,19.47
+Chicago,Chicago Bears,2007,21.33
+Chicago,Chicago Bears,2008,22.76
+Chicago,Chicago Bears,2009,18.93
+Chicago,Chicago Bears,2010,19.07
+Chicago,Chicago Bears,2011,19.47
+Chicago,Chicago Bears,2012,18.48
+Chicago,Chicago Bears,2013,16.99
+Chicago,Chicago Bears,2014,18.45
+Chicago,Chicago Bears,2015,17.97
+Chicago,Chicago Bears,2016,20.1
+Chicago,Chicago Bears,2017,19.01
+Chicago,Chicago Bears,2018,22.16
+Chicago,Chicago Bears,2019,20.04
+Chicago,Chicago Bears,2020,28.25
+Chicago,Chicago Bears,2021,32.79
+Chicago,Chicago Bears,2022,28.79
+Chicago,Chicago Bears,2023,28.63
+Chicago,Chicago Bears,2024,28.06
+Chicago,Chicago Bears,2025,23.09
+Chicago,Chicago Bears,2026,23.3
+Cincinnati,Cincinnati Bengals,2003,13.17
+Cincinnati,Cincinnati Bengals,2004,13.31
+Cincinnati,Cincinnati Bengals,2005,11.81
+Cincinnati,Cincinnati Bengals,2006,11.56
+Cincinnati,Cincinnati Bengals,2007,12.56
+Cincinnati,Cincinnati Bengals,2008,12.22
+Cincinnati,Cincinnati Bengals,2009,11.99
+Cincinnati,Cincinnati Bengals,2010,11.86
+Cincinnati,Cincinnati Bengals,2011,11.0
+Cincinnati,Cincinnati Bengals,2012,11.4
+Cincinnati,Cincinnati Bengals,2013,11.24
+Cincinnati,Cincinnati Bengals,2014,10.39
+Cincinnati,Cincinnati Bengals,2015,12.52
+Cincinnati,Cincinnati Bengals,2016,11.88
+Cincinnati,Cincinnati Bengals,2017,11.06
+Cincinnati,Cincinnati Bengals,2018,12.52
+Cincinnati,Cincinnati Bengals,2019,11.72
+Cincinnati,Cincinnati Bengals,2020,17.41
+Cincinnati,Cincinnati Bengals,2021,19.6
+Cincinnati,Cincinnati Bengals,2022,17.28
+Cincinnati,Cincinnati Bengals,2023,17.4
+Cincinnati,Cincinnati Bengals,2024,16.0
+Cincinnati,Cincinnati Bengals,2025,15.22
+Cincinnati,Cincinnati Bengals,2026,14.88
+Cleveland,Cleveland Browns,2003,24.69
+Cleveland,Cleveland Browns,2004,23.68
+Cleveland,Cleveland Browns,2005,23.14
+Cleveland,Cleveland Browns,2006,22.86
+Cleveland,Cleveland Browns,2007,23.4
+Cleveland,Cleveland Browns,2008,23.55
+Cleveland,Cleveland Browns,2009,23.1
+Cleveland,Cleveland Browns,2010,23.41
+Cleveland,Cleveland Browns,2011,22.02
+Cleveland,Cleveland Browns,2012,23.44
+Cleveland,Cleveland Browns,2013,20.92
+Cleveland,Cleveland Browns,2014,24.28
+Cleveland,Cleveland Browns,2015,22.53
+Cleveland,Cleveland Browns,2016,21.18
+Cleveland,Cleveland Browns,2017,21.41
+Cleveland,Cleveland Browns,2018,23.85
+Cleveland,Cleveland Browns,2019,23.47
+Cleveland,Cleveland Browns,2020,33.39
+Cleveland,Cleveland Browns,2021,36.84
+Cleveland,Cleveland Browns,2022,34.16
+Cleveland,Cleveland Browns,2023,31.19
+Cleveland,Cleveland Browns,2024,28.36
+Cleveland,Cleveland Browns,2025,27.69
+Cleveland,Cleveland Browns,2026,27.32
+Dallas,Dallas Cowboys,2003,10.61
+Dallas,Dallas Cowboys,2004,9.69
+Dallas,Dallas Cowboys,2005,10.28
+Dallas,Dallas Cowboys,2006,10.23
+Dallas,Dallas Cowboys,2007,9.41
+Dallas,Dallas Cowboys,2008,9.79
+Dallas,Dallas Cowboys,2009,9.59
+Dallas,Dallas Cowboys,2010,8.8
+Dallas,Dallas Cowboys,2011,9.43
+Dallas,Dallas Cowboys,2012,9.38
+Dallas,Dallas Cowboys,2013,9.49
+Dallas,Dallas Cowboys,2014,9.32
+Dallas,Dallas Cowboys,2015,8.41
+Dallas,Dallas Cowboys,2016,8.85
+Dallas,Dallas Cowboys,2017,9.83
+Dallas,Dallas Cowboys,2018,10.03
+Dallas,Dallas Cowboys,2019,10.25
+Dallas,Dallas Cowboys,2020,15.67
+Dallas,Dallas Cowboys,2021,15.52
+Dallas,Dallas Cowboys,2022,14.98
+Dallas,Dallas Cowboys,2023,14.05
+Dallas,Dallas Cowboys,2024,13.05
+Dallas,Dallas Cowboys,2025,11.7
+Dallas,Dallas Cowboys,2026,11.42
+Denver,Denver Broncos,2003,4.81
+Denver,Denver Broncos,2004,4.87
+Denver,Denver Broncos,2005,4.73
+Denver,Denver Broncos,2006,4.8
+Denver,Denver Broncos,2007,5.28
+Denver,Denver Broncos,2008,4.16
+Denver,Denver Broncos,2009,4.72
+Denver,Denver Broncos,2010,4.07
+Denver,Denver Broncos,2011,4.28
+Denver,Denver Broncos,2012,4.6
+Denver,Denver Broncos,2013,4.27
+Denver,Denver Broncos,2014,3.91
+Denver,Denver Broncos,2015,4.17
+Denver,Denver Broncos,2016,4.62
+Denver,Denver Broncos,2017,4.37
+Denver,Denver Broncos,2018,4.7
+Denver,Denver Broncos,2019,4.76
+Denver,Denver Broncos,2020,6.34
+Denver,Denver Broncos,2021,7.79
+Denver,Denver Broncos,2022,7.01
+Denver,Denver Broncos,2023,5.94
+Denver,Denver Broncos,2024,6.1
+Denver,Denver Broncos,2025,5.48
+Denver,Denver Broncos,2026,5.46
+Detroit,Detroit Lions,2003,40.34
+Detroit,Detroit Lions,2004,41.13
+Detroit,Detroit Lions,2005,41.8
+Detroit,Detroit Lions,2006,41.93
+Detroit,Detroit Lions,2007,36.96
+Detroit,Detroit Lions,2008,38.15
+Detroit,Detroit Lions,2009,37.22
+Detroit,Detroit Lions,2010,36.22
+Detroit,Detroit Lions,2011,40.67
+Detroit,Detroit Lions,2012,37.18
+Detroit,Detroit Lions,2013,33.05
+Detroit,Detroit Lions,2014,37.0
+Detroit,Detroit Lions,2015,41.0
+Detroit,Detroit Lions,2016,39.55
+Detroit,Detroit Lions,2017,35.03
+Detroit,Detroit Lions,2018,38.04
+Detroit,Detroit Lions,2019,42.56
+Detroit,Detroit Lions,2020,53.11
+Detroit,Detroit Lions,2021,61.83
+Detroit,Detroit Lions,2022,59.17
+Detroit,Detroit Lions,2023,52.23
+Detroit,Detroit Lions,2024,50.69
+Detroit,Detroit Lions,2025,40.65
+Detroit,Detroit Lions,2026,41.95
+Green Bay,Green Bay Packers,2003,2.47
+Green Bay,Green Bay Packers,2004,2.31
+Green Bay,Green Bay Packers,2005,2.63
+Green Bay,Green Bay Packers,2006,2.21
+Green Bay,Green Bay Packers,2007,2.29
+Green Bay,Green Bay Packers,2008,2.33
+Green Bay,Green Bay Packers,2009,2.46
+Green Bay,Green Bay Packers,2010,2.06
+Green Bay,Green Bay Packers,2011,2.35
+Green Bay,Green Bay Packers,2012,2.16
+Green Bay,Green Bay Packers,2013,2.0
+Green Bay,Green Bay Packers,2014,2.15
+Green Bay,Green Bay Packers,2015,2.2
+Green Bay,Green Bay Packers,2016,2.15
+Green Bay,Green Bay Packers,2017,2.28
+Green Bay,Green Bay Packers,2018,2.28
+Green Bay,Green Bay Packers,2019,2.39
+Green Bay,Green Bay Packers,2020,3.33
+Green Bay,Green Bay Packers,2021,3.82
+Green Bay,Green Bay Packers,2022,3.27
+Green Bay,Green Bay Packers,2023,3.49
+Green Bay,Green Bay Packers,2024,2.78
+Green Bay,Green Bay Packers,2025,2.81
+Green Bay,Green Bay Packers,2026,2.7
+Houston,Houston Texans,2003,12.17
+Houston,Houston Texans,2004,11.45
+Houston,Houston Texans,2005,11.52
+Houston,Houston Texans,2006,11.16
+Houston,Houston Texans,2007,10.93
+Houston,Houston Texans,2008,11.61
+Houston,Houston Texans,2009,11.13
+Houston,Houston Texans,2010,10.32
+Houston,Houston Texans,2011,11.1
+Houston,Houston Texans,2012,10.56
+Houston,Houston Texans,2013,10.69
+Houston,Houston Texans,2014,10.4
+Houston,Houston Texans,2015,9.94
+Houston,Houston Texans,2016,10.34
+Houston,Houston Texans,2017,11.37
+Houston,Houston Texans,2018,11.53
+Houston,Houston Texans,2019,11.39
+Houston,Houston Texans,2020,15.67
+Houston,Houston Texans,2021,18.17
+Houston,Houston Texans,2022,16.09
+Houston,Houston Texans,2023,15.81
+Houston,Houston Texans,2024,14.4
+Houston,Houston Texans,2025,13.43
+Houston,Houston Texans,2026,13.26
+Indianapolis,Indianapolis Colts,2003,14.58
+Indianapolis,Indianapolis Colts,2004,14.36
+Indianapolis,Indianapolis Colts,2005,14.49
+Indianapolis,Indianapolis Colts,2006,13.38
+Indianapolis,Indianapolis Colts,2007,13.64
+Indianapolis,Indianapolis Colts,2008,12.73
+Indianapolis,Indianapolis Colts,2009,12.97
+Indianapolis,Indianapolis Colts,2010,12.44
+Indianapolis,Indianapolis Colts,2011,12.39
+Indianapolis,Indianapolis Colts,2012,12.53
+Indianapolis,Indianapolis Colts,2013,11.33
+Indianapolis,Indianapolis Colts,2014,13.15
+Indianapolis,Indianapolis Colts,2015,11.48
+Indianapolis,Indianapolis Colts,2016,11.61
+Indianapolis,Indianapolis Colts,2017,13.55
+Indianapolis,Indianapolis Colts,2018,13.57
+Indianapolis,Indianapolis Colts,2019,13.74
+Indianapolis,Indianapolis Colts,2020,18.64
+Indianapolis,Indianapolis Colts,2021,20.29
+Indianapolis,Indianapolis Colts,2022,18.55
+Indianapolis,Indianapolis Colts,2023,18.11
+Indianapolis,Indianapolis Colts,2024,16.47
+Indianapolis,Indianapolis Colts,2025,16.5
+Indianapolis,Indianapolis Colts,2026,14.6
+Jacksonville,Jacksonville Jaguars,2003,10.55
+Jacksonville,Jacksonville Jaguars,2004,10.66
+Jacksonville,Jacksonville Jaguars,2005,10.9
+Jacksonville,Jacksonville Jaguars,2006,10.19
+Jacksonville,Jacksonville Jaguars,2007,9.89
+Jacksonville,Jacksonville Jaguars,2008,10.31
+Jacksonville,Jacksonville Jaguars,2009,10.14
+Jacksonville,Jacksonville Jaguars,2010,9.57
+Jacksonville,Jacksonville Jaguars,2011,9.42
+Jacksonville,Jacksonville Jaguars,2012,9.64
+Jacksonville,Jacksonville Jaguars,2013,8.55
+Jacksonville,Jacksonville Jaguars,2014,8.41
+Jacksonville,Jacksonville Jaguars,2015,9.17
+Jacksonville,Jacksonville Jaguars,2016,9.67
+Jacksonville,Jacksonville Jaguars,2017,10.18
+Jacksonville,Jacksonville Jaguars,2018,11.04
+Jacksonville,Jacksonville Jaguars,2019,10.92
+Jacksonville,Jacksonville Jaguars,2020,14.21
+Jacksonville,Jacksonville Jaguars,2021,15.94
+Jacksonville,Jacksonville Jaguars,2022,14.52
+Jacksonville,Jacksonville Jaguars,2023,14.18
+Jacksonville,Jacksonville Jaguars,2024,13.15
+Jacksonville,Jacksonville Jaguars,2025,12.61
+Jacksonville,Jacksonville Jaguars,2026,11.1
+Kansas City,Kansas City Chiefs,2003,24.62
+Kansas City,Kansas City Chiefs,2004,25.48
+Kansas City,Kansas City Chiefs,2005,23.15
+Kansas City,Kansas City Chiefs,2006,23.4
+Kansas City,Kansas City Chiefs,2007,23.39
+Kansas City,Kansas City Chiefs,2008,21.72
+Kansas City,Kansas City Chiefs,2009,22.11
+Kansas City,Kansas City Chiefs,2010,21.5
+Kansas City,Kansas City Chiefs,2011,21.24
+Kansas City,Kansas City Chiefs,2012,19.83
+Kansas City,Kansas City Chiefs,2013,20.43
+Kansas City,Kansas City Chiefs,2014,20.64
+Kansas City,Kansas City Chiefs,2015,22.62
+Kansas City,Kansas City Chiefs,2016,22.51
+Kansas City,Kansas City Chiefs,2017,24.42
+Kansas City,Kansas City Chiefs,2018,21.4
+Kansas City,Kansas City Chiefs,2019,23.85
+Kansas City,Kansas City Chiefs,2020,31.42
+Kansas City,Kansas City Chiefs,2021,37.43
+Kansas City,Kansas City Chiefs,2022,31.91
+Kansas City,Kansas City Chiefs,2023,29.95
+Kansas City,Kansas City Chiefs,2024,28.32
+Kansas City,Kansas City Chiefs,2025,24.57
+Kansas City,Kansas City Chiefs,2026,24.57
+Las Vegas,Las Vegas Raiders,2003,6.73
+Las Vegas,Las Vegas Raiders,2004,6.95
+Las Vegas,Las Vegas Raiders,2005,6.91
+Las Vegas,Las Vegas Raiders,2006,7.34
+Las Vegas,Las Vegas Raiders,2007,6.91
+Las Vegas,Las Vegas Raiders,2008,6.27
+Las Vegas,Las Vegas Raiders,2009,6.06
+Las Vegas,Las Vegas Raiders,2010,6.44
+Las Vegas,Las Vegas Raiders,2011,5.7
+Las Vegas,Las Vegas Raiders,2012,6.7
+Las Vegas,Las Vegas Raiders,2013,6.36
+Las Vegas,Las Vegas Raiders,2014,5.68
+Las Vegas,Las Vegas Raiders,2015,5.49
+Las Vegas,Las Vegas Raiders,2016,6.7
+Las Vegas,Las Vegas Raiders,2017,6.33
+Las Vegas,Las Vegas Raiders,2018,6.94
+Las Vegas,Las Vegas Raiders,2019,6.09
+Las Vegas,Las Vegas Raiders,2020,8.89
+Las Vegas,Las Vegas Raiders,2021,10.15
+Las Vegas,Las Vegas Raiders,2022,9.61
+Las Vegas,Las Vegas Raiders,2023,8.87
+Las Vegas,Las Vegas Raiders,2024,8.69
+Las Vegas,Las Vegas Raiders,2025,7.54
+Las Vegas,Las Vegas Raiders,2026,7.3
+Los Angeles,Los Angeles Rams / Chargers,2003,7.55
+Los Angeles,Los Angeles Rams / Chargers,2004,7.58
+Los Angeles,Los Angeles Rams / Chargers,2005,7.54
+Los Angeles,Los Angeles Rams / Chargers,2006,6.74
+Los Angeles,Los Angeles Rams / Chargers,2007,6.47
+Los Angeles,Los Angeles Rams / Chargers,2008,7.42
+Los Angeles,Los Angeles Rams / Chargers,2009,6.95
+Los Angeles,Los Angeles Rams / Chargers,2010,6.43
+Los Angeles,Los Angeles Rams / Chargers,2011,7.18
+Los Angeles,Los Angeles Rams / Chargers,2012,6.53
+Los Angeles,Los Angeles Rams / Chargers,2013,6.82
+Los Angeles,Los Angeles Rams / Chargers,2014,6.29
+Los Angeles,Los Angeles Rams / Chargers,2015,7.3
+Los Angeles,Los Angeles Rams / Chargers,2016,7.33
+Los Angeles,Los Angeles Rams / Chargers,2017,6.73
+Los Angeles,Los Angeles Rams / Chargers,2018,7.34
+Los Angeles,Los Angeles Rams / Chargers,2019,7.37
+Los Angeles,Los Angeles Rams / Chargers,2020,10.26
+Los Angeles,Los Angeles Rams / Chargers,2021,10.51
+Los Angeles,Los Angeles Rams / Chargers,2022,10.53
+Los Angeles,Los Angeles Rams / Chargers,2023,10.07
+Los Angeles,Los Angeles Rams / Chargers,2024,8.42
+Los Angeles,Los Angeles Rams / Chargers,2025,8.03
+Los Angeles,Los Angeles Rams / Chargers,2026,7.11
+Miami,Miami Dolphins,2003,10.85
+Miami,Miami Dolphins,2004,11.23
+Miami,Miami Dolphins,2005,11.5
+Miami,Miami Dolphins,2006,10.55
+Miami,Miami Dolphins,2007,11.24
+Miami,Miami Dolphins,2008,9.42
+Miami,Miami Dolphins,2009,9.07
+Miami,Miami Dolphins,2010,9.81
+Miami,Miami Dolphins,2011,9.89
+Miami,Miami Dolphins,2012,9.5
+Miami,Miami Dolphins,2013,8.21
+Miami,Miami Dolphins,2014,9.14
+Miami,Miami Dolphins,2015,8.85
+Miami,Miami Dolphins,2016,10.16
+Miami,Miami Dolphins,2017,10.21
+Miami,Miami Dolphins,2018,9.71
+Miami,Miami Dolphins,2019,10.17
+Miami,Miami Dolphins,2020,13.72
+Miami,Miami Dolphins,2021,15.92
+Miami,Miami Dolphins,2022,15.6
+Miami,Miami Dolphins,2023,13.65
+Miami,Miami Dolphins,2024,13.59
+Miami,Miami Dolphins,2025,12.14
+Miami,Miami Dolphins,2026,11.11
+Minneapolis,Minnesota Vikings,2003,7.96
+Minneapolis,Minnesota Vikings,2004,7.47
+Minneapolis,Minnesota Vikings,2005,7.54
+Minneapolis,Minnesota Vikings,2006,7.16
+Minneapolis,Minnesota Vikings,2007,8.31
+Minneapolis,Minnesota Vikings,2008,7.41
+Minneapolis,Minnesota Vikings,2009,7.0
+Minneapolis,Minnesota Vikings,2010,7.25
+Minneapolis,Minnesota Vikings,2011,7.0
+Minneapolis,Minnesota Vikings,2012,6.83
+Minneapolis,Minnesota Vikings,2013,7.05
+Minneapolis,Minnesota Vikings,2014,6.98
+Minneapolis,Minnesota Vikings,2015,6.75
+Minneapolis,Minnesota Vikings,2016,6.89
+Minneapolis,Minnesota Vikings,2017,7.17
+Minneapolis,Minnesota Vikings,2018,6.52
+Minneapolis,Minnesota Vikings,2019,6.99
+Minneapolis,Minnesota Vikings,2020,10.95
+Minneapolis,Minnesota Vikings,2021,12.26
+Minneapolis,Minnesota Vikings,2022,10.86
+Minneapolis,Minnesota Vikings,2023,10.55
+Minneapolis,Minnesota Vikings,2024,9.8
+Minneapolis,Minnesota Vikings,2025,10.27
+Minneapolis,Minnesota Vikings,2026,8.85
+Boston,New England Patriots,2003,4.47
+Boston,New England Patriots,2004,4.22
+Boston,New England Patriots,2005,4.0
+Boston,New England Patriots,2006,4.34
+Boston,New England Patriots,2007,4.06
+Boston,New England Patriots,2008,3.84
+Boston,New England Patriots,2009,3.95
+Boston,New England Patriots,2010,3.78
+Boston,New England Patriots,2011,4.34
+Boston,New England Patriots,2012,4.09
+Boston,New England Patriots,2013,3.82
+Boston,New England Patriots,2014,4.09
+Boston,New England Patriots,2015,3.93
+Boston,New England Patriots,2016,3.81
+Boston,New England Patriots,2017,4.44
+Boston,New England Patriots,2018,4.31
+Boston,New England Patriots,2019,4.04
+Boston,New England Patriots,2020,5.81
+Boston,New England Patriots,2021,6.33
+Boston,New England Patriots,2022,5.85
+Boston,New England Patriots,2023,6.01
+Boston,New England Patriots,2024,5.87
+Boston,New England Patriots,2025,4.77
+Boston,New England Patriots,2026,4.85
+New Orleans,New Orleans Saints,2003,43.54
+New Orleans,New Orleans Saints,2004,43.23
+New Orleans,New Orleans Saints,2005,42.32
+New Orleans,New Orleans Saints,2006,41.03
+New Orleans,New Orleans Saints,2007,42.41
+New Orleans,New Orleans Saints,2008,39.76
+New Orleans,New Orleans Saints,2009,41.56
+New Orleans,New Orleans Saints,2010,40.16
+New Orleans,New Orleans Saints,2011,39.06
+New Orleans,New Orleans Saints,2012,36.88
+New Orleans,New Orleans Saints,2013,36.95
+New Orleans,New Orleans Saints,2014,39.27
+New Orleans,New Orleans Saints,2015,40.28
+New Orleans,New Orleans Saints,2016,37.85
+New Orleans,New Orleans Saints,2017,41.17
+New Orleans,New Orleans Saints,2018,43.54
+New Orleans,New Orleans Saints,2019,38.99
+New Orleans,New Orleans Saints,2020,59.72
+New Orleans,New Orleans Saints,2021,63.76
+New Orleans,New Orleans Saints,2022,62.93
+New Orleans,New Orleans Saints,2023,56.33
+New Orleans,New Orleans Saints,2024,50.39
+New Orleans,New Orleans Saints,2025,47.19
+New Orleans,New Orleans Saints,2026,47.36
+New York City,New York Giants / Jets,2003,4.05
+New York City,New York Giants / Jets,2004,3.76
+New York City,New York Giants / Jets,2005,4.01
+New York City,New York Giants / Jets,2006,3.49
+New York City,New York Giants / Jets,2007,3.75
+New York City,New York Giants / Jets,2008,3.46
+New York City,New York Giants / Jets,2009,3.51
+New York City,New York Giants / Jets,2010,3.59
+New York City,New York Giants / Jets,2011,3.35
+New York City,New York Giants / Jets,2012,3.38
+New York City,New York Giants / Jets,2013,3.6
+New York City,New York Giants / Jets,2014,3.22
+New York City,New York Giants / Jets,2015,3.65
+New York City,New York Giants / Jets,2016,3.33
+New York City,New York Giants / Jets,2017,3.75
+New York City,New York Giants / Jets,2018,4.01
+New York City,New York Giants / Jets,2019,3.31
+New York City,New York Giants / Jets,2020,5.04
+New York City,New York Giants / Jets,2021,5.92
+New York City,New York Giants / Jets,2022,5.44
+New York City,New York Giants / Jets,2023,5.23
+New York City,New York Giants / Jets,2024,4.72
+New York City,New York Giants / Jets,2025,4.54
+New York City,New York Giants / Jets,2026,4.17
+Philadelphia,Philadelphia Eagles,2003,22.23
+Philadelphia,Philadelphia Eagles,2004,20.95
+Philadelphia,Philadelphia Eagles,2005,20.72
+Philadelphia,Philadelphia Eagles,2006,19.62
+Philadelphia,Philadelphia Eagles,2007,19.23
+Philadelphia,Philadelphia Eagles,2008,18.97
+Philadelphia,Philadelphia Eagles,2009,19.52
+Philadelphia,Philadelphia Eagles,2010,18.35
+Philadelphia,Philadelphia Eagles,2011,18.78
+Philadelphia,Philadelphia Eagles,2012,20.34
+Philadelphia,Philadelphia Eagles,2013,18.76
+Philadelphia,Philadelphia Eagles,2014,17.19
+Philadelphia,Philadelphia Eagles,2015,19.53
+Philadelphia,Philadelphia Eagles,2016,18.26
+Philadelphia,Philadelphia Eagles,2017,16.97
+Philadelphia,Philadelphia Eagles,2018,18.47
+Philadelphia,Philadelphia Eagles,2019,17.99
+Philadelphia,Philadelphia Eagles,2020,26.93
+Philadelphia,Philadelphia Eagles,2021,30.47
+Philadelphia,Philadelphia Eagles,2022,30.53
+Philadelphia,Philadelphia Eagles,2023,27.43
+Philadelphia,Philadelphia Eagles,2024,25.18
+Philadelphia,Philadelphia Eagles,2025,24.6
+Philadelphia,Philadelphia Eagles,2026,19.73
+Pittsburgh,Pittsburgh Steelers,2003,14.16
+Pittsburgh,Pittsburgh Steelers,2004,14.33
+Pittsburgh,Pittsburgh Steelers,2005,12.54
+Pittsburgh,Pittsburgh Steelers,2006,14.17
+Pittsburgh,Pittsburgh Steelers,2007,13.4
+Pittsburgh,Pittsburgh Steelers,2008,12.66
+Pittsburgh,Pittsburgh Steelers,2009,13.18
+Pittsburgh,Pittsburgh Steelers,2010,14.12
+Pittsburgh,Pittsburgh Steelers,2011,12.45
+Pittsburgh,Pittsburgh Steelers,2012,12.28
+Pittsburgh,Pittsburgh Steelers,2013,11.58
+Pittsburgh,Pittsburgh Steelers,2014,11.1
+Pittsburgh,Pittsburgh Steelers,2015,12.76
+Pittsburgh,Pittsburgh Steelers,2016,11.86
+Pittsburgh,Pittsburgh Steelers,2017,12.79
+Pittsburgh,Pittsburgh Steelers,2018,12.69
+Pittsburgh,Pittsburgh Steelers,2019,13.64
+Pittsburgh,Pittsburgh Steelers,2020,18.43
+Pittsburgh,Pittsburgh Steelers,2021,21.03
+Pittsburgh,Pittsburgh Steelers,2022,18.82
+Pittsburgh,Pittsburgh Steelers,2023,17.87
+Pittsburgh,Pittsburgh Steelers,2024,16.25
+Pittsburgh,Pittsburgh Steelers,2025,15.51
+Pittsburgh,Pittsburgh Steelers,2026,14.96
+San Francisco,San Francisco 49ers,2003,6.23
+San Francisco,San Francisco 49ers,2004,5.63
+San Francisco,San Francisco 49ers,2005,6.08
+San Francisco,San Francisco 49ers,2006,6.14
+San Francisco,San Francisco 49ers,2007,5.76
+San Francisco,San Francisco 49ers,2008,6.11
+San Francisco,San Francisco 49ers,2009,5.23
+San Francisco,San Francisco 49ers,2010,5.0
+San Francisco,San Francisco 49ers,2011,4.75
+San Francisco,San Francisco 49ers,2012,5.64
+San Francisco,San Francisco 49ers,2013,5.3
+San Francisco,San Francisco 49ers,2014,4.99
+San Francisco,San Francisco 49ers,2015,5.3
+San Francisco,San Francisco 49ers,2016,5.0
+San Francisco,San Francisco 49ers,2017,6.19
+San Francisco,San Francisco 49ers,2018,5.62
+San Francisco,San Francisco 49ers,2019,5.73
+San Francisco,San Francisco 49ers,2020,8.02
+San Francisco,San Francisco 49ers,2021,8.84
+San Francisco,San Francisco 49ers,2022,8.29
+San Francisco,San Francisco 49ers,2023,7.5
+San Francisco,San Francisco 49ers,2024,7.4
+San Francisco,San Francisco 49ers,2025,7.34
+San Francisco,San Francisco 49ers,2026,6.7
+Seattle,Seattle Seahawks,2003,4.86
+Seattle,Seattle Seahawks,2004,4.32
+Seattle,Seattle Seahawks,2005,4.14
+Seattle,Seattle Seahawks,2006,4.27
+Seattle,Seattle Seahawks,2007,4.24
+Seattle,Seattle Seahawks,2008,4.41
+Seattle,Seattle Seahawks,2009,3.71
+Seattle,Seattle Seahawks,2010,4.37
+Seattle,Seattle Seahawks,2011,3.92
+Seattle,Seattle Seahawks,2012,3.8
+Seattle,Seattle Seahawks,2013,3.6
+Seattle,Seattle Seahawks,2014,3.39
+Seattle,Seattle Seahawks,2015,4.1
+Seattle,Seattle Seahawks,2016,4.02
+Seattle,Seattle Seahawks,2017,3.8
+Seattle,Seattle Seahawks,2018,3.89
+Seattle,Seattle Seahawks,2019,4.2
+Seattle,Seattle Seahawks,2020,6.23
+Seattle,Seattle Seahawks,2021,6.47
+Seattle,Seattle Seahawks,2022,5.83
+Seattle,Seattle Seahawks,2023,5.75
+Seattle,Seattle Seahawks,2024,5.38
+Seattle,Seattle Seahawks,2025,4.48
+Seattle,Seattle Seahawks,2026,4.71
+Tampa,Tampa Bay Buccaneers,2003,6.92
+Tampa,Tampa Bay Buccaneers,2004,7.14
+Tampa,Tampa Bay Buccaneers,2005,7.44
+Tampa,Tampa Bay Buccaneers,2006,7.08
+Tampa,Tampa Bay Buccaneers,2007,6.49
+Tampa,Tampa Bay Buccaneers,2008,6.09
+Tampa,Tampa Bay Buccaneers,2009,7.27
+Tampa,Tampa Bay Buccaneers,2010,6.29
+Tampa,Tampa Bay Buccaneers,2011,6.16
+Tampa,Tampa Bay Buccaneers,2012,6.05
+Tampa,Tampa Bay Buccaneers,2013,6.02
+Tampa,Tampa Bay Buccaneers,2014,5.79
+Tampa,Tampa Bay Buccaneers,2015,5.89
+Tampa,Tampa Bay Buccaneers,2016,6.04
+Tampa,Tampa Bay Buccaneers,2017,6.36
+Tampa,Tampa Bay Buccaneers,2018,6.32
+Tampa,Tampa Bay Buccaneers,2019,6.4
+Tampa,Tampa Bay Buccaneers,2020,9.14
+Tampa,Tampa Bay Buccaneers,2021,10.06
+Tampa,Tampa Bay Buccaneers,2022,10.12
+Tampa,Tampa Bay Buccaneers,2023,8.1
+Tampa,Tampa Bay Buccaneers,2024,8.85
+Tampa,Tampa Bay Buccaneers,2025,8.35
+Tampa,Tampa Bay Buccaneers,2026,6.62
+Nashville,Tennessee Titans,2003,9.83
+Nashville,Tennessee Titans,2004,9.66
+Nashville,Tennessee Titans,2005,9.0
+Nashville,Tennessee Titans,2006,9.16
+Nashville,Tennessee Titans,2007,8.84
+Nashville,Tennessee Titans,2008,10.13
+Nashville,Tennessee Titans,2009,9.57
+Nashville,Tennessee Titans,2010,9.59
+Nashville,Tennessee Titans,2011,9.16
+Nashville,Tennessee Titans,2012,8.09
+Nashville,Tennessee Titans,2013,8.24
+Nashville,Tennessee Titans,2014,8.59
+Nashville,Tennessee Titans,2015,8.09
+Nashville,Tennessee Titans,2016,9.26
+Nashville,Tennessee Titans,2017,8.98
+Nashville,Tennessee Titans,2018,9.11
+Nashville,Tennessee Titans,2019,9.86
+Nashville,Tennessee Titans,2020,13.22
+Nashville,Tennessee Titans,2021,14.32
+Nashville,Tennessee Titans,2022,14.28
+Nashville,Tennessee Titans,2023,12.36
+Nashville,Tennessee Titans,2024,12.41
+Nashville,Tennessee Titans,2025,11.6
+Nashville,Tennessee Titans,2026,10.35
+Washington D.C.,Washington Commanders,2003,24.39
+Washington D.C.,Washington Commanders,2004,22.14
+Washington D.C.,Washington Commanders,2005,24.39
+Washington D.C.,Washington Commanders,2006,22.7
+Washington D.C.,Washington Commanders,2007,21.93
+Washington D.C.,Washington Commanders,2008,23.46
+Washington D.C.,Washington Commanders,2009,20.99
+Washington D.C.,Washington Commanders,2010,19.79
+Washington D.C.,Washington Commanders,2011,19.25
+Washington D.C.,Washington Commanders,2012,21.49
+Washington D.C.,Washington Commanders,2013,18.86
+Washington D.C.,Washington Commanders,2014,22.15
+Washington D.C.,Washington Commanders,2015,18.38
+Washington D.C.,Washington Commanders,2016,23.4
+Washington D.C.,Washington Commanders,2017,22.09
+Washington D.C.,Washington Commanders,2018,22.2
+Washington D.C.,Washington Commanders,2019,22.15
+Washington D.C.,Washington Commanders,2020,31.68
+Washington D.C.,Washington Commanders,2021,34.75
+Washington D.C.,Washington Commanders,2022,34.2
+Washington D.C.,Washington Commanders,2023,31.1
+Washington D.C.,Washington Commanders,2024,29.22
+Washington D.C.,Washington Commanders,2025,26.68
+Washington D.C.,Washington Commanders,2026,25.13

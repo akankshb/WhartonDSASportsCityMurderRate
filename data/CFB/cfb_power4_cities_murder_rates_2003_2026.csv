@@ -1,0 +1,1609 @@
+School,City,Conference,Year,Murder Rate (per 100k)
+Boston College,Chestnut Hill,ACC,2003,1.77
+Boston College,Chestnut Hill,ACC,2004,1.54
+Boston College,Chestnut Hill,ACC,2005,1.55
+Boston College,Chestnut Hill,ACC,2006,1.48
+Boston College,Chestnut Hill,ACC,2007,1.48
+Boston College,Chestnut Hill,ACC,2008,1.36
+Boston College,Chestnut Hill,ACC,2009,1.28
+Boston College,Chestnut Hill,ACC,2010,1.4
+Boston College,Chestnut Hill,ACC,2011,1.12
+Boston College,Chestnut Hill,ACC,2012,1.37
+Boston College,Chestnut Hill,ACC,2013,1.33
+Boston College,Chestnut Hill,ACC,2014,1.19
+Boston College,Chestnut Hill,ACC,2015,1.32
+Boston College,Chestnut Hill,ACC,2016,1.26
+Boston College,Chestnut Hill,ACC,2017,1.27
+Boston College,Chestnut Hill,ACC,2018,1.49
+Boston College,Chestnut Hill,ACC,2019,1.44
+Boston College,Chestnut Hill,ACC,2020,2.15
+Boston College,Chestnut Hill,ACC,2021,2.44
+Boston College,Chestnut Hill,ACC,2022,2.12
+Boston College,Chestnut Hill,ACC,2023,1.97
+Boston College,Chestnut Hill,ACC,2024,1.98
+Boston College,Chestnut Hill,ACC,2025,1.52
+Boston College,Chestnut Hill,ACC,2026,1.46
+Clemson,Clemson,ACC,2003,0.99
+Clemson,Clemson,ACC,2004,1.02
+Clemson,Clemson,ACC,2005,0.99
+Clemson,Clemson,ACC,2006,0.97
+Clemson,Clemson,ACC,2007,1.02
+Clemson,Clemson,ACC,2008,0.93
+Clemson,Clemson,ACC,2009,0.97
+Clemson,Clemson,ACC,2010,0.93
+Clemson,Clemson,ACC,2011,0.83
+Clemson,Clemson,ACC,2012,0.79
+Clemson,Clemson,ACC,2013,0.76
+Clemson,Clemson,ACC,2014,0.88
+Clemson,Clemson,ACC,2015,0.86
+Clemson,Clemson,ACC,2016,1.08
+Clemson,Clemson,ACC,2017,0.93
+Clemson,Clemson,ACC,2018,1.13
+Clemson,Clemson,ACC,2019,0.85
+Clemson,Clemson,ACC,2020,1.32
+Clemson,Clemson,ACC,2021,1.34
+Clemson,Clemson,ACC,2022,1.37
+Clemson,Clemson,ACC,2023,1.39
+Clemson,Clemson,ACC,2024,1.19
+Clemson,Clemson,ACC,2025,1.13
+Clemson,Clemson,ACC,2026,1.11
+Duke,Durham,ACC,2003,9.6
+Duke,Durham,ACC,2004,8.06
+Duke,Durham,ACC,2005,7.86
+Duke,Durham,ACC,2006,7.94
+Duke,Durham,ACC,2007,8.06
+Duke,Durham,ACC,2008,7.62
+Duke,Durham,ACC,2009,8.02
+Duke,Durham,ACC,2010,8.13
+Duke,Durham,ACC,2011,7.01
+Duke,Durham,ACC,2012,8.3
+Duke,Durham,ACC,2013,6.65
+Duke,Durham,ACC,2014,7.41
+Duke,Durham,ACC,2015,7.59
+Duke,Durham,ACC,2016,8.63
+Duke,Durham,ACC,2017,7.54
+Duke,Durham,ACC,2018,8.02
+Duke,Durham,ACC,2019,8.42
+Duke,Durham,ACC,2020,11.58
+Duke,Durham,ACC,2021,12.31
+Duke,Durham,ACC,2022,12.63
+Duke,Durham,ACC,2023,10.45
+Duke,Durham,ACC,2024,9.91
+Duke,Durham,ACC,2025,9.7
+Duke,Durham,ACC,2026,8.55
+Florida State,Tallahassee,ACC,2003,8.25
+Florida State,Tallahassee,ACC,2004,9.67
+Florida State,Tallahassee,ACC,2005,9.25
+Florida State,Tallahassee,ACC,2006,7.44
+Florida State,Tallahassee,ACC,2007,9.0
+Florida State,Tallahassee,ACC,2008,8.97
+Florida State,Tallahassee,ACC,2009,7.62
+Florida State,Tallahassee,ACC,2010,8.75
+Florida State,Tallahassee,ACC,2011,7.13
+Florida State,Tallahassee,ACC,2012,7.52
+Florida State,Tallahassee,ACC,2013,7.56
+Florida State,Tallahassee,ACC,2014,7.78
+Florida State,Tallahassee,ACC,2015,8.04
+Florida State,Tallahassee,ACC,2016,8.13
+Florida State,Tallahassee,ACC,2017,7.73
+Florida State,Tallahassee,ACC,2018,9.2
+Florida State,Tallahassee,ACC,2019,8.91
+Florida State,Tallahassee,ACC,2020,11.41
+Florida State,Tallahassee,ACC,2021,12.74
+Florida State,Tallahassee,ACC,2022,13.09
+Florida State,Tallahassee,ACC,2023,11.96
+Florida State,Tallahassee,ACC,2024,10.4
+Florida State,Tallahassee,ACC,2025,9.96
+Florida State,Tallahassee,ACC,2026,10.01
+Georgia Tech,Atlanta,ACC,2003,17.63
+Georgia Tech,Atlanta,ACC,2004,18.66
+Georgia Tech,Atlanta,ACC,2005,20.26
+Georgia Tech,Atlanta,ACC,2006,17.63
+Georgia Tech,Atlanta,ACC,2007,20.73
+Georgia Tech,Atlanta,ACC,2008,17.16
+Georgia Tech,Atlanta,ACC,2009,16.54
+Georgia Tech,Atlanta,ACC,2010,16.3
+Georgia Tech,Atlanta,ACC,2011,17.65
+Georgia Tech,Atlanta,ACC,2012,16.81
+Georgia Tech,Atlanta,ACC,2013,16.07
+Georgia Tech,Atlanta,ACC,2014,16.83
+Georgia Tech,Atlanta,ACC,2015,16.43
+Georgia Tech,Atlanta,ACC,2016,18.1
+Georgia Tech,Atlanta,ACC,2017,18.98
+Georgia Tech,Atlanta,ACC,2018,19.03
+Georgia Tech,Atlanta,ACC,2019,17.7
+Georgia Tech,Atlanta,ACC,2020,27.08
+Georgia Tech,Atlanta,ACC,2021,29.19
+Georgia Tech,Atlanta,ACC,2022,28.4
+Georgia Tech,Atlanta,ACC,2023,26.97
+Georgia Tech,Atlanta,ACC,2024,23.73
+Georgia Tech,Atlanta,ACC,2025,23.54
+Georgia Tech,Atlanta,ACC,2026,20.15
+Louisville,Louisville,ACC,2003,15.53
+Louisville,Louisville,ACC,2004,13.32
+Louisville,Louisville,ACC,2005,15.16
+Louisville,Louisville,ACC,2006,14.35
+Louisville,Louisville,ACC,2007,12.59
+Louisville,Louisville,ACC,2008,14.18
+Louisville,Louisville,ACC,2009,13.17
+Louisville,Louisville,ACC,2010,15.33
+Louisville,Louisville,ACC,2011,13.38
+Louisville,Louisville,ACC,2012,15.05
+Louisville,Louisville,ACC,2013,13.41
+Louisville,Louisville,ACC,2014,11.75
+Louisville,Louisville,ACC,2015,13.33
+Louisville,Louisville,ACC,2016,13.57
+Louisville,Louisville,ACC,2017,14.43
+Louisville,Louisville,ACC,2018,12.55
+Louisville,Louisville,ACC,2019,14.02
+Louisville,Louisville,ACC,2020,18.98
+Louisville,Louisville,ACC,2021,21.96
+Louisville,Louisville,ACC,2022,20.73
+Louisville,Louisville,ACC,2023,19.65
+Louisville,Louisville,ACC,2024,18.76
+Louisville,Louisville,ACC,2025,16.79
+Louisville,Louisville,ACC,2026,16.45
+Miami,Coral Gables,ACC,2003,2.93
+Miami,Coral Gables,ACC,2004,2.88
+Miami,Coral Gables,ACC,2005,2.97
+Miami,Coral Gables,ACC,2006,2.9
+Miami,Coral Gables,ACC,2007,2.64
+Miami,Coral Gables,ACC,2008,3.18
+Miami,Coral Gables,ACC,2009,2.56
+Miami,Coral Gables,ACC,2010,2.41
+Miami,Coral Gables,ACC,2011,2.84
+Miami,Coral Gables,ACC,2012,2.69
+Miami,Coral Gables,ACC,2013,2.62
+Miami,Coral Gables,ACC,2014,2.39
+Miami,Coral Gables,ACC,2015,2.36
+Miami,Coral Gables,ACC,2016,2.63
+Miami,Coral Gables,ACC,2017,2.72
+Miami,Coral Gables,ACC,2018,2.79
+Miami,Coral Gables,ACC,2019,2.87
+Miami,Coral Gables,ACC,2020,4.12
+Miami,Coral Gables,ACC,2021,4.15
+Miami,Coral Gables,ACC,2022,3.77
+Miami,Coral Gables,ACC,2023,3.8
+Miami,Coral Gables,ACC,2024,3.33
+Miami,Coral Gables,ACC,2025,2.9
+Miami,Coral Gables,ACC,2026,3.42
+North Carolina,Chapel Hill,ACC,2003,1.22
+North Carolina,Chapel Hill,ACC,2004,1.12
+North Carolina,Chapel Hill,ACC,2005,1.12
+North Carolina,Chapel Hill,ACC,2006,1.32
+North Carolina,Chapel Hill,ACC,2007,1.24
+North Carolina,Chapel Hill,ACC,2008,1.2
+North Carolina,Chapel Hill,ACC,2009,1.13
+North Carolina,Chapel Hill,ACC,2010,0.97
+North Carolina,Chapel Hill,ACC,2011,1.04
+North Carolina,Chapel Hill,ACC,2012,0.94
+North Carolina,Chapel Hill,ACC,2013,1.22
+North Carolina,Chapel Hill,ACC,2014,0.9
+North Carolina,Chapel Hill,ACC,2015,0.91
+North Carolina,Chapel Hill,ACC,2016,0.9
+North Carolina,Chapel Hill,ACC,2017,1.17
+North Carolina,Chapel Hill,ACC,2018,0.95
+North Carolina,Chapel Hill,ACC,2019,1.2
+North Carolina,Chapel Hill,ACC,2020,1.59
+North Carolina,Chapel Hill,ACC,2021,1.72
+North Carolina,Chapel Hill,ACC,2022,1.89
+North Carolina,Chapel Hill,ACC,2023,1.49
+North Carolina,Chapel Hill,ACC,2024,1.5
+North Carolina,Chapel Hill,ACC,2025,1.23
+North Carolina,Chapel Hill,ACC,2026,1.18
+NC State,Raleigh,ACC,2003,5.23
+NC State,Raleigh,ACC,2004,4.69
+NC State,Raleigh,ACC,2005,4.84
+NC State,Raleigh,ACC,2006,4.98
+NC State,Raleigh,ACC,2007,4.72
+NC State,Raleigh,ACC,2008,4.5
+NC State,Raleigh,ACC,2009,4.57
+NC State,Raleigh,ACC,2010,3.84
+NC State,Raleigh,ACC,2011,4.32
+NC State,Raleigh,ACC,2012,4.64
+NC State,Raleigh,ACC,2013,4.78
+NC State,Raleigh,ACC,2014,4.38
+NC State,Raleigh,ACC,2015,4.4
+NC State,Raleigh,ACC,2016,4.5
+NC State,Raleigh,ACC,2017,4.32
+NC State,Raleigh,ACC,2018,4.94
+NC State,Raleigh,ACC,2019,5.02
+NC State,Raleigh,ACC,2020,6.34
+NC State,Raleigh,ACC,2021,6.79
+NC State,Raleigh,ACC,2022,6.98
+NC State,Raleigh,ACC,2023,6.83
+NC State,Raleigh,ACC,2024,5.92
+NC State,Raleigh,ACC,2025,5.73
+NC State,Raleigh,ACC,2026,5.37
+Pittsburgh,Pittsburgh,ACC,2003,14.83
+Pittsburgh,Pittsburgh,ACC,2004,14.22
+Pittsburgh,Pittsburgh,ACC,2005,12.8
+Pittsburgh,Pittsburgh,ACC,2006,14.08
+Pittsburgh,Pittsburgh,ACC,2007,12.91
+Pittsburgh,Pittsburgh,ACC,2008,12.97
+Pittsburgh,Pittsburgh,ACC,2009,13.49
+Pittsburgh,Pittsburgh,ACC,2010,10.99
+Pittsburgh,Pittsburgh,ACC,2011,13.05
+Pittsburgh,Pittsburgh,ACC,2012,11.21
+Pittsburgh,Pittsburgh,ACC,2013,11.41
+Pittsburgh,Pittsburgh,ACC,2014,12.71
+Pittsburgh,Pittsburgh,ACC,2015,13.19
+Pittsburgh,Pittsburgh,ACC,2016,11.77
+Pittsburgh,Pittsburgh,ACC,2017,11.88
+Pittsburgh,Pittsburgh,ACC,2018,11.74
+Pittsburgh,Pittsburgh,ACC,2019,12.58
+Pittsburgh,Pittsburgh,ACC,2020,19.55
+Pittsburgh,Pittsburgh,ACC,2021,20.46
+Pittsburgh,Pittsburgh,ACC,2022,18.35
+Pittsburgh,Pittsburgh,ACC,2023,17.95
+Pittsburgh,Pittsburgh,ACC,2024,15.82
+Pittsburgh,Pittsburgh,ACC,2025,15.74
+Pittsburgh,Pittsburgh,ACC,2026,15.29
+Syracuse,Syracuse,ACC,2003,7.32
+Syracuse,Syracuse,ACC,2004,8.3
+Syracuse,Syracuse,ACC,2005,8.52
+Syracuse,Syracuse,ACC,2006,8.09
+Syracuse,Syracuse,ACC,2007,7.26
+Syracuse,Syracuse,ACC,2008,7.85
+Syracuse,Syracuse,ACC,2009,6.81
+Syracuse,Syracuse,ACC,2010,6.65
+Syracuse,Syracuse,ACC,2011,8.08
+Syracuse,Syracuse,ACC,2012,6.31
+Syracuse,Syracuse,ACC,2013,6.41
+Syracuse,Syracuse,ACC,2014,6.56
+Syracuse,Syracuse,ACC,2015,7.0
+Syracuse,Syracuse,ACC,2016,7.75
+Syracuse,Syracuse,ACC,2017,7.66
+Syracuse,Syracuse,ACC,2018,8.09
+Syracuse,Syracuse,ACC,2019,7.97
+Syracuse,Syracuse,ACC,2020,10.54
+Syracuse,Syracuse,ACC,2021,10.93
+Syracuse,Syracuse,ACC,2022,11.03
+Syracuse,Syracuse,ACC,2023,9.97
+Syracuse,Syracuse,ACC,2024,9.33
+Syracuse,Syracuse,ACC,2025,8.9
+Syracuse,Syracuse,ACC,2026,9.4
+Virginia,Charlottesville,ACC,2003,2.65
+Virginia,Charlottesville,ACC,2004,2.62
+Virginia,Charlottesville,ACC,2005,2.26
+Virginia,Charlottesville,ACC,2006,2.39
+Virginia,Charlottesville,ACC,2007,2.32
+Virginia,Charlottesville,ACC,2008,2.36
+Virginia,Charlottesville,ACC,2009,2.4
+Virginia,Charlottesville,ACC,2010,2.22
+Virginia,Charlottesville,ACC,2011,2.22
+Virginia,Charlottesville,ACC,2012,2.26
+Virginia,Charlottesville,ACC,2013,2.19
+Virginia,Charlottesville,ACC,2014,2.21
+Virginia,Charlottesville,ACC,2015,1.76
+Virginia,Charlottesville,ACC,2016,2.08
+Virginia,Charlottesville,ACC,2017,2.25
+Virginia,Charlottesville,ACC,2018,2.17
+Virginia,Charlottesville,ACC,2019,2.21
+Virginia,Charlottesville,ACC,2020,2.86
+Virginia,Charlottesville,ACC,2021,3.72
+Virginia,Charlottesville,ACC,2022,3.38
+Virginia,Charlottesville,ACC,2023,3.09
+Virginia,Charlottesville,ACC,2024,3.28
+Virginia,Charlottesville,ACC,2025,2.75
+Virginia,Charlottesville,ACC,2026,2.75
+Virginia Tech,Blacksburg,ACC,2003,0.52
+Virginia Tech,Blacksburg,ACC,2004,0.55
+Virginia Tech,Blacksburg,ACC,2005,0.28
+Virginia Tech,Blacksburg,ACC,2006,0.46
+Virginia Tech,Blacksburg,ACC,2007,0.43
+Virginia Tech,Blacksburg,ACC,2008,0.53
+Virginia Tech,Blacksburg,ACC,2009,0.73
+Virginia Tech,Blacksburg,ACC,2010,0.6
+Virginia Tech,Blacksburg,ACC,2011,0.57
+Virginia Tech,Blacksburg,ACC,2012,0.28
+Virginia Tech,Blacksburg,ACC,2013,0.45
+Virginia Tech,Blacksburg,ACC,2014,0.39
+Virginia Tech,Blacksburg,ACC,2015,0.29
+Virginia Tech,Blacksburg,ACC,2016,0.48
+Virginia Tech,Blacksburg,ACC,2017,0.56
+Virginia Tech,Blacksburg,ACC,2018,0.5
+Virginia Tech,Blacksburg,ACC,2019,0.57
+Virginia Tech,Blacksburg,ACC,2020,0.78
+Virginia Tech,Blacksburg,ACC,2021,0.69
+Virginia Tech,Blacksburg,ACC,2022,0.88
+Virginia Tech,Blacksburg,ACC,2023,0.56
+Virginia Tech,Blacksburg,ACC,2024,0.58
+Virginia Tech,Blacksburg,ACC,2025,0.56
+Virginia Tech,Blacksburg,ACC,2026,0.48
+Wake Forest,Winston-Salem,ACC,2003,6.37
+Wake Forest,Winston-Salem,ACC,2004,7.34
+Wake Forest,Winston-Salem,ACC,2005,7.57
+Wake Forest,Winston-Salem,ACC,2006,6.9
+Wake Forest,Winston-Salem,ACC,2007,6.63
+Wake Forest,Winston-Salem,ACC,2008,6.32
+Wake Forest,Winston-Salem,ACC,2009,6.56
+Wake Forest,Winston-Salem,ACC,2010,6.51
+Wake Forest,Winston-Salem,ACC,2011,6.08
+Wake Forest,Winston-Salem,ACC,2012,5.8
+Wake Forest,Winston-Salem,ACC,2013,4.88
+Wake Forest,Winston-Salem,ACC,2014,5.83
+Wake Forest,Winston-Salem,ACC,2015,6.68
+Wake Forest,Winston-Salem,ACC,2016,6.26
+Wake Forest,Winston-Salem,ACC,2017,5.72
+Wake Forest,Winston-Salem,ACC,2018,6.17
+Wake Forest,Winston-Salem,ACC,2019,5.98
+Wake Forest,Winston-Salem,ACC,2020,8.23
+Wake Forest,Winston-Salem,ACC,2021,10.78
+Wake Forest,Winston-Salem,ACC,2022,9.66
+Wake Forest,Winston-Salem,ACC,2023,9.22
+Wake Forest,Winston-Salem,ACC,2024,7.54
+Wake Forest,Winston-Salem,ACC,2025,8.14
+Wake Forest,Winston-Salem,ACC,2026,7.64
+California,Berkeley,ACC,2003,4.3
+California,Berkeley,ACC,2004,3.69
+California,Berkeley,ACC,2005,3.57
+California,Berkeley,ACC,2006,4.13
+California,Berkeley,ACC,2007,3.91
+California,Berkeley,ACC,2008,3.63
+California,Berkeley,ACC,2009,3.82
+California,Berkeley,ACC,2010,4.0
+California,Berkeley,ACC,2011,3.59
+California,Berkeley,ACC,2012,3.59
+California,Berkeley,ACC,2013,3.63
+California,Berkeley,ACC,2014,3.52
+California,Berkeley,ACC,2015,3.45
+California,Berkeley,ACC,2016,3.58
+California,Berkeley,ACC,2017,3.19
+California,Berkeley,ACC,2018,3.4
+California,Berkeley,ACC,2019,4.42
+California,Berkeley,ACC,2020,5.05
+California,Berkeley,ACC,2021,5.39
+California,Berkeley,ACC,2022,5.8
+California,Berkeley,ACC,2023,5.59
+California,Berkeley,ACC,2024,4.52
+California,Berkeley,ACC,2025,4.53
+California,Berkeley,ACC,2026,4.15
+Stanford,Stanford,ACC,2003,0.47
+Stanford,Stanford,ACC,2004,0.41
+Stanford,Stanford,ACC,2005,0.4
+Stanford,Stanford,ACC,2006,0.43
+Stanford,Stanford,ACC,2007,0.53
+Stanford,Stanford,ACC,2008,0.44
+Stanford,Stanford,ACC,2009,0.48
+Stanford,Stanford,ACC,2010,0.46
+Stanford,Stanford,ACC,2011,0.42
+Stanford,Stanford,ACC,2012,0.37
+Stanford,Stanford,ACC,2013,0.34
+Stanford,Stanford,ACC,2014,0.38
+Stanford,Stanford,ACC,2015,0.43
+Stanford,Stanford,ACC,2016,0.3
+Stanford,Stanford,ACC,2017,0.38
+Stanford,Stanford,ACC,2018,0.56
+Stanford,Stanford,ACC,2019,0.39
+Stanford,Stanford,ACC,2020,0.66
+Stanford,Stanford,ACC,2021,0.58
+Stanford,Stanford,ACC,2022,0.81
+Stanford,Stanford,ACC,2023,0.78
+Stanford,Stanford,ACC,2024,0.63
+Stanford,Stanford,ACC,2025,0.58
+Stanford,Stanford,ACC,2026,0.57
+SMU,Dallas,ACC,2003,10.41
+SMU,Dallas,ACC,2004,9.89
+SMU,Dallas,ACC,2005,10.73
+SMU,Dallas,ACC,2006,9.57
+SMU,Dallas,ACC,2007,10.13
+SMU,Dallas,ACC,2008,10.51
+SMU,Dallas,ACC,2009,8.8
+SMU,Dallas,ACC,2010,9.31
+SMU,Dallas,ACC,2011,9.25
+SMU,Dallas,ACC,2012,7.72
+SMU,Dallas,ACC,2013,8.61
+SMU,Dallas,ACC,2014,8.81
+SMU,Dallas,ACC,2015,8.32
+SMU,Dallas,ACC,2016,9.98
+SMU,Dallas,ACC,2017,10.61
+SMU,Dallas,ACC,2018,10.7
+SMU,Dallas,ACC,2019,11.29
+SMU,Dallas,ACC,2020,13.47
+SMU,Dallas,ACC,2021,15.98
+SMU,Dallas,ACC,2022,14.6
+SMU,Dallas,ACC,2023,12.77
+SMU,Dallas,ACC,2024,12.11
+SMU,Dallas,ACC,2025,11.61
+SMU,Dallas,ACC,2026,9.9
+Illinois,Champaign,Big Ten,2003,4.49
+Illinois,Champaign,Big Ten,2004,4.44
+Illinois,Champaign,Big Ten,2005,5.14
+Illinois,Champaign,Big Ten,2006,4.38
+Illinois,Champaign,Big Ten,2007,4.6
+Illinois,Champaign,Big Ten,2008,4.31
+Illinois,Champaign,Big Ten,2009,3.91
+Illinois,Champaign,Big Ten,2010,3.77
+Illinois,Champaign,Big Ten,2011,3.81
+Illinois,Champaign,Big Ten,2012,3.8
+Illinois,Champaign,Big Ten,2013,4.14
+Illinois,Champaign,Big Ten,2014,4.1
+Illinois,Champaign,Big Ten,2015,3.81
+Illinois,Champaign,Big Ten,2016,3.94
+Illinois,Champaign,Big Ten,2017,3.88
+Illinois,Champaign,Big Ten,2018,4.13
+Illinois,Champaign,Big Ten,2019,4.35
+Illinois,Champaign,Big Ten,2020,5.7
+Illinois,Champaign,Big Ten,2021,6.56
+Illinois,Champaign,Big Ten,2022,5.99
+Illinois,Champaign,Big Ten,2023,6.17
+Illinois,Champaign,Big Ten,2024,5.51
+Illinois,Champaign,Big Ten,2025,4.93
+Illinois,Champaign,Big Ten,2026,5.11
+Indiana,Bloomington,Big Ten,2003,1.79
+Indiana,Bloomington,Big Ten,2004,1.95
+Indiana,Bloomington,Big Ten,2005,2.13
+Indiana,Bloomington,Big Ten,2006,2.06
+Indiana,Bloomington,Big Ten,2007,1.98
+Indiana,Bloomington,Big Ten,2008,1.85
+Indiana,Bloomington,Big Ten,2009,1.94
+Indiana,Bloomington,Big Ten,2010,1.88
+Indiana,Bloomington,Big Ten,2011,1.89
+Indiana,Bloomington,Big Ten,2012,1.61
+Indiana,Bloomington,Big Ten,2013,1.84
+Indiana,Bloomington,Big Ten,2014,1.56
+Indiana,Bloomington,Big Ten,2015,1.59
+Indiana,Bloomington,Big Ten,2016,1.78
+Indiana,Bloomington,Big Ten,2017,1.81
+Indiana,Bloomington,Big Ten,2018,2.02
+Indiana,Bloomington,Big Ten,2019,1.87
+Indiana,Bloomington,Big Ten,2020,2.64
+Indiana,Bloomington,Big Ten,2021,2.78
+Indiana,Bloomington,Big Ten,2022,2.59
+Indiana,Bloomington,Big Ten,2023,2.54
+Indiana,Bloomington,Big Ten,2024,2.49
+Indiana,Bloomington,Big Ten,2025,2.57
+Indiana,Bloomington,Big Ten,2026,1.97
+Iowa,Iowa City,Big Ten,2003,1.68
+Iowa,Iowa City,Big Ten,2004,1.45
+Iowa,Iowa City,Big Ten,2005,1.6
+Iowa,Iowa City,Big Ten,2006,1.28
+Iowa,Iowa City,Big Ten,2007,1.44
+Iowa,Iowa City,Big Ten,2008,1.4
+Iowa,Iowa City,Big Ten,2009,1.32
+Iowa,Iowa City,Big Ten,2010,1.31
+Iowa,Iowa City,Big Ten,2011,1.32
+Iowa,Iowa City,Big Ten,2012,1.31
+Iowa,Iowa City,Big Ten,2013,1.08
+Iowa,Iowa City,Big Ten,2014,1.13
+Iowa,Iowa City,Big Ten,2015,1.22
+Iowa,Iowa City,Big Ten,2016,1.06
+Iowa,Iowa City,Big Ten,2017,1.23
+Iowa,Iowa City,Big Ten,2018,1.47
+Iowa,Iowa City,Big Ten,2019,1.46
+Iowa,Iowa City,Big Ten,2020,1.86
+Iowa,Iowa City,Big Ten,2021,2.27
+Iowa,Iowa City,Big Ten,2022,2.05
+Iowa,Iowa City,Big Ten,2023,1.84
+Iowa,Iowa City,Big Ten,2024,1.88
+Iowa,Iowa City,Big Ten,2025,1.83
+Iowa,Iowa City,Big Ten,2026,1.54
+Maryland,College Park,Big Ten,2003,3.66
+Maryland,College Park,Big Ten,2004,3.51
+Maryland,College Park,Big Ten,2005,3.46
+Maryland,College Park,Big Ten,2006,3.08
+Maryland,College Park,Big Ten,2007,3.0
+Maryland,College Park,Big Ten,2008,3.0
+Maryland,College Park,Big Ten,2009,3.25
+Maryland,College Park,Big Ten,2010,3.12
+Maryland,College Park,Big Ten,2011,3.04
+Maryland,College Park,Big Ten,2012,3.3
+Maryland,College Park,Big Ten,2013,3.3
+Maryland,College Park,Big Ten,2014,2.52
+Maryland,College Park,Big Ten,2015,2.59
+Maryland,College Park,Big Ten,2016,3.02
+Maryland,College Park,Big Ten,2017,3.28
+Maryland,College Park,Big Ten,2018,3.38
+Maryland,College Park,Big Ten,2019,3.27
+Maryland,College Park,Big Ten,2020,4.1
+Maryland,College Park,Big Ten,2021,5.47
+Maryland,College Park,Big Ten,2022,4.65
+Maryland,College Park,Big Ten,2023,4.59
+Maryland,College Park,Big Ten,2024,4.24
+Maryland,College Park,Big Ten,2025,3.89
+Maryland,College Park,Big Ten,2026,3.91
+Michigan,Ann Arbor,Big Ten,2003,2.15
+Michigan,Ann Arbor,Big Ten,2004,1.81
+Michigan,Ann Arbor,Big Ten,2005,1.63
+Michigan,Ann Arbor,Big Ten,2006,1.83
+Michigan,Ann Arbor,Big Ten,2007,1.92
+Michigan,Ann Arbor,Big Ten,2008,1.88
+Michigan,Ann Arbor,Big Ten,2009,1.86
+Michigan,Ann Arbor,Big Ten,2010,1.93
+Michigan,Ann Arbor,Big Ten,2011,1.88
+Michigan,Ann Arbor,Big Ten,2012,1.68
+Michigan,Ann Arbor,Big Ten,2013,1.53
+Michigan,Ann Arbor,Big Ten,2014,1.58
+Michigan,Ann Arbor,Big Ten,2015,1.88
+Michigan,Ann Arbor,Big Ten,2016,1.69
+Michigan,Ann Arbor,Big Ten,2017,1.96
+Michigan,Ann Arbor,Big Ten,2018,1.94
+Michigan,Ann Arbor,Big Ten,2019,2.16
+Michigan,Ann Arbor,Big Ten,2020,2.6
+Michigan,Ann Arbor,Big Ten,2021,2.62
+Michigan,Ann Arbor,Big Ten,2022,2.98
+Michigan,Ann Arbor,Big Ten,2023,2.58
+Michigan,Ann Arbor,Big Ten,2024,2.41
+Michigan,Ann Arbor,Big Ten,2025,2.43
+Michigan,Ann Arbor,Big Ten,2026,2.06
+Michigan State,East Lansing,Big Ten,2003,2.34
+Michigan State,East Lansing,Big Ten,2004,2.41
+Michigan State,East Lansing,Big Ten,2005,2.51
+Michigan State,East Lansing,Big Ten,2006,2.33
+Michigan State,East Lansing,Big Ten,2007,2.62
+Michigan State,East Lansing,Big Ten,2008,2.17
+Michigan State,East Lansing,Big Ten,2009,2.16
+Michigan State,East Lansing,Big Ten,2010,2.03
+Michigan State,East Lansing,Big Ten,2011,2.49
+Michigan State,East Lansing,Big Ten,2012,2.42
+Michigan State,East Lansing,Big Ten,2013,2.08
+Michigan State,East Lansing,Big Ten,2014,1.95
+Michigan State,East Lansing,Big Ten,2015,1.91
+Michigan State,East Lansing,Big Ten,2016,2.44
+Michigan State,East Lansing,Big Ten,2017,2.37
+Michigan State,East Lansing,Big Ten,2018,2.42
+Michigan State,East Lansing,Big Ten,2019,2.32
+Michigan State,East Lansing,Big Ten,2020,3.43
+Michigan State,East Lansing,Big Ten,2021,3.63
+Michigan State,East Lansing,Big Ten,2022,3.24
+Michigan State,East Lansing,Big Ten,2023,3.09
+Michigan State,East Lansing,Big Ten,2024,3.06
+Michigan State,East Lansing,Big Ten,2025,2.62
+Michigan State,East Lansing,Big Ten,2026,2.7
+Minnesota,Minneapolis,Big Ten,2003,7.54
+Minnesota,Minneapolis,Big Ten,2004,7.65
+Minnesota,Minneapolis,Big Ten,2005,7.5
+Minnesota,Minneapolis,Big Ten,2006,7.48
+Minnesota,Minneapolis,Big Ten,2007,7.77
+Minnesota,Minneapolis,Big Ten,2008,6.76
+Minnesota,Minneapolis,Big Ten,2009,6.95
+Minnesota,Minneapolis,Big Ten,2010,6.49
+Minnesota,Minneapolis,Big Ten,2011,6.79
+Minnesota,Minneapolis,Big Ten,2012,6.43
+Minnesota,Minneapolis,Big Ten,2013,6.86
+Minnesota,Minneapolis,Big Ten,2014,6.89
+Minnesota,Minneapolis,Big Ten,2015,7.89
+Minnesota,Minneapolis,Big Ten,2016,6.88
+Minnesota,Minneapolis,Big Ten,2017,7.92
+Minnesota,Minneapolis,Big Ten,2018,7.17
+Minnesota,Minneapolis,Big Ten,2019,7.27
+Minnesota,Minneapolis,Big Ten,2020,10.7
+Minnesota,Minneapolis,Big Ten,2021,12.09
+Minnesota,Minneapolis,Big Ten,2022,11.48
+Minnesota,Minneapolis,Big Ten,2023,10.57
+Minnesota,Minneapolis,Big Ten,2024,9.75
+Minnesota,Minneapolis,Big Ten,2025,9.89
+Minnesota,Minneapolis,Big Ten,2026,8.16
+Nebraska,Lincoln,Big Ten,2003,2.37
+Nebraska,Lincoln,Big Ten,2004,2.37
+Nebraska,Lincoln,Big Ten,2005,2.23
+Nebraska,Lincoln,Big Ten,2006,2.28
+Nebraska,Lincoln,Big Ten,2007,2.59
+Nebraska,Lincoln,Big Ten,2008,2.07
+Nebraska,Lincoln,Big Ten,2009,2.54
+Nebraska,Lincoln,Big Ten,2010,2.0
+Nebraska,Lincoln,Big Ten,2011,2.36
+Nebraska,Lincoln,Big Ten,2012,1.75
+Nebraska,Lincoln,Big Ten,2013,2.39
+Nebraska,Lincoln,Big Ten,2014,1.98
+Nebraska,Lincoln,Big Ten,2015,2.2
+Nebraska,Lincoln,Big Ten,2016,2.21
+Nebraska,Lincoln,Big Ten,2017,2.22
+Nebraska,Lincoln,Big Ten,2018,2.56
+Nebraska,Lincoln,Big Ten,2019,2.54
+Nebraska,Lincoln,Big Ten,2020,3.24
+Nebraska,Lincoln,Big Ten,2021,3.7
+Nebraska,Lincoln,Big Ten,2022,3.57
+Nebraska,Lincoln,Big Ten,2023,3.18
+Nebraska,Lincoln,Big Ten,2024,3.15
+Nebraska,Lincoln,Big Ten,2025,2.98
+Nebraska,Lincoln,Big Ten,2026,2.53
+Northwestern,Evanston,Big Ten,2003,1.86
+Northwestern,Evanston,Big Ten,2004,2.01
+Northwestern,Evanston,Big Ten,2005,1.83
+Northwestern,Evanston,Big Ten,2006,1.96
+Northwestern,Evanston,Big Ten,2007,1.85
+Northwestern,Evanston,Big Ten,2008,1.97
+Northwestern,Evanston,Big Ten,2009,1.93
+Northwestern,Evanston,Big Ten,2010,2.04
+Northwestern,Evanston,Big Ten,2011,1.91
+Northwestern,Evanston,Big Ten,2012,1.79
+Northwestern,Evanston,Big Ten,2013,1.63
+Northwestern,Evanston,Big Ten,2014,1.55
+Northwestern,Evanston,Big Ten,2015,1.8
+Northwestern,Evanston,Big Ten,2016,1.94
+Northwestern,Evanston,Big Ten,2017,1.93
+Northwestern,Evanston,Big Ten,2018,1.84
+Northwestern,Evanston,Big Ten,2019,1.83
+Northwestern,Evanston,Big Ten,2020,2.74
+Northwestern,Evanston,Big Ten,2021,2.93
+Northwestern,Evanston,Big Ten,2022,2.53
+Northwestern,Evanston,Big Ten,2023,2.77
+Northwestern,Evanston,Big Ten,2024,2.15
+Northwestern,Evanston,Big Ten,2025,2.17
+Northwestern,Evanston,Big Ten,2026,2.05
+Ohio State,Columbus,Big Ten,2003,8.81
+Ohio State,Columbus,Big Ten,2004,8.1
+Ohio State,Columbus,Big Ten,2005,7.89
+Ohio State,Columbus,Big Ten,2006,8.1
+Ohio State,Columbus,Big Ten,2007,8.58
+Ohio State,Columbus,Big Ten,2008,7.69
+Ohio State,Columbus,Big Ten,2009,8.82
+Ohio State,Columbus,Big Ten,2010,7.75
+Ohio State,Columbus,Big Ten,2011,7.23
+Ohio State,Columbus,Big Ten,2012,7.13
+Ohio State,Columbus,Big Ten,2013,6.88
+Ohio State,Columbus,Big Ten,2014,7.44
+Ohio State,Columbus,Big Ten,2015,7.25
+Ohio State,Columbus,Big Ten,2016,7.48
+Ohio State,Columbus,Big Ten,2017,7.41
+Ohio State,Columbus,Big Ten,2018,8.84
+Ohio State,Columbus,Big Ten,2019,7.1
+Ohio State,Columbus,Big Ten,2020,10.88
+Ohio State,Columbus,Big Ten,2021,12.52
+Ohio State,Columbus,Big Ten,2022,11.81
+Ohio State,Columbus,Big Ten,2023,10.99
+Ohio State,Columbus,Big Ten,2024,10.67
+Ohio State,Columbus,Big Ten,2025,9.73
+Ohio State,Columbus,Big Ten,2026,8.82
+Penn State,State College,Big Ten,2003,0.4
+Penn State,State College,Big Ten,2004,0.53
+Penn State,State College,Big Ten,2005,0.38
+Penn State,State College,Big Ten,2006,0.27
+Penn State,State College,Big Ten,2007,0.57
+Penn State,State College,Big Ten,2008,0.44
+Penn State,State College,Big Ten,2009,0.41
+Penn State,State College,Big Ten,2010,0.43
+Penn State,State College,Big Ten,2011,0.43
+Penn State,State College,Big Ten,2012,0.4
+Penn State,State College,Big Ten,2013,0.41
+Penn State,State College,Big Ten,2014,0.44
+Penn State,State College,Big Ten,2015,0.42
+Penn State,State College,Big Ten,2016,0.5
+Penn State,State College,Big Ten,2017,0.71
+Penn State,State College,Big Ten,2018,0.56
+Penn State,State College,Big Ten,2019,0.52
+Penn State,State College,Big Ten,2020,0.66
+Penn State,State College,Big Ten,2021,0.76
+Penn State,State College,Big Ten,2022,0.77
+Penn State,State College,Big Ten,2023,0.69
+Penn State,State College,Big Ten,2024,0.72
+Penn State,State College,Big Ten,2025,0.67
+Penn State,State College,Big Ten,2026,0.51
+Purdue,West Lafayette,Big Ten,2003,0.95
+Purdue,West Lafayette,Big Ten,2004,1.04
+Purdue,West Lafayette,Big Ten,2005,1.14
+Purdue,West Lafayette,Big Ten,2006,0.85
+Purdue,West Lafayette,Big Ten,2007,0.99
+Purdue,West Lafayette,Big Ten,2008,0.92
+Purdue,West Lafayette,Big Ten,2009,0.9
+Purdue,West Lafayette,Big Ten,2010,0.87
+Purdue,West Lafayette,Big Ten,2011,1.04
+Purdue,West Lafayette,Big Ten,2012,0.97
+Purdue,West Lafayette,Big Ten,2013,0.87
+Purdue,West Lafayette,Big Ten,2014,0.78
+Purdue,West Lafayette,Big Ten,2015,0.96
+Purdue,West Lafayette,Big Ten,2016,0.93
+Purdue,West Lafayette,Big Ten,2017,0.87
+Purdue,West Lafayette,Big Ten,2018,0.89
+Purdue,West Lafayette,Big Ten,2019,0.98
+Purdue,West Lafayette,Big Ten,2020,1.13
+Purdue,West Lafayette,Big Ten,2021,1.44
+Purdue,West Lafayette,Big Ten,2022,1.34
+Purdue,West Lafayette,Big Ten,2023,1.23
+Purdue,West Lafayette,Big Ten,2024,1.28
+Purdue,West Lafayette,Big Ten,2025,1.05
+Purdue,West Lafayette,Big Ten,2026,1.07
+Rutgers,Piscataway,Big Ten,2003,1.95
+Rutgers,Piscataway,Big Ten,2004,1.92
+Rutgers,Piscataway,Big Ten,2005,1.88
+Rutgers,Piscataway,Big Ten,2006,2.25
+Rutgers,Piscataway,Big Ten,2007,1.89
+Rutgers,Piscataway,Big Ten,2008,1.75
+Rutgers,Piscataway,Big Ten,2009,1.63
+Rutgers,Piscataway,Big Ten,2010,1.61
+Rutgers,Piscataway,Big Ten,2011,1.64
+Rutgers,Piscataway,Big Ten,2012,1.67
+Rutgers,Piscataway,Big Ten,2013,1.68
+Rutgers,Piscataway,Big Ten,2014,1.8
+Rutgers,Piscataway,Big Ten,2015,1.68
+Rutgers,Piscataway,Big Ten,2016,1.83
+Rutgers,Piscataway,Big Ten,2017,1.82
+Rutgers,Piscataway,Big Ten,2018,1.93
+Rutgers,Piscataway,Big Ten,2019,1.96
+Rutgers,Piscataway,Big Ten,2020,2.6
+Rutgers,Piscataway,Big Ten,2021,2.89
+Rutgers,Piscataway,Big Ten,2022,2.98
+Rutgers,Piscataway,Big Ten,2023,2.59
+Rutgers,Piscataway,Big Ten,2024,2.28
+Rutgers,Piscataway,Big Ten,2025,2.19
+Rutgers,Piscataway,Big Ten,2026,1.9
+Wisconsin,Madison,Big Ten,2003,2.11
+Wisconsin,Madison,Big Ten,2004,1.97
+Wisconsin,Madison,Big Ten,2005,2.27
+Wisconsin,Madison,Big Ten,2006,2.4
+Wisconsin,Madison,Big Ten,2007,2.1
+Wisconsin,Madison,Big Ten,2008,1.93
+Wisconsin,Madison,Big Ten,2009,1.9
+Wisconsin,Madison,Big Ten,2010,1.8
+Wisconsin,Madison,Big Ten,2011,1.75
+Wisconsin,Madison,Big Ten,2012,1.87
+Wisconsin,Madison,Big Ten,2013,2.0
+Wisconsin,Madison,Big Ten,2014,1.78
+Wisconsin,Madison,Big Ten,2015,1.68
+Wisconsin,Madison,Big Ten,2016,2.24
+Wisconsin,Madison,Big Ten,2017,1.75
+Wisconsin,Madison,Big Ten,2018,2.13
+Wisconsin,Madison,Big Ten,2019,2.34
+Wisconsin,Madison,Big Ten,2020,3.02
+Wisconsin,Madison,Big Ten,2021,3.29
+Wisconsin,Madison,Big Ten,2022,2.75
+Wisconsin,Madison,Big Ten,2023,2.95
+Wisconsin,Madison,Big Ten,2024,2.57
+Wisconsin,Madison,Big Ten,2025,2.48
+Wisconsin,Madison,Big Ten,2026,2.12
+Oregon,Eugene,Big Ten,2003,2.31
+Oregon,Eugene,Big Ten,2004,2.31
+Oregon,Eugene,Big Ten,2005,2.71
+Oregon,Eugene,Big Ten,2006,2.25
+Oregon,Eugene,Big Ten,2007,2.14
+Oregon,Eugene,Big Ten,2008,1.95
+Oregon,Eugene,Big Ten,2009,2.55
+Oregon,Eugene,Big Ten,2010,2.34
+Oregon,Eugene,Big Ten,2011,2.12
+Oregon,Eugene,Big Ten,2012,1.79
+Oregon,Eugene,Big Ten,2013,1.96
+Oregon,Eugene,Big Ten,2014,1.97
+Oregon,Eugene,Big Ten,2015,2.48
+Oregon,Eugene,Big Ten,2016,2.09
+Oregon,Eugene,Big Ten,2017,2.37
+Oregon,Eugene,Big Ten,2018,2.07
+Oregon,Eugene,Big Ten,2019,2.32
+Oregon,Eugene,Big Ten,2020,3.4
+Oregon,Eugene,Big Ten,2021,3.53
+Oregon,Eugene,Big Ten,2022,3.21
+Oregon,Eugene,Big Ten,2023,3.34
+Oregon,Eugene,Big Ten,2024,3.11
+Oregon,Eugene,Big Ten,2025,2.87
+Oregon,Eugene,Big Ten,2026,2.79
+Washington,Seattle,Big Ten,2003,4.37
+Washington,Seattle,Big Ten,2004,4.53
+Washington,Seattle,Big Ten,2005,4.06
+Washington,Seattle,Big Ten,2006,4.23
+Washington,Seattle,Big Ten,2007,4.25
+Washington,Seattle,Big Ten,2008,3.58
+Washington,Seattle,Big Ten,2009,3.93
+Washington,Seattle,Big Ten,2010,4.22
+Washington,Seattle,Big Ten,2011,3.53
+Washington,Seattle,Big Ten,2012,3.7
+Washington,Seattle,Big Ten,2013,3.85
+Washington,Seattle,Big Ten,2014,4.58
+Washington,Seattle,Big Ten,2015,4.18
+Washington,Seattle,Big Ten,2016,3.86
+Washington,Seattle,Big Ten,2017,3.67
+Washington,Seattle,Big Ten,2018,4.09
+Washington,Seattle,Big Ten,2019,4.28
+Washington,Seattle,Big Ten,2020,6.15
+Washington,Seattle,Big Ten,2021,6.38
+Washington,Seattle,Big Ten,2022,6.39
+Washington,Seattle,Big Ten,2023,6.1
+Washington,Seattle,Big Ten,2024,5.38
+Washington,Seattle,Big Ten,2025,5.3
+Washington,Seattle,Big Ten,2026,4.63
+USC,Los Angeles,Big Ten,2003,7.51
+USC,Los Angeles,Big Ten,2004,6.7
+USC,Los Angeles,Big Ten,2005,7.3
+USC,Los Angeles,Big Ten,2006,7.55
+USC,Los Angeles,Big Ten,2007,7.31
+USC,Los Angeles,Big Ten,2008,6.83
+USC,Los Angeles,Big Ten,2009,7.28
+USC,Los Angeles,Big Ten,2010,6.45
+USC,Los Angeles,Big Ten,2011,6.5
+USC,Los Angeles,Big Ten,2012,5.87
+USC,Los Angeles,Big Ten,2013,6.68
+USC,Los Angeles,Big Ten,2014,6.07
+USC,Los Angeles,Big Ten,2015,6.63
+USC,Los Angeles,Big Ten,2016,6.76
+USC,Los Angeles,Big Ten,2017,6.82
+USC,Los Angeles,Big Ten,2018,7.11
+USC,Los Angeles,Big Ten,2019,7.46
+USC,Los Angeles,Big Ten,2020,9.71
+USC,Los Angeles,Big Ten,2021,11.12
+USC,Los Angeles,Big Ten,2022,10.35
+USC,Los Angeles,Big Ten,2023,9.94
+USC,Los Angeles,Big Ten,2024,8.97
+USC,Los Angeles,Big Ten,2025,8.94
+USC,Los Angeles,Big Ten,2026,8.16
+UCLA,Los Angeles,Big Ten,2003,7.12
+UCLA,Los Angeles,Big Ten,2004,7.31
+UCLA,Los Angeles,Big Ten,2005,6.94
+UCLA,Los Angeles,Big Ten,2006,6.36
+UCLA,Los Angeles,Big Ten,2007,6.95
+UCLA,Los Angeles,Big Ten,2008,7.54
+UCLA,Los Angeles,Big Ten,2009,7.13
+UCLA,Los Angeles,Big Ten,2010,6.71
+UCLA,Los Angeles,Big Ten,2011,6.79
+UCLA,Los Angeles,Big Ten,2012,6.79
+UCLA,Los Angeles,Big Ten,2013,6.93
+UCLA,Los Angeles,Big Ten,2014,6.64
+UCLA,Los Angeles,Big Ten,2015,7.48
+UCLA,Los Angeles,Big Ten,2016,7.2
+UCLA,Los Angeles,Big Ten,2017,6.04
+UCLA,Los Angeles,Big Ten,2018,7.04
+UCLA,Los Angeles,Big Ten,2019,7.59
+UCLA,Los Angeles,Big Ten,2020,9.66
+UCLA,Los Angeles,Big Ten,2021,10.17
+UCLA,Los Angeles,Big Ten,2022,10.3
+UCLA,Los Angeles,Big Ten,2023,9.4
+UCLA,Los Angeles,Big Ten,2024,8.07
+UCLA,Los Angeles,Big Ten,2025,8.42
+UCLA,Los Angeles,Big Ten,2026,8.36
+Baylor,Waco,Big 12,2003,6.26
+Baylor,Waco,Big 12,2004,6.16
+Baylor,Waco,Big 12,2005,5.88
+Baylor,Waco,Big 12,2006,5.35
+Baylor,Waco,Big 12,2007,6.09
+Baylor,Waco,Big 12,2008,5.47
+Baylor,Waco,Big 12,2009,5.24
+Baylor,Waco,Big 12,2010,5.44
+Baylor,Waco,Big 12,2011,5.91
+Baylor,Waco,Big 12,2012,5.37
+Baylor,Waco,Big 12,2013,5.23
+Baylor,Waco,Big 12,2014,4.68
+Baylor,Waco,Big 12,2015,5.93
+Baylor,Waco,Big 12,2016,5.67
+Baylor,Waco,Big 12,2017,6.05
+Baylor,Waco,Big 12,2018,6.25
+Baylor,Waco,Big 12,2019,5.27
+Baylor,Waco,Big 12,2020,8.12
+Baylor,Waco,Big 12,2021,8.99
+Baylor,Waco,Big 12,2022,7.57
+Baylor,Waco,Big 12,2023,7.87
+Baylor,Waco,Big 12,2024,7.1
+Baylor,Waco,Big 12,2025,6.06
+Baylor,Waco,Big 12,2026,6.59
+BYU,Provo,Big 12,2003,0.98
+BYU,Provo,Big 12,2004,0.98
+BYU,Provo,Big 12,2005,1.05
+BYU,Provo,Big 12,2006,0.96
+BYU,Provo,Big 12,2007,0.99
+BYU,Provo,Big 12,2008,0.8
+BYU,Provo,Big 12,2009,0.99
+BYU,Provo,Big 12,2010,0.86
+BYU,Provo,Big 12,2011,0.78
+BYU,Provo,Big 12,2012,0.83
+BYU,Provo,Big 12,2013,0.93
+BYU,Provo,Big 12,2014,0.69
+BYU,Provo,Big 12,2015,0.94
+BYU,Provo,Big 12,2016,0.85
+BYU,Provo,Big 12,2017,1.1
+BYU,Provo,Big 12,2018,1.0
+BYU,Provo,Big 12,2019,0.98
+BYU,Provo,Big 12,2020,1.38
+BYU,Provo,Big 12,2021,1.4
+BYU,Provo,Big 12,2022,1.42
+BYU,Provo,Big 12,2023,1.27
+BYU,Provo,Big 12,2024,1.15
+BYU,Provo,Big 12,2025,1.16
+BYU,Provo,Big 12,2026,1.04
+UCF,Orlando,Big 12,2003,8.11
+UCF,Orlando,Big 12,2004,7.53
+UCF,Orlando,Big 12,2005,7.43
+UCF,Orlando,Big 12,2006,7.09
+UCF,Orlando,Big 12,2007,7.63
+UCF,Orlando,Big 12,2008,6.1
+UCF,Orlando,Big 12,2009,5.99
+UCF,Orlando,Big 12,2010,6.18
+UCF,Orlando,Big 12,2011,6.61
+UCF,Orlando,Big 12,2012,5.59
+UCF,Orlando,Big 12,2013,5.9
+UCF,Orlando,Big 12,2014,6.57
+UCF,Orlando,Big 12,2015,6.77
+UCF,Orlando,Big 12,2016,6.01
+UCF,Orlando,Big 12,2017,7.14
+UCF,Orlando,Big 12,2018,7.67
+UCF,Orlando,Big 12,2019,8.1
+UCF,Orlando,Big 12,2020,9.83
+UCF,Orlando,Big 12,2021,11.01
+UCF,Orlando,Big 12,2022,10.23
+UCF,Orlando,Big 12,2023,10.44
+UCF,Orlando,Big 12,2024,9.31
+UCF,Orlando,Big 12,2025,8.05
+UCF,Orlando,Big 12,2026,8.26
+Cincinnati,Cincinnati,Big 12,2003,12.52
+Cincinnati,Cincinnati,Big 12,2004,13.27
+Cincinnati,Cincinnati,Big 12,2005,11.61
+Cincinnati,Cincinnati,Big 12,2006,12.33
+Cincinnati,Cincinnati,Big 12,2007,14.13
+Cincinnati,Cincinnati,Big 12,2008,11.09
+Cincinnati,Cincinnati,Big 12,2009,12.02
+Cincinnati,Cincinnati,Big 12,2010,12.55
+Cincinnati,Cincinnati,Big 12,2011,11.26
+Cincinnati,Cincinnati,Big 12,2012,12.09
+Cincinnati,Cincinnati,Big 12,2013,11.42
+Cincinnati,Cincinnati,Big 12,2014,10.38
+Cincinnati,Cincinnati,Big 12,2015,10.69
+Cincinnati,Cincinnati,Big 12,2016,11.73
+Cincinnati,Cincinnati,Big 12,2017,10.43
+Cincinnati,Cincinnati,Big 12,2018,11.09
+Cincinnati,Cincinnati,Big 12,2019,12.5
+Cincinnati,Cincinnati,Big 12,2020,15.95
+Cincinnati,Cincinnati,Big 12,2021,18.65
+Cincinnati,Cincinnati,Big 12,2022,16.86
+Cincinnati,Cincinnati,Big 12,2023,17.75
+Cincinnati,Cincinnati,Big 12,2024,16.43
+Cincinnati,Cincinnati,Big 12,2025,15.04
+Cincinnati,Cincinnati,Big 12,2026,13.8
+Houston,Houston,Big 12,2003,11.61
+Houston,Houston,Big 12,2004,10.98
+Houston,Houston,Big 12,2005,13.17
+Houston,Houston,Big 12,2006,11.91
+Houston,Houston,Big 12,2007,11.16
+Houston,Houston,Big 12,2008,11.42
+Houston,Houston,Big 12,2009,11.61
+Houston,Houston,Big 12,2010,11.69
+Houston,Houston,Big 12,2011,11.78
+Houston,Houston,Big 12,2012,10.92
+Houston,Houston,Big 12,2013,9.61
+Houston,Houston,Big 12,2014,10.08
+Houston,Houston,Big 12,2015,10.81
+Houston,Houston,Big 12,2016,10.62
+Houston,Houston,Big 12,2017,10.98
+Houston,Houston,Big 12,2018,8.93
+Houston,Houston,Big 12,2019,12.61
+Houston,Houston,Big 12,2020,15.48
+Houston,Houston,Big 12,2021,18.64
+Houston,Houston,Big 12,2022,17.12
+Houston,Houston,Big 12,2023,15.78
+Houston,Houston,Big 12,2024,15.99
+Houston,Houston,Big 12,2025,13.06
+Houston,Houston,Big 12,2026,14.6
+Iowa State,Ames,Big 12,2003,1.01
+Iowa State,Ames,Big 12,2004,0.8
+Iowa State,Ames,Big 12,2005,0.9
+Iowa State,Ames,Big 12,2006,0.97
+Iowa State,Ames,Big 12,2007,0.76
+Iowa State,Ames,Big 12,2008,0.91
+Iowa State,Ames,Big 12,2009,0.86
+Iowa State,Ames,Big 12,2010,0.82
+Iowa State,Ames,Big 12,2011,0.82
+Iowa State,Ames,Big 12,2012,0.79
+Iowa State,Ames,Big 12,2013,0.87
+Iowa State,Ames,Big 12,2014,0.86
+Iowa State,Ames,Big 12,2015,0.86
+Iowa State,Ames,Big 12,2016,0.9
+Iowa State,Ames,Big 12,2017,0.94
+Iowa State,Ames,Big 12,2018,0.99
+Iowa State,Ames,Big 12,2019,0.97
+Iowa State,Ames,Big 12,2020,1.49
+Iowa State,Ames,Big 12,2021,1.62
+Iowa State,Ames,Big 12,2022,1.27
+Iowa State,Ames,Big 12,2023,1.18
+Iowa State,Ames,Big 12,2024,1.11
+Iowa State,Ames,Big 12,2025,1.21
+Iowa State,Ames,Big 12,2026,0.99
+Kansas,Lawrence,Big 12,2003,2.14
+Kansas,Lawrence,Big 12,2004,1.86
+Kansas,Lawrence,Big 12,2005,1.77
+Kansas,Lawrence,Big 12,2006,1.7
+Kansas,Lawrence,Big 12,2007,1.68
+Kansas,Lawrence,Big 12,2008,1.8
+Kansas,Lawrence,Big 12,2009,2.07
+Kansas,Lawrence,Big 12,2010,1.88
+Kansas,Lawrence,Big 12,2011,1.78
+Kansas,Lawrence,Big 12,2012,1.64
+Kansas,Lawrence,Big 12,2013,1.66
+Kansas,Lawrence,Big 12,2014,1.58
+Kansas,Lawrence,Big 12,2015,1.69
+Kansas,Lawrence,Big 12,2016,1.8
+Kansas,Lawrence,Big 12,2017,1.9
+Kansas,Lawrence,Big 12,2018,1.82
+Kansas,Lawrence,Big 12,2019,1.98
+Kansas,Lawrence,Big 12,2020,2.59
+Kansas,Lawrence,Big 12,2021,2.85
+Kansas,Lawrence,Big 12,2022,2.79
+Kansas,Lawrence,Big 12,2023,2.52
+Kansas,Lawrence,Big 12,2024,2.43
+Kansas,Lawrence,Big 12,2025,2.26
+Kansas,Lawrence,Big 12,2026,2.23
+Kansas State,Manhattan,Big 12,2003,1.49
+Kansas State,Manhattan,Big 12,2004,1.51
+Kansas State,Manhattan,Big 12,2005,1.35
+Kansas State,Manhattan,Big 12,2006,1.41
+Kansas State,Manhattan,Big 12,2007,1.54
+Kansas State,Manhattan,Big 12,2008,1.52
+Kansas State,Manhattan,Big 12,2009,1.43
+Kansas State,Manhattan,Big 12,2010,1.29
+Kansas State,Manhattan,Big 12,2011,1.24
+Kansas State,Manhattan,Big 12,2012,1.22
+Kansas State,Manhattan,Big 12,2013,1.22
+Kansas State,Manhattan,Big 12,2014,1.29
+Kansas State,Manhattan,Big 12,2015,1.23
+Kansas State,Manhattan,Big 12,2016,1.23
+Kansas State,Manhattan,Big 12,2017,1.25
+Kansas State,Manhattan,Big 12,2018,1.32
+Kansas State,Manhattan,Big 12,2019,1.22
+Kansas State,Manhattan,Big 12,2020,1.8
+Kansas State,Manhattan,Big 12,2021,2.08
+Kansas State,Manhattan,Big 12,2022,2.02
+Kansas State,Manhattan,Big 12,2023,2.1
+Kansas State,Manhattan,Big 12,2024,1.89
+Kansas State,Manhattan,Big 12,2025,1.72
+Kansas State,Manhattan,Big 12,2026,1.42
+Oklahoma State,Stillwater,Big 12,2003,2.42
+Oklahoma State,Stillwater,Big 12,2004,2.56
+Oklahoma State,Stillwater,Big 12,2005,2.62
+Oklahoma State,Stillwater,Big 12,2006,2.04
+Oklahoma State,Stillwater,Big 12,2007,2.55
+Oklahoma State,Stillwater,Big 12,2008,2.29
+Oklahoma State,Stillwater,Big 12,2009,2.41
+Oklahoma State,Stillwater,Big 12,2010,2.15
+Oklahoma State,Stillwater,Big 12,2011,2.19
+Oklahoma State,Stillwater,Big 12,2012,1.98
+Oklahoma State,Stillwater,Big 12,2013,2.14
+Oklahoma State,Stillwater,Big 12,2014,2.32
+Oklahoma State,Stillwater,Big 12,2015,2.37
+Oklahoma State,Stillwater,Big 12,2016,2.35
+Oklahoma State,Stillwater,Big 12,2017,2.15
+Oklahoma State,Stillwater,Big 12,2018,2.29
+Oklahoma State,Stillwater,Big 12,2019,2.29
+Oklahoma State,Stillwater,Big 12,2020,3.3
+Oklahoma State,Stillwater,Big 12,2021,3.77
+Oklahoma State,Stillwater,Big 12,2022,3.25
+Oklahoma State,Stillwater,Big 12,2023,3.14
+Oklahoma State,Stillwater,Big 12,2024,3.16
+Oklahoma State,Stillwater,Big 12,2025,2.99
+Oklahoma State,Stillwater,Big 12,2026,2.44
+TCU,Fort Worth,Big 12,2003,6.97
+TCU,Fort Worth,Big 12,2004,7.42
+TCU,Fort Worth,Big 12,2005,7.31
+TCU,Fort Worth,Big 12,2006,6.53
+TCU,Fort Worth,Big 12,2007,7.03
+TCU,Fort Worth,Big 12,2008,6.63
+TCU,Fort Worth,Big 12,2009,5.97
+TCU,Fort Worth,Big 12,2010,6.98
+TCU,Fort Worth,Big 12,2011,5.99
+TCU,Fort Worth,Big 12,2012,6.01
+TCU,Fort Worth,Big 12,2013,5.29
+TCU,Fort Worth,Big 12,2014,5.64
+TCU,Fort Worth,Big 12,2015,5.79
+TCU,Fort Worth,Big 12,2016,5.48
+TCU,Fort Worth,Big 12,2017,6.55
+TCU,Fort Worth,Big 12,2018,6.21
+TCU,Fort Worth,Big 12,2019,7.04
+TCU,Fort Worth,Big 12,2020,8.97
+TCU,Fort Worth,Big 12,2021,10.62
+TCU,Fort Worth,Big 12,2022,9.61
+TCU,Fort Worth,Big 12,2023,8.95
+TCU,Fort Worth,Big 12,2024,8.39
+TCU,Fort Worth,Big 12,2025,7.55
+TCU,Fort Worth,Big 12,2026,7.14
+Texas Tech,Lubbock,Big 12,2003,6.82
+Texas Tech,Lubbock,Big 12,2004,6.72
+Texas Tech,Lubbock,Big 12,2005,6.25
+Texas Tech,Lubbock,Big 12,2006,6.17
+Texas Tech,Lubbock,Big 12,2007,5.58
+Texas Tech,Lubbock,Big 12,2008,5.82
+Texas Tech,Lubbock,Big 12,2009,5.71
+Texas Tech,Lubbock,Big 12,2010,5.3
+Texas Tech,Lubbock,Big 12,2011,6.19
+Texas Tech,Lubbock,Big 12,2012,5.54
+Texas Tech,Lubbock,Big 12,2013,5.48
+Texas Tech,Lubbock,Big 12,2014,5.73
+Texas Tech,Lubbock,Big 12,2015,5.3
+Texas Tech,Lubbock,Big 12,2016,6.05
+Texas Tech,Lubbock,Big 12,2017,5.03
+Texas Tech,Lubbock,Big 12,2018,5.82
+Texas Tech,Lubbock,Big 12,2019,5.39
+Texas Tech,Lubbock,Big 12,2020,8.93
+Texas Tech,Lubbock,Big 12,2021,9.71
+Texas Tech,Lubbock,Big 12,2022,8.65
+Texas Tech,Lubbock,Big 12,2023,8.39
+Texas Tech,Lubbock,Big 12,2024,7.53
+Texas Tech,Lubbock,Big 12,2025,7.51
+Texas Tech,Lubbock,Big 12,2026,7.13
+West Virginia,Morgantown,Big 12,2003,1.93
+West Virginia,Morgantown,Big 12,2004,2.02
+West Virginia,Morgantown,Big 12,2005,1.84
+West Virginia,Morgantown,Big 12,2006,1.87
+West Virginia,Morgantown,Big 12,2007,1.91
+West Virginia,Morgantown,Big 12,2008,1.94
+West Virginia,Morgantown,Big 12,2009,1.74
+West Virginia,Morgantown,Big 12,2010,1.78
+West Virginia,Morgantown,Big 12,2011,1.81
+West Virginia,Morgantown,Big 12,2012,1.82
+West Virginia,Morgantown,Big 12,2013,1.87
+West Virginia,Morgantown,Big 12,2014,1.65
+West Virginia,Morgantown,Big 12,2015,1.97
+West Virginia,Morgantown,Big 12,2016,1.68
+West Virginia,Morgantown,Big 12,2017,1.92
+West Virginia,Morgantown,Big 12,2018,2.05
+West Virginia,Morgantown,Big 12,2019,2.12
+West Virginia,Morgantown,Big 12,2020,2.59
+West Virginia,Morgantown,Big 12,2021,2.77
+West Virginia,Morgantown,Big 12,2022,2.56
+West Virginia,Morgantown,Big 12,2023,2.53
+West Virginia,Morgantown,Big 12,2024,2.2
+West Virginia,Morgantown,Big 12,2025,2.17
+West Virginia,Morgantown,Big 12,2026,1.88
+Arizona,Tucson,Big 12,2003,6.63
+Arizona,Tucson,Big 12,2004,6.84
+Arizona,Tucson,Big 12,2005,6.25
+Arizona,Tucson,Big 12,2006,6.78
+Arizona,Tucson,Big 12,2007,5.98
+Arizona,Tucson,Big 12,2008,6.26
+Arizona,Tucson,Big 12,2009,5.54
+Arizona,Tucson,Big 12,2010,5.91
+Arizona,Tucson,Big 12,2011,6.04
+Arizona,Tucson,Big 12,2012,5.76
+Arizona,Tucson,Big 12,2013,5.94
+Arizona,Tucson,Big 12,2014,5.49
+Arizona,Tucson,Big 12,2015,5.7
+Arizona,Tucson,Big 12,2016,5.86
+Arizona,Tucson,Big 12,2017,6.39
+Arizona,Tucson,Big 12,2018,6.2
+Arizona,Tucson,Big 12,2019,6.36
+Arizona,Tucson,Big 12,2020,8.54
+Arizona,Tucson,Big 12,2021,9.89
+Arizona,Tucson,Big 12,2022,7.99
+Arizona,Tucson,Big 12,2023,8.14
+Arizona,Tucson,Big 12,2024,7.89
+Arizona,Tucson,Big 12,2025,7.4
+Arizona,Tucson,Big 12,2026,6.25
+Arizona State,Tempe,Big 12,2003,3.83
+Arizona State,Tempe,Big 12,2004,3.49
+Arizona State,Tempe,Big 12,2005,3.28
+Arizona State,Tempe,Big 12,2006,3.64
+Arizona State,Tempe,Big 12,2007,3.49
+Arizona State,Tempe,Big 12,2008,2.93
+Arizona State,Tempe,Big 12,2009,2.72
+Arizona State,Tempe,Big 12,2010,2.95
+Arizona State,Tempe,Big 12,2011,3.26
+Arizona State,Tempe,Big 12,2012,3.2
+Arizona State,Tempe,Big 12,2013,3.05
+Arizona State,Tempe,Big 12,2014,3.1
+Arizona State,Tempe,Big 12,2015,3.01
+Arizona State,Tempe,Big 12,2016,3.37
+Arizona State,Tempe,Big 12,2017,3.37
+Arizona State,Tempe,Big 12,2018,3.06
+Arizona State,Tempe,Big 12,2019,3.31
+Arizona State,Tempe,Big 12,2020,4.57
+Arizona State,Tempe,Big 12,2021,5.26
+Arizona State,Tempe,Big 12,2022,4.6
+Arizona State,Tempe,Big 12,2023,4.5
+Arizona State,Tempe,Big 12,2024,4.36
+Arizona State,Tempe,Big 12,2025,3.85
+Arizona State,Tempe,Big 12,2026,3.87
+Colorado,Boulder,Big 12,2003,1.08
+Colorado,Boulder,Big 12,2004,0.93
+Colorado,Boulder,Big 12,2005,0.97
+Colorado,Boulder,Big 12,2006,0.98
+Colorado,Boulder,Big 12,2007,0.94
+Colorado,Boulder,Big 12,2008,0.82
+Colorado,Boulder,Big 12,2009,0.83
+Colorado,Boulder,Big 12,2010,1.07
+Colorado,Boulder,Big 12,2011,0.84
+Colorado,Boulder,Big 12,2012,0.92
+Colorado,Boulder,Big 12,2013,0.8
+Colorado,Boulder,Big 12,2014,0.64
+Colorado,Boulder,Big 12,2015,1.08
+Colorado,Boulder,Big 12,2016,0.81
+Colorado,Boulder,Big 12,2017,0.92
+Colorado,Boulder,Big 12,2018,0.84
+Colorado,Boulder,Big 12,2019,0.91
+Colorado,Boulder,Big 12,2020,1.29
+Colorado,Boulder,Big 12,2021,1.4
+Colorado,Boulder,Big 12,2022,1.42
+Colorado,Boulder,Big 12,2023,1.46
+Colorado,Boulder,Big 12,2024,1.18
+Colorado,Boulder,Big 12,2025,1.25
+Colorado,Boulder,Big 12,2026,0.99
+Utah,Salt Lake City,Big 12,2003,3.07
+Utah,Salt Lake City,Big 12,2004,2.85
+Utah,Salt Lake City,Big 12,2005,2.9
+Utah,Salt Lake City,Big 12,2006,2.85
+Utah,Salt Lake City,Big 12,2007,3.05
+Utah,Salt Lake City,Big 12,2008,2.9
+Utah,Salt Lake City,Big 12,2009,2.82
+Utah,Salt Lake City,Big 12,2010,2.63
+Utah,Salt Lake City,Big 12,2011,2.8
+Utah,Salt Lake City,Big 12,2012,2.76
+Utah,Salt Lake City,Big 12,2013,2.59
+Utah,Salt Lake City,Big 12,2014,2.41
+Utah,Salt Lake City,Big 12,2015,2.66
+Utah,Salt Lake City,Big 12,2016,2.42
+Utah,Salt Lake City,Big 12,2017,2.92
+Utah,Salt Lake City,Big 12,2018,2.44
+Utah,Salt Lake City,Big 12,2019,3.06
+Utah,Salt Lake City,Big 12,2020,3.74
+Utah,Salt Lake City,Big 12,2021,4.23
+Utah,Salt Lake City,Big 12,2022,4.03
+Utah,Salt Lake City,Big 12,2023,3.99
+Utah,Salt Lake City,Big 12,2024,3.54
+Utah,Salt Lake City,Big 12,2025,3.55
+Utah,Salt Lake City,Big 12,2026,3.35
+Alabama,Tuscaloosa,SEC,2003,10.06
+Alabama,Tuscaloosa,SEC,2004,8.8
+Alabama,Tuscaloosa,SEC,2005,9.96
+Alabama,Tuscaloosa,SEC,2006,8.75
+Alabama,Tuscaloosa,SEC,2007,10.16
+Alabama,Tuscaloosa,SEC,2008,8.54
+Alabama,Tuscaloosa,SEC,2009,7.37
+Alabama,Tuscaloosa,SEC,2010,9.1
+Alabama,Tuscaloosa,SEC,2011,8.23
+Alabama,Tuscaloosa,SEC,2012,7.59
+Alabama,Tuscaloosa,SEC,2013,7.49
+Alabama,Tuscaloosa,SEC,2014,8.89
+Alabama,Tuscaloosa,SEC,2015,8.16
+Alabama,Tuscaloosa,SEC,2016,8.25
+Alabama,Tuscaloosa,SEC,2017,8.75
+Alabama,Tuscaloosa,SEC,2018,9.11
+Alabama,Tuscaloosa,SEC,2019,8.35
+Alabama,Tuscaloosa,SEC,2020,12.5
+Alabama,Tuscaloosa,SEC,2021,13.35
+Alabama,Tuscaloosa,SEC,2022,13.0
+Alabama,Tuscaloosa,SEC,2023,12.31
+Alabama,Tuscaloosa,SEC,2024,13.36
+Alabama,Tuscaloosa,SEC,2025,11.46
+Alabama,Tuscaloosa,SEC,2026,11.63
+Arkansas,Fayetteville,SEC,2003,2.95
+Arkansas,Fayetteville,SEC,2004,3.14
+Arkansas,Fayetteville,SEC,2005,2.95
+Arkansas,Fayetteville,SEC,2006,3.14
+Arkansas,Fayetteville,SEC,2007,2.45
+Arkansas,Fayetteville,SEC,2008,2.53
+Arkansas,Fayetteville,SEC,2009,2.42
+Arkansas,Fayetteville,SEC,2010,2.84
+Arkansas,Fayetteville,SEC,2011,2.49
+Arkansas,Fayetteville,SEC,2012,2.65
+Arkansas,Fayetteville,SEC,2013,2.61
+Arkansas,Fayetteville,SEC,2014,2.46
+Arkansas,Fayetteville,SEC,2015,2.78
+Arkansas,Fayetteville,SEC,2016,2.63
+Arkansas,Fayetteville,SEC,2017,2.91
+Arkansas,Fayetteville,SEC,2018,2.67
+Arkansas,Fayetteville,SEC,2019,2.94
+Arkansas,Fayetteville,SEC,2020,4.02
+Arkansas,Fayetteville,SEC,2021,4.07
+Arkansas,Fayetteville,SEC,2022,4.14
+Arkansas,Fayetteville,SEC,2023,3.81
+Arkansas,Fayetteville,SEC,2024,3.49
+Arkansas,Fayetteville,SEC,2025,3.84
+Arkansas,Fayetteville,SEC,2026,3.31
+Auburn,Auburn,SEC,2003,3.74
+Auburn,Auburn,SEC,2004,3.84
+Auburn,Auburn,SEC,2005,3.54
+Auburn,Auburn,SEC,2006,3.23
+Auburn,Auburn,SEC,2007,3.6
+Auburn,Auburn,SEC,2008,3.03
+Auburn,Auburn,SEC,2009,2.93
+Auburn,Auburn,SEC,2010,3.21
+Auburn,Auburn,SEC,2011,3.23
+Auburn,Auburn,SEC,2012,2.88
+Auburn,Auburn,SEC,2013,2.88
+Auburn,Auburn,SEC,2014,2.77
+Auburn,Auburn,SEC,2015,3.14
+Auburn,Auburn,SEC,2016,3.11
+Auburn,Auburn,SEC,2017,3.1
+Auburn,Auburn,SEC,2018,3.24
+Auburn,Auburn,SEC,2019,3.55
+Auburn,Auburn,SEC,2020,4.53
+Auburn,Auburn,SEC,2021,5.05
+Auburn,Auburn,SEC,2022,4.72
+Auburn,Auburn,SEC,2023,4.84
+Auburn,Auburn,SEC,2024,4.35
+Auburn,Auburn,SEC,2025,4.21
+Auburn,Auburn,SEC,2026,3.74
+Florida,Gainesville,SEC,2003,4.53
+Florida,Gainesville,SEC,2004,4.8
+Florida,Gainesville,SEC,2005,4.9
+Florida,Gainesville,SEC,2006,5.15
+Florida,Gainesville,SEC,2007,3.98
+Florida,Gainesville,SEC,2008,4.83
+Florida,Gainesville,SEC,2009,4.9
+Florida,Gainesville,SEC,2010,4.17
+Florida,Gainesville,SEC,2011,3.95
+Florida,Gainesville,SEC,2012,5.27
+Florida,Gainesville,SEC,2013,4.24
+Florida,Gainesville,SEC,2014,3.96
+Florida,Gainesville,SEC,2015,4.39
+Florida,Gainesville,SEC,2016,4.75
+Florida,Gainesville,SEC,2017,4.33
+Florida,Gainesville,SEC,2018,5.06
+Florida,Gainesville,SEC,2019,4.25
+Florida,Gainesville,SEC,2020,6.46
+Florida,Gainesville,SEC,2021,7.26
+Florida,Gainesville,SEC,2022,7.29
+Florida,Gainesville,SEC,2023,6.41
+Florida,Gainesville,SEC,2024,6.02
+Florida,Gainesville,SEC,2025,5.55
+Florida,Gainesville,SEC,2026,4.52
+Georgia,Athens,SEC,2003,4.36
+Georgia,Athens,SEC,2004,5.04
+Georgia,Athens,SEC,2005,4.32
+Georgia,Athens,SEC,2006,4.5
+Georgia,Athens,SEC,2007,4.14
+Georgia,Athens,SEC,2008,4.23
+Georgia,Athens,SEC,2009,4.02
+Georgia,Athens,SEC,2010,3.81
+Georgia,Athens,SEC,2011,4.08
+Georgia,Athens,SEC,2012,3.68
+Georgia,Athens,SEC,2013,4.09
+Georgia,Athens,SEC,2014,3.94
+Georgia,Athens,SEC,2015,3.7
+Georgia,Athens,SEC,2016,3.8
+Georgia,Athens,SEC,2017,4.43
+Georgia,Athens,SEC,2018,4.48
+Georgia,Athens,SEC,2019,4.17
+Georgia,Athens,SEC,2020,5.8
+Georgia,Athens,SEC,2021,6.44
+Georgia,Athens,SEC,2022,6.54
+Georgia,Athens,SEC,2023,6.03
+Georgia,Athens,SEC,2024,5.58
+Georgia,Athens,SEC,2025,4.84
+Georgia,Athens,SEC,2026,4.44
+Kentucky,Lexington,SEC,2003,5.81
+Kentucky,Lexington,SEC,2004,5.97
+Kentucky,Lexington,SEC,2005,4.44
+Kentucky,Lexington,SEC,2006,4.72
+Kentucky,Lexington,SEC,2007,5.38
+Kentucky,Lexington,SEC,2008,5.01
+Kentucky,Lexington,SEC,2009,4.69
+Kentucky,Lexington,SEC,2010,5.15
+Kentucky,Lexington,SEC,2011,4.4
+Kentucky,Lexington,SEC,2012,5.06
+Kentucky,Lexington,SEC,2013,4.53
+Kentucky,Lexington,SEC,2014,5.14
+Kentucky,Lexington,SEC,2015,4.72
+Kentucky,Lexington,SEC,2016,5.22
+Kentucky,Lexington,SEC,2017,4.85
+Kentucky,Lexington,SEC,2018,4.79
+Kentucky,Lexington,SEC,2019,5.03
+Kentucky,Lexington,SEC,2020,7.17
+Kentucky,Lexington,SEC,2021,7.47
+Kentucky,Lexington,SEC,2022,7.9
+Kentucky,Lexington,SEC,2023,7.09
+Kentucky,Lexington,SEC,2024,5.88
+Kentucky,Lexington,SEC,2025,5.72
+Kentucky,Lexington,SEC,2026,5.4
+LSU,Baton Rouge,SEC,2003,22.39
+LSU,Baton Rouge,SEC,2004,23.91
+LSU,Baton Rouge,SEC,2005,23.0
+LSU,Baton Rouge,SEC,2006,23.49
+LSU,Baton Rouge,SEC,2007,21.52
+LSU,Baton Rouge,SEC,2008,23.59
+LSU,Baton Rouge,SEC,2009,20.83
+LSU,Baton Rouge,SEC,2010,20.3
+LSU,Baton Rouge,SEC,2011,21.79
+LSU,Baton Rouge,SEC,2012,19.3
+LSU,Baton Rouge,SEC,2013,21.72
+LSU,Baton Rouge,SEC,2014,22.22
+LSU,Baton Rouge,SEC,2015,22.26
+LSU,Baton Rouge,SEC,2016,20.13
+LSU,Baton Rouge,SEC,2017,21.1
+LSU,Baton Rouge,SEC,2018,23.16
+LSU,Baton Rouge,SEC,2019,22.51
+LSU,Baton Rouge,SEC,2020,33.19
+LSU,Baton Rouge,SEC,2021,36.81
+LSU,Baton Rouge,SEC,2022,34.51
+LSU,Baton Rouge,SEC,2023,33.29
+LSU,Baton Rouge,SEC,2024,27.84
+LSU,Baton Rouge,SEC,2025,26.23
+LSU,Baton Rouge,SEC,2026,26.04
+Mississippi State,Starkville,SEC,2003,4.43
+Mississippi State,Starkville,SEC,2004,3.72
+Mississippi State,Starkville,SEC,2005,3.83
+Mississippi State,Starkville,SEC,2006,3.94
+Mississippi State,Starkville,SEC,2007,3.74
+Mississippi State,Starkville,SEC,2008,3.17
+Mississippi State,Starkville,SEC,2009,3.51
+Mississippi State,Starkville,SEC,2010,3.47
+Mississippi State,Starkville,SEC,2011,3.43
+Mississippi State,Starkville,SEC,2012,3.22
+Mississippi State,Starkville,SEC,2013,3.34
+Mississippi State,Starkville,SEC,2014,2.83
+Mississippi State,Starkville,SEC,2015,3.26
+Mississippi State,Starkville,SEC,2016,3.43
+Mississippi State,Starkville,SEC,2017,3.63
+Mississippi State,Starkville,SEC,2018,3.9
+Mississippi State,Starkville,SEC,2019,3.65
+Mississippi State,Starkville,SEC,2020,5.32
+Mississippi State,Starkville,SEC,2021,5.72
+Mississippi State,Starkville,SEC,2022,5.15
+Mississippi State,Starkville,SEC,2023,5.2
+Mississippi State,Starkville,SEC,2024,4.94
+Mississippi State,Starkville,SEC,2025,4.87
+Mississippi State,Starkville,SEC,2026,4.18
+Missouri,Columbia,SEC,2003,4.58
+Missouri,Columbia,SEC,2004,4.74
+Missouri,Columbia,SEC,2005,4.41
+Missouri,Columbia,SEC,2006,3.87
+Missouri,Columbia,SEC,2007,4.05
+Missouri,Columbia,SEC,2008,4.36
+Missouri,Columbia,SEC,2009,4.07
+Missouri,Columbia,SEC,2010,4.16
+Missouri,Columbia,SEC,2011,4.26
+Missouri,Columbia,SEC,2012,3.96
+Missouri,Columbia,SEC,2013,3.87
+Missouri,Columbia,SEC,2014,3.73
+Missouri,Columbia,SEC,2015,3.99
+Missouri,Columbia,SEC,2016,3.98
+Missouri,Columbia,SEC,2017,4.24
+Missouri,Columbia,SEC,2018,4.13
+Missouri,Columbia,SEC,2019,4.29
+Missouri,Columbia,SEC,2020,5.3
+Missouri,Columbia,SEC,2021,6.5
+Missouri,Columbia,SEC,2022,5.94
+Missouri,Columbia,SEC,2023,5.63
+Missouri,Columbia,SEC,2024,5.38
+Missouri,Columbia,SEC,2025,5.01
+Missouri,Columbia,SEC,2026,4.98
+Ole Miss,Oxford,SEC,2003,2.05
+Ole Miss,Oxford,SEC,2004,1.95
+Ole Miss,Oxford,SEC,2005,1.83
+Ole Miss,Oxford,SEC,2006,1.66
+Ole Miss,Oxford,SEC,2007,1.88
+Ole Miss,Oxford,SEC,2008,2.07
+Ole Miss,Oxford,SEC,2009,1.67
+Ole Miss,Oxford,SEC,2010,1.92
+Ole Miss,Oxford,SEC,2011,1.71
+Ole Miss,Oxford,SEC,2012,1.64
+Ole Miss,Oxford,SEC,2013,1.88
+Ole Miss,Oxford,SEC,2014,1.76
+Ole Miss,Oxford,SEC,2015,1.67
+Ole Miss,Oxford,SEC,2016,1.83
+Ole Miss,Oxford,SEC,2017,1.71
+Ole Miss,Oxford,SEC,2018,1.98
+Ole Miss,Oxford,SEC,2019,2.09
+Ole Miss,Oxford,SEC,2020,2.51
+Ole Miss,Oxford,SEC,2021,3.07
+Ole Miss,Oxford,SEC,2022,2.71
+Ole Miss,Oxford,SEC,2023,2.61
+Ole Miss,Oxford,SEC,2024,2.53
+Ole Miss,Oxford,SEC,2025,2.31
+Ole Miss,Oxford,SEC,2026,1.94
+South Carolina,Columbia,SEC,2003,8.84
+South Carolina,Columbia,SEC,2004,8.64
+South Carolina,Columbia,SEC,2005,8.89
+South Carolina,Columbia,SEC,2006,8.98
+South Carolina,Columbia,SEC,2007,9.49
+South Carolina,Columbia,SEC,2008,9.0
+South Carolina,Columbia,SEC,2009,8.02
+South Carolina,Columbia,SEC,2010,8.09
+South Carolina,Columbia,SEC,2011,8.56
+South Carolina,Columbia,SEC,2012,7.68
+South Carolina,Columbia,SEC,2013,6.56
+South Carolina,Columbia,SEC,2014,7.28
+South Carolina,Columbia,SEC,2015,7.56
+South Carolina,Columbia,SEC,2016,8.09
+South Carolina,Columbia,SEC,2017,7.79
+South Carolina,Columbia,SEC,2018,7.86
+South Carolina,Columbia,SEC,2019,8.27
+South Carolina,Columbia,SEC,2020,11.09
+South Carolina,Columbia,SEC,2021,13.87
+South Carolina,Columbia,SEC,2022,12.71
+South Carolina,Columbia,SEC,2023,10.64
+South Carolina,Columbia,SEC,2024,10.81
+South Carolina,Columbia,SEC,2025,10.79
+South Carolina,Columbia,SEC,2026,9.81
+Tennessee,Knoxville,SEC,2003,7.6
+Tennessee,Knoxville,SEC,2004,7.38
+Tennessee,Knoxville,SEC,2005,6.95
+Tennessee,Knoxville,SEC,2006,6.6
+Tennessee,Knoxville,SEC,2007,7.09
+Tennessee,Knoxville,SEC,2008,7.06
+Tennessee,Knoxville,SEC,2009,7.11
+Tennessee,Knoxville,SEC,2010,7.07
+Tennessee,Knoxville,SEC,2011,6.9
+Tennessee,Knoxville,SEC,2012,5.75
+Tennessee,Knoxville,SEC,2013,5.74
+Tennessee,Knoxville,SEC,2014,6.69
+Tennessee,Knoxville,SEC,2015,6.94
+Tennessee,Knoxville,SEC,2016,6.3
+Tennessee,Knoxville,SEC,2017,6.45
+Tennessee,Knoxville,SEC,2018,7.02
+Tennessee,Knoxville,SEC,2019,6.46
+Tennessee,Knoxville,SEC,2020,9.43
+Tennessee,Knoxville,SEC,2021,11.1
+Tennessee,Knoxville,SEC,2022,10.13
+Tennessee,Knoxville,SEC,2023,9.93
+Tennessee,Knoxville,SEC,2024,8.5
+Tennessee,Knoxville,SEC,2025,8.85
+Tennessee,Knoxville,SEC,2026,8.78
+Texas,Austin,SEC,2003,3.35
+Texas,Austin,SEC,2004,3.59
+Texas,Austin,SEC,2005,3.14
+Texas,Austin,SEC,2006,3.15
+Texas,Austin,SEC,2007,3.44
+Texas,Austin,SEC,2008,3.23
+Texas,Austin,SEC,2009,3.06
+Texas,Austin,SEC,2010,3.16
+Texas,Austin,SEC,2011,2.8
+Texas,Austin,SEC,2012,3.02
+Texas,Austin,SEC,2013,3.26
+Texas,Austin,SEC,2014,3.08
+Texas,Austin,SEC,2015,3.22
+Texas,Austin,SEC,2016,3.18
+Texas,Austin,SEC,2017,3.51
+Texas,Austin,SEC,2018,2.93
+Texas,Austin,SEC,2019,3.12
+Texas,Austin,SEC,2020,4.74
+Texas,Austin,SEC,2021,5.46
+Texas,Austin,SEC,2022,4.94
+Texas,Austin,SEC,2023,4.37
+Texas,Austin,SEC,2024,4.2
+Texas,Austin,SEC,2025,3.97
+Texas,Austin,SEC,2026,4.07
+Texas A&M,College Station,SEC,2003,1.67
+Texas A&M,College Station,SEC,2004,1.6
+Texas A&M,College Station,SEC,2005,1.58
+Texas A&M,College Station,SEC,2006,1.25
+Texas A&M,College Station,SEC,2007,1.29
+Texas A&M,College Station,SEC,2008,1.39
+Texas A&M,College Station,SEC,2009,1.35
+Texas A&M,College Station,SEC,2010,1.49
+Texas A&M,College Station,SEC,2011,1.41
+Texas A&M,College Station,SEC,2012,1.34
+Texas A&M,College Station,SEC,2013,1.33
+Texas A&M,College Station,SEC,2014,1.25
+Texas A&M,College Station,SEC,2015,1.3
+Texas A&M,College Station,SEC,2016,1.28
+Texas A&M,College Station,SEC,2017,1.38
+Texas A&M,College Station,SEC,2018,1.28
+Texas A&M,College Station,SEC,2019,1.53
+Texas A&M,College Station,SEC,2020,1.92
+Texas A&M,College Station,SEC,2021,2.18
+Texas A&M,College Station,SEC,2022,1.98
+Texas A&M,College Station,SEC,2023,1.8
+Texas A&M,College Station,SEC,2024,1.8
+Texas A&M,College Station,SEC,2025,1.69
+Texas A&M,College Station,SEC,2026,1.55
+Vanderbilt,Nashville,SEC,2003,10.92
+Vanderbilt,Nashville,SEC,2004,9.75
+Vanderbilt,Nashville,SEC,2005,9.29
+Vanderbilt,Nashville,SEC,2006,9.97
+Vanderbilt,Nashville,SEC,2007,9.45
+Vanderbilt,Nashville,SEC,2008,10.45
+Vanderbilt,Nashville,SEC,2009,9.2
+Vanderbilt,Nashville,SEC,2010,8.59
+Vanderbilt,Nashville,SEC,2011,9.14
+Vanderbilt,Nashville,SEC,2012,8.98
+Vanderbilt,Nashville,SEC,2013,6.85
+Vanderbilt,Nashville,SEC,2014,8.6
+Vanderbilt,Nashville,SEC,2015,7.97
+Vanderbilt,Nashville,SEC,2016,9.0
+Vanderbilt,Nashville,SEC,2017,9.31
+Vanderbilt,Nashville,SEC,2018,9.67
+Vanderbilt,Nashville,SEC,2019,9.03
+Vanderbilt,Nashville,SEC,2020,14.1
+Vanderbilt,Nashville,SEC,2021,13.94
+Vanderbilt,Nashville,SEC,2022,12.37
+Vanderbilt,Nashville,SEC,2023,13.24
+Vanderbilt,Nashville,SEC,2024,11.59
+Vanderbilt,Nashville,SEC,2025,10.57
+Vanderbilt,Nashville,SEC,2026,10.96
+Oklahoma,Norman,SEC,2003,2.36
+Oklahoma,Norman,SEC,2004,2.52
+Oklahoma,Norman,SEC,2005,2.39
+Oklahoma,Norman,SEC,2006,2.24
+Oklahoma,Norman,SEC,2007,2.11
+Oklahoma,Norman,SEC,2008,1.96
+Oklahoma,Norman,SEC,2009,2.53
+Oklahoma,Norman,SEC,2010,2.4
+Oklahoma,Norman,SEC,2011,2.25
+Oklahoma,Norman,SEC,2012,2.21
+Oklahoma,Norman,SEC,2013,2.21
+Oklahoma,Norman,SEC,2014,2.13
+Oklahoma,Norman,SEC,2015,2.34
+Oklahoma,Norman,SEC,2016,2.21
+Oklahoma,Norman,SEC,2017,2.41
+Oklahoma,Norman,SEC,2018,2.09
+Oklahoma,Norman,SEC,2019,2.24
+Oklahoma,Norman,SEC,2020,3.22
+Oklahoma,Norman,SEC,2021,3.79
+Oklahoma,Norman,SEC,2022,3.57
+Oklahoma,Norman,SEC,2023,3.1
+Oklahoma,Norman,SEC,2024,2.96
+Oklahoma,Norman,SEC,2025,2.72
+Oklahoma,Norman,SEC,2026,2.57

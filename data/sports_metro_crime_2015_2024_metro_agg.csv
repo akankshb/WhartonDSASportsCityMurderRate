@@ -1,0 +1,388 @@
+Metro,Year,Included_Cities,Number_of_Cities_Reported,Population_Sum,Violent Crime,Murder,Rape,Robbery,Aggravated Assault,Property Crime,Burglary,Larceny Theft,Motor Vehicle Theft,Arson,Violent_Crime_Rate_per_100k,Property_Crime_Rate_per_100k,Coverage_Note
+Atlanta,2015,"Atlanta, GA",1,464710,5203,94,,1995,2944,25556,4781,16493,4282,50,1119.62,5499.34,Complete for mapped city components
+Atlanta,2016,"Atlanta, GA",1,472579,5121,111,,2070,2804,24804,4411,16400,3993,50,1083.63,5248.65,Complete for mapped city components
+Atlanta,2017,"Atlanta, GA",1,481343,4504,79,282,1413,2730,22991,3390,16304,3297,74,935.72,4776.43,Complete for mapped city components
+Atlanta,2018,"Atlanta, GA",1,496106,3814,88,245,1099,2382,23091,3082,16701,3308,90,768.79,4654.45,Complete for mapped city components
+Atlanta,2021,"Atlanta, GA",1,521274,4609,159,150,835,3465,19154,1689,14272,3193,13,884.18,3674.46,Complete for mapped city components
+Atlanta,2022,"Atlanta, GA",1,495707,4167,168,157,711,3131,18579,1839,13437,3303,18,840.62,3747.98,Complete for mapped city components
+Atlanta,2023,"Atlanta, GA",1,500212,3538,132,116,602,2688,19471,1735,12506,5230,46,707.3,3892.55,Complete for mapped city components
+Austin,2015,"Austin, TX",1,938728,3497,23,487,929,2058,35399,5000,28068,2331,91,372.53,3770.95,Complete for mapped city components
+Austin,2016,"Austin, TX",1,956911,3903,39,751,1048,2065,33545,5232,26125,2188,74,407.87,3505.55,Complete for mapped city components
+Austin,2017,"Austin, TX",1,971949,4032,25,834,987,2186,31001,4380,24542,2079,76,414.84,3189.57,Complete for mapped city components
+Austin,2018,"Austin, TX",1,973344,3720,32,787,1021,1880,33655,4549,26568,2538,56,382.19,3457.67,Complete for mapped city components
+Austin,2019,"Austin, TX",1,986062,3953,32,534,971,2416,36588,4344,29216,3028,103,400.89,3710.52,Complete for mapped city components
+Austin,2020,"Austin, TX",1,1000276,4671,44,478,1101,3048,36322,4774,27481,4067,134,466.97,3631.2,Complete for mapped city components
+Austin,2021,"Austin, TX",1,1016721,4996,79,557,991,3369,33989,4758,24662,4569,186,491.38,3343.0,Complete for mapped city components
+Austin,2022,"Austin, TX",1,965234,5215,69,528,939,3679,34650,4816,24481,5353,149,540.28,3589.8,Complete for mapped city components
+Austin,2023,"Austin, TX",1,978816,4885,66,492,913,3414,32356,4581,20802,6973,147,499.07,3305.63,Complete for mapped city components
+Austin,2024,"Austin, TX",1,984613,4597,65,666,841,3025,31920,4383,21643,5894,151,466.88,3241.88,Complete for mapped city components
+Baltimore,2015,"Baltimore, MD",1,621252,9542,344,287,4313,4598,30941,7757,17658,5526,260,1535.93,4980.43,Complete for mapped city components
+Baltimore,2016,"Baltimore, MD",1,618385,11010,318,299,5236,5157,29547,7375,16855,5317,259,1780.44,4778.09,Complete for mapped city components
+Baltimore,2017,"Baltimore, MD",1,613217,12430,342,382,5879,5827,30220,8041,17008,5171,261,2027.01,4928.11,Complete for mapped city components
+Baltimore,2018,"Baltimore, MD",1,605436,11100,309,361,5066,5364,27217,6048,16794,4375,138,1833.39,4495.44,Complete for mapped city components
+Baltimore,2019,"Baltimore, MD",1,597239,11101,348,324,4856,5573,25748,5414,16395,3939,108,1858.72,4311.17,Complete for mapped city components
+Baltimore,2022,"Baltimore, MD",1,570546,8861,287,259,3172,5143,18699,3333,11940,3426,76,1553.07,3277.39,Complete for mapped city components
+Baltimore,2023,"Baltimore, MD",1,565192,8887,233,255,3266,5133,24178,2518,11234,10426,141,1572.39,4277.84,Complete for mapped city components
+Baltimore,2024,"Baltimore, MD",1,566632,9101,197,326,3248,5330,23555,2968,14630,5957,116,1606.16,4157.02,Complete for mapped city components
+Boston,2015,"Boston, MA",1,665258,4702,38,240,1551,2873,15408,2357,11772,1279,,706.79,2316.09,Complete for mapped city components
+Boston,2016,"Boston, MA",1,673880,4767,49,278,1530,2910,14489,1837,11429,1223,,707.4,2150.09,Complete for mapped city components
+Boston,2017,"Boston, MA",1,682903,4570,57,290,1404,2819,14266,2109,10952,1205,,669.2,2089.02,Complete for mapped city components
+Boston,2018,"Boston, MA",1,694673,4324,56,278,1172,2818,14007,1853,11000,1154,,622.45,2016.34,Complete for mapped city components
+Boston,2020,"Boston, MA",1,697323,4354,58,184,919,3193,13015,1698,10037,1280,34,624.39,1866.42,Complete for mapped city components
+Boston,2021,"Boston, MA",1,704758,3885,36,223,771,2855,11614,1342,9118,1154,26,551.25,1647.94,Complete for mapped city components
+Boston,2022,"Boston, MA",1,638925,3955,44,176,770,2965,11514,1213,9116,1185,32,619.01,1802.09,Complete for mapped city components
+Boston,2023,"Boston, MA",1,642823,4030,34,209,878,2909,12499,1163,10216,1120,27,626.92,1944.39,Complete for mapped city components
+Boston,2024,"Boston, MA",1,659049,4138,24,169,833,3112,13324,1171,11121,1032,20,627.87,2021.7,Complete for mapped city components
+Buffalo,2015,"Buffalo, NY",1,258096,2887,41,173,1033,1640,11176,2777,7421,978,173,1118.58,4330.17,Complete for mapped city components
+Buffalo,2016,"Buffalo, NY",1,257446,2857,44,153,1049,1611,10599,2631,7133,835,228,1109.75,4116.98,Complete for mapped city components
+Buffalo,2017,"Buffalo, NY",1,256169,2611,40,142,857,1572,9827,2356,6638,833,192,1019.25,3836.14,Complete for mapped city components
+Buffalo,2018,"Buffalo, NY",1,258219,2692,57,167,907,1561,9852,2271,6707,874,157,1042.53,3815.37,Complete for mapped city components
+Buffalo,2019,"Buffalo, NY",1,255686,2533,47,121,802,1563,8298,1610,6009,679,143,990.67,3245.39,Complete for mapped city components
+Buffalo,2020,"Buffalo, NY",1,254627,2592,61,53,680,1798,7844,1146,5508,1190,121,1017.96,3080.58,Complete for mapped city components
+Buffalo,2021,"Buffalo, NY",1,253809,2394,65,127,606,1596,7755,1044,5201,1510,121,943.23,3055.45,Complete for mapped city components
+Buffalo,2022,"Buffalo, NY",1,275710,2030,67,110,533,1320,8852,1324,6005,1523,77,736.28,3210.62,Complete for mapped city components
+Buffalo,2023,"Buffalo, NY",1,275922,2081,39,117,500,1425,11545,1349,6372,3824,104,754.2,4184.15,Complete for mapped city components
+Buffalo,2024,"Buffalo, NY",1,273728,1933,34,119,432,1348,10428,1199,7044,2185,91,706.18,3809.62,Complete for mapped city components
+Charlotte,2015,"Charlotte-Mecklenburg, NC",1,877817,5948,61,,1947,3724,33075,6755,24091,2229,216,677.59,3767.87,Complete for mapped city components
+Charlotte,2016,"Charlotte-Mecklenburg, NC",1,896379,6560,67,,2121,4153,36732,6691,27280,2761,220,731.83,4097.82,Complete for mapped city components
+Charlotte,2017,"Charlotte-Mecklenburg, NC",1,914609,,86,,2017,3965,34894,6416,25856,2622,194,,3815.18,Complete for mapped city components
+Charlotte,2018,"Charlotte-Mecklenburg, NC",1,931235,,59,,1761,4408,34881,5670,26186,3025,157,,3745.67,Complete for mapped city components
+Charlotte,2019,"Charlotte-Mecklenburg, NC",1,944260,6982,103,317,1975,4587,37070,5426,28304,3340,151,739.41,3925.83,Complete for mapped city components
+Charlotte,2020,"Charlotte-Mecklenburg, NC",1,958358,8015,119,245,1763,5888,31053,4312,23757,2984,158,836.33,3240.23,Complete for mapped city components
+Charlotte,2021,"Charlotte-Mecklenburg, NC",1,956282,7480,98,315,1345,5722,30013,3704,23173,3136,131,782.2,3138.51,Complete for mapped city components
+Charlotte,2022,"Charlotte-Mecklenburg, NC",1,955466,7132,108,271,1381,5372,32246,4095,24356,3795,148,746.44,3374.9,Complete for mapped city components
+Charlotte,2023,"Charlotte-Mecklenburg, NC",1,979304,7111,92,249,1257,5513,37565,4211,25248,8106,142,726.13,3835.89,Complete for mapped city components
+Charlotte,2024,"Charlotte-Mecklenburg, NC",1,1003130,7355,109,250,1308,5688,37169,4284,25261,7624,164,733.21,3705.3,Complete for mapped city components
+Chicago,2015,"Chicago, IL",1,2728695,24663,478,1432,9649,13104,80395,13151,57022,10222,534,903.84,2946.28,Complete for mapped city components
+Chicago,2016,"Chicago, IL",1,2725153,30126,765,1589,11957,15815,86960,14258,61229,11473,590,1105.48,3191.01,Complete for mapped city components
+Chicago,2017,"Chicago, IL",1,2706171,29737,653,1762,11887,15435,88324,12912,63834,11578,514,1098.86,3263.8,Complete for mapped city components
+Chicago,2018,"Chicago, IL",1,2719151,27357,563,1798,9684,15312,86513,11686,64695,10132,438,1006.09,3181.62,Complete for mapped city components
+Chicago,2019,"Chicago, IL",1,2707064,25532,492,1761,7983,15296,80742,9578,62083,9081,416,943.16,2982.64,Complete for mapped city components
+Chicago,2020,"Chicago, IL",1,2693598,26583,771,1346,7869,16597,,8643,,10053,636,986.9,,Complete for mapped city components
+Chicago,2022,"Chicago, IL",1,2652124,14321,604,1374,8948,3395,83090,7626,54273,21191,152,539.98,3132.96,Complete for mapped city components
+Chicago,2023,"Chicago, IL",1,2628298,15948,499,1244,10837,3368,90201,7361,56378,26462,168,606.78,3431.92,Complete for mapped city components
+Chicago,2024,"Chicago, IL",1,2638698,14245,461,1551,8847,3386,91626,7778,61185,22663,462,539.85,3472.39,Complete for mapped city components
+Cincinnati,2015,"Cincinnati, OH",1,298478,2761,66,236,1263,1196,16446,4413,10873,1160,440,925.03,5509.95,Complete for mapped city components
+Cincinnati,2016,"Cincinnati, OH",1,298880,2720,57,249,1278,1136,15382,3929,10216,1237,485,910.06,5146.55,Complete for mapped city components
+Cincinnati,2017,"Cincinnati, OH",1,299116,2833,70,292,1196,1275,15105,3448,10172,1485,,947.12,5049.88,Complete for mapped city components
+Cincinnati,2018,"Cincinnati, OH",1,301952,2535,57,293,897,1288,13710,2978,9422,1310,,839.54,4540.46,Complete for mapped city components
+Cincinnati,2019,"Cincinnati, OH",1,303335,2562,64,280,872,1346,13051,2765,8935,1351,,844.61,4302.5,Complete for mapped city components
+Cincinnati,2020,"Cincinnati, OH",1,304724,2721,92,215,750,1664,11224,2322,7396,1506,,892.94,3683.33,Complete for mapped city components
+Cincinnati,2021,"Cincinnati, OH",1,305308,2479,90,204,625,1560,10030,1752,6811,1467,0,811.97,3285.21,Complete for mapped city components
+Cincinnati,2022,"Cincinnati, OH",1,307761,2591,73,259,640,1619,11543,1877,7655,2011,1,841.89,3750.64,Complete for mapped city components
+Cincinnati,2023,"Cincinnati, OH",1,309484,2253,68,221,645,1319,13087,1910,7478,3699,0,727.99,4228.65,Complete for mapped city components
+Cincinnati,2024,"Cincinnati, OH",1,311599,2635,68,178,722,1667,11932,1709,7463,2760,0,845.64,3829.28,Complete for mapped city components
+Cleveland,2016,"Cleveland, OH",1,386227,6299,135,488,2980,2696,20533,6333,10001,4199,315,1630.91,5316.3,Complete for mapped city components
+Cleveland,2017,"Cleveland, OH",1,385351,5999,107,497,2697,2698,18944,5853,9696,3395,253,1556.76,4916.04,Complete for mapped city components
+Cleveland,2018,"Cleveland, OH",1,384666,5576,86,461,1772,3257,16970,4658,9342,2970,165,1449.57,4411.62,Complete for mapped city components
+Cleveland,2019,"Cleveland, OH",1,381829,5791,92,479,1895,3325,17057,4311,9968,2778,157,1516.65,4467.18,Complete for mapped city components
+Cleveland,2020,"Cleveland, OH",1,379121,6281,160,393,1593,4135,15433,3692,8800,2941,168,1656.73,4070.73,Complete for mapped city components
+Cleveland,2021,"Cleveland, OH",1,379313,6316,165,444,1325,4382,14230,2997,8300,2933,153,1665.12,3751.52,Complete for mapped city components
+Cleveland,2022,"Cleveland, OH",1,363764,5870,145,453,1549,3723,15704,3004,8728,3972,124,1613.68,4317.08,Complete for mapped city components
+Cleveland,2023,"Cleveland, OH",1,358146,6100,139,428,1605,3928,17236,3203,8865,5168,175,1703.22,4812.56,Complete for mapped city components
+Cleveland,2024,"Cleveland, OH",1,362762,5663,109,511,1412,3631,16057,3121,8777,4159,190,1561.08,4426.32,Complete for mapped city components
+Columbus,2015,"Columbus, OH",1,847745,4631,77,806,2240,1508,33353,7219,23021,3113,405,546.27,3934.32,Complete for mapped city components
+Columbus,2016,"Columbus, OH",1,862515,4500,91,867,2144,1398,35106,7756,23800,3550,405,521.73,4070.19,Complete for mapped city components
+Columbus,2017,"Columbus, OH",1,872205,4478,142,919,1963,1454,34408,7111,23121,4176,379,513.41,3944.94,Complete for mapped city components
+Columbus,2018,"Columbus, OH",1,892576,4416,99,820,1922,1575,31512,6271,21323,3918,,494.75,3530.46,Complete for mapped city components
+Columbus,2019,"Columbus, OH",1,906120,4561,81,882,1810,1788,29974,5809,20606,3559,,503.35,3307.95,Complete for mapped city components
+Columbus,2020,"Columbus, OH",1,911383,5064,174,816,1796,2278,28530,5551,19874,3105,,555.64,3130.41,Complete for mapped city components
+Columbus,2021,"Columbus, OH",1,916001,5382,203,779,1997,2403,29589,4844,20407,4338,12,587.55,3230.24,Complete for mapped city components
+Columbus,2022,"Columbus, OH",1,907196,4082,127,1005,1275,1675,31609,4288,20028,7293,14,449.96,3484.25,Complete for mapped city components
+Columbus,2023,"Columbus, OH",1,908834,3500,95,1048,1068,1289,24575,3746,14114,6715,19,385.11,2704.01,Complete for mapped city components
+Columbus,2024,"Columbus, OH",1,915447,3981,112,1137,803,1929,24290,3703,15618,4969,17,434.87,2653.35,Complete for mapped city components
+Dallas–Fort Worth,2015,"Dallas, TX; Fort Worth, TX",2,2131708,13397,192,1298,5158,6749,74543,17126,47565,9852,491,628.46,3496.87,Complete for mapped city components
+Dallas–Fort Worth,2016,"Dallas, TX; Fort Worth, TX",2,2172788,14554,237,1266,5769,7282,73034,16264,46792,9978,509,669.83,3361.3,Complete for mapped city components
+Dallas–Fort Worth,2017,"Dallas, TX; Fort Worth, TX",2,2211620,15260,237,1400,5663,7960,70706,14990,45097,10619,502,689.99,3197.02,Complete for mapped city components
+Dallas–Fort Worth,2018,"Dallas, TX; Fort Worth, TX",2,2256221,14904,213,1310,5103,8278,69699,13569,43498,12632,335,660.57,3089.19,Complete for mapped city components
+Dallas–Fort Worth,2019,"Dallas, TX; Fort Worth, TX",2,2278532,15832,267,1267,5372,8926,69884,13179,43113,13592,229,694.83,3067.06,Complete for mapped city components
+Dallas–Fort Worth,2020,"Dallas, TX; Fort Worth, TX",2,2292537,16543,346,1015,4159,11023,72379,13327,45143,13909,321,721.6,3157.16,Complete for mapped city components
+Dallas–Fort Worth,2021,"Dallas, TX; Fort Worth, TX",2,2297047,16425,330,1135,3138,11822,70996,10460,45063,15473,347,715.05,3090.75,Complete for mapped city components
+Dallas–Fort Worth,2022,"Dallas, TX; Fort Worth, TX",2,2234726,14774,257,1083,2823,10611,75026,10780,47317,16929,298,661.11,3357.28,Complete for mapped city components
+Dallas–Fort Worth,2023,"Dallas, TX; Fort Worth, TX",2,2278711,13532,327,1153,2752,9300,78357,9948,44924,23485,254,593.84,3438.65,Complete for mapped city components
+Dallas–Fort Worth,2024,"Dallas, TX; Fort Worth, TX",2,2318978,13270,254,1026,2951,9039,71225,9570,41991,19664,279,572.23,3071.4,Complete for mapped city components
+Denver,2015,"Denver, CO",1,682418,4599,53,548,1230,2768,24089,4762,14962,4365,112,673.93,3529.95,Complete for mapped city components
+Denver,2016,"Denver, CO",1,699259,4597,57,567,1160,2813,25101,4675,15638,4788,94,657.41,3589.66,Complete for mapped city components
+Denver,2017,"Denver, CO",1,706616,4774,59,699,1232,2784,25912,4331,16021,5560,129,675.61,3667.06,Complete for mapped city components
+Denver,2018,"Denver, CO",1,720745,5262,65,717,1211,3269,26464,3982,17207,5275,116,730.08,3671.76,Complete for mapped city components
+Denver,2019,"Denver, CO",1,728941,5459,67,713,1205,3474,27288,3967,18027,5294,107,748.89,3743.51,Complete for mapped city components
+Denver,2020,"Denver, CO",1,737709,6329,97,670,1218,4344,34294,5223,20662,8409,160,857.93,4648.72,Complete for mapped city components
+Denver,2021,"Denver, CO",1,740209,6897,100,742,1326,4729,42781,5839,24214,12728,194,931.76,5779.58,Complete for mapped city components
+Denver,2022,"Denver, CO",1,705264,7545,90,756,1301,5398,45336,5171,24964,15201,195,1069.81,6428.23,Complete for mapped city components
+Denver,2023,"Denver, CO",1,712222,7277,85,664,1252,5276,40957,5106,23394,12457,133,1021.73,5750.59,Complete for mapped city components
+Denver,2024,"Denver, CO",1,722031,7170,71,676,1272,5151,34380,5112,20373,8895,133,993.03,4761.57,Complete for mapped city components
+Detroit,2015,"Detroit, MI",1,673225,11846,295,530,3457,7564,27559,7820,14523,5216,842,1759.59,4093.58,Complete for mapped city components
+Detroit,2016,"Detroit, MI",1,669673,13705,303,579,2941,9882,31630,8787,13938,8905,554,2046.52,4723.2,Complete for mapped city components
+Detroit,2017,"Detroit, MI",1,670792,13796,267,697,2639,10193,30458,8258,14045,8155,869,2056.67,4540.6,Complete for mapped city components
+Detroit,2018,"Detroit, MI",1,671275,13478,261,988,2309,9920,28897,7440,15003,6454,853,2007.82,4304.79,Complete for mapped city components
+Detroit,2019,"Detroit, MI",1,663502,13040,275,952,2346,9467,28550,6820,14844,6886,789,1965.33,4302.93,Complete for mapped city components
+Detroit,2020,"Detroit, MI",1,659616,14370,328,676,1848,11518,21178,4361,11239,5578,762,2178.54,3210.66,Complete for mapped city components
+Detroit,2021,"Detroit, MI",1,673708,14509,303,818,1511,11877,22607,4183,11677,6747,543,2153.6,3355.61,Complete for mapped city components
+Detroit,2022,"Detroit, MI",1,626757,12710,308,712,1398,10292,28068,4829,13794,9445,440,2027.9,4478.29,Complete for mapped city components
+Detroit,2023,"Detroit, MI",1,615501,12631,250,673,1388,10320,29135,4659,15300,9176,477,2052.15,4733.54,Complete for mapped city components
+Detroit,2024,"Detroit, MI",1,651171,11599,203,605,1195,9596,28035,4578,15263,8194,399,1781.25,4305.32,Complete for mapped city components
+Green Bay,2015,"Green Bay, WI",1,105119,456,2,62,58,334,2246,375,1780,91,13,433.79,2136.63,Complete for mapped city components
+Green Bay,2016,"Green Bay, WI",1,105452,505,4,77,73,351,2306,424,1795,87,9,478.89,2186.78,Complete for mapped city components
+Green Bay,2017,"Green Bay, WI",1,105331,498,0,76,65,357,2147,321,1738,88,19,472.8,2038.34,Complete for mapped city components
+Green Bay,2018,"Green Bay, WI",1,105281,483,1,78,56,348,1798,250,1448,100,7,458.77,1707.81,Complete for mapped city components
+Green Bay,2019,"Green Bay, WI",1,104992,529,3,78,49,399,1724,245,1355,124,10,503.85,1642.03,Complete for mapped city components
+Green Bay,2020,"Green Bay, WI",1,104649,552,6,71,45,430,1600,206,1279,115,12,527.48,1528.92,Complete for mapped city components
+Green Bay,2021,"Green Bay, WI",1,103826,486,3,73,40,370,1629,251,1239,139,13,468.09,1568.97,Complete for mapped city components
+Green Bay,2022,"Green Bay, WI",1,106916,456,6,67,30,353,1844,251,1419,174,8,426.5,1724.72,Complete for mapped city components
+Green Bay,2023,"Green Bay, WI",1,105521,408,6,70,33,299,1613,227,1086,300,10,386.65,1528.61,Complete for mapped city components
+Green Bay,2024,"Green Bay, WI",1,105240,521,2,65,28,426,1381,114,1000,267,3,495.06,1312.24,Complete for mapped city components
+Houston,2015,"Houston, TX",1,2275221,21994,303,986,10278,10427,100053,19859,66634,13560,671,966.68,4397.51,Complete for mapped city components
+Houston,2016,"Houston, TX",1,2334348,23960,301,1210,9962,12487,100856,18488,69630,12738,668,1026.41,4320.52,Complete for mapped city components
+Houston,2017,"Houston, TX",1,2338235,25609,269,1366,9773,14201,96532,17108,67828,11596,665,1095.23,4128.41,Complete for mapped city components
+Houston,2019,"Houston, TX",1,2355606,25257,275,1249,9147,14586,101750,17038,71614,13098,485,1072.21,4319.48,Complete for mapped city components
+Houston,2020,"Houston, TX",1,2346155,29474,400,1137,8757,19180,98043,15788,67474,14781,532,1256.27,4178.88,Complete for mapped city components
+Houston,2021,"Houston, TX",1,2339252,28325,464,1173,7729,18959,96048,14749,65729,15570,465,1210.86,4105.93,Complete for mapped city components
+Houston,2022,"Houston, TX",1,2276533,25987,433,1140,6955,17459,104304,14939,72021,17344,454,1141.52,4581.7,Complete for mapped city components
+Houston,2023,"Houston, TX",1,2304406,25156,343,1408,6814,16591,103873,13972,69928,19973,373,1091.65,4507.58,Complete for mapped city components
+Houston,2024,"Houston, TX",1,2319160,26628,320,1693,6355,18260,99572,14953,68315,16304,228,1148.17,4293.45,Complete for mapped city components
+Indianapolis,2015,"Indianapolis, IN",1,863675,11124,148,677,3802,6497,41377,11085,25301,4991,,1287.98,4790.81,Complete for mapped city components
+Indianapolis,2016,"Indianapolis, IN",1,866351,11907,148,684,3976,7099,41540,10209,26335,4996,251,1374.39,4794.82,Complete for mapped city components
+Indianapolis,2017,"Indianapolis, IN",1,870788,11616,156,668,3485,7307,38418,8945,24569,4904,256,1333.96,4411.87,Complete for mapped city components
+Indianapolis,2018,"Indianapolis, IN",1,877584,11170,162,677,3081,7250,36237,7842,23448,4947,229,1272.81,4129.18,Complete for mapped city components
+Indianapolis,2020,"Indianapolis, IN",1,890672,7755,216,573,2166,4800,31796,5171,21170,5455,357,870.69,3569.89,Complete for mapped city components
+Indianapolis,2021,"Indianapolis, IN",1,895826,6430,239,588,1726,3877,30831,4411,20598,5822,319,717.77,3441.63,Complete for mapped city components
+Indianapolis,2022,"Indianapolis, IN",1,886455,9109,208,565,1624,6712,29932,4804,20451,4677,248,1027.58,3376.6,Complete for mapped city components
+Indianapolis,2023,"Indianapolis, IN",1,887131,9146,168,496,1545,6937,32136,5463,19782,6891,309,1030.96,3622.46,Complete for mapped city components
+Indianapolis,2024,"Indianapolis, IN",1,890685,7819,178,527,1275,5839,29714,4613,18456,6645,206,877.86,3336.08,Complete for mapped city components
+Jacksonville,2015,"Jacksonville, FL",1,867258,5622,97,471,1398,3656,31854,6082,23456,2316,71,648.25,3672.96,Complete for mapped city components
+Jacksonville,2016,"Jacksonville, FL",1,880557,5504,106,517,1463,3418,31538,5851,22660,3027,83,625.06,3581.6,Complete for mapped city components
+Jacksonville,2017,"Jacksonville, FL",1,894638,5648,109,538,1376,3625,31551,5646,22980,2925,96,631.32,3526.68,Complete for mapped city components
+Jacksonville,2018,"Jacksonville, FL",1,903213,5381,110,535,1323,3413,30112,4909,22262,2941,76,595.76,3333.88,Complete for mapped city components
+Jacksonville,2019,"Jacksonville, FL",1,909142,5886,129,554,1294,3909,30088,4906,22373,2809,82,647.42,3309.49,Complete for mapped city components
+Jacksonville,2020,"Jacksonville, FL",1,920508,6424,140,456,928,4900,26432,3860,19602,2970,109,697.88,2871.46,Complete for mapped city components
+Kansas City,2015,"Kansas City, KS; Kansas City, MO",2,623743,7872,137,630,2007,5098,28078,6182,17003,4893,275,1262.06,4501.53,Complete for mapped city components
+Kansas City,2016,"Kansas City, MO",1,478364,7915,129,408,1897,5481,20842,4764,12127,3951,188,1654.6,4356.93,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2017,"Kansas City, MO",1,484948,8362,150,445,1858,5909,22035,4658,12950,4427,201,1724.31,4543.79,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2018,"Kansas City, MO",1,493115,7842,137,403,1637,5665,21236,3717,13305,4214,216,1590.3,4306.5,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2019,"Kansas City, MO",1,495964,7099,150,347,1443,5159,19124,3070,12253,3801,160,1431.35,3855.93,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2020,"Kansas City, MO",1,499335,7919,176,382,1285,6076,20570,3072,12958,4540,180,1585.91,4119.48,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2021,"Kansas City, MO",1,500965,7398,156,415,1213,5614,21461,2827,13987,4647,154,1476.75,4283.93,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2022,"Kansas City, MO",1,508856,7538,166,379,1118,5875,23995,2886,15023,6086,134,1481.36,4715.48,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2023,"Kansas City, MO",1,509855,7534,181,400,1230,5723,25281,2802,13426,9053,112,1477.68,4958.47,"Partial for mapped city components; missing: Kansas City, KS"
+Kansas City,2024,"Kansas City, KS; Kansas City, MO",2,664898,9520,160,486,1443,7431,29451,3187,16039,10225,92,1431.8,4429.4,Complete for mapped city components
+Las Vegas,2015,"Las Vegas Metropolitan Police Department, NV",1,1562134,14383,127,1107,5010,8139,46791,14876,24010,7905,134,920.73,2995.33,Complete for mapped city components
+Las Vegas,2016,"Las Vegas Metropolitan Police Department, NV",1,1592178,13520,158,1200,4974,7188,46000,12500,24645,8855,99,849.15,2889.12,Complete for mapped city components
+Las Vegas,2017,"Las Vegas Metropolitan Police Department, NV",1,1627244,10071,205,1296,3436,5134,47896,13102,26608,8186,91,618.9,2943.38,Complete for mapped city components
+Las Vegas,2018,"Las Vegas Metropolitan Police Department, NV",1,1644390,9949,120,1610,2690,5529,46673,11968,26756,7949,83,605.03,2838.32,Complete for mapped city components
+Las Vegas,2019,"Las Vegas Metropolitan Police Department, NV",1,1666803,8854,84,1439,2118,5213,46197,10646,28240,7311,125,531.2,2771.59,Complete for mapped city components
+Las Vegas,2020,"Las Vegas Metropolitan Police Department, NV",1,1693061,8934,96,1068,1707,6063,37426,7057,23546,6823,162,527.68,2210.55,Complete for mapped city components
+Las Vegas,2021,"Las Vegas Metropolitan Police Department, NV",1,1685021,7890,152,994,1388,5356,42857,7951,26048,8858,171,468.24,2543.41,Complete for mapped city components
+Las Vegas,2022,"Las Vegas Metropolitan Police Department, NV",1,1667961,8605,147,1041,1622,5795,48669,9338,28710,10621,150,515.9,2917.87,Complete for mapped city components
+Las Vegas,2023,"Las Vegas Metropolitan Police Department, NV",1,1670226,7850,134,831,1296,5589,51473,8763,28081,14629,163,470.0,3081.8,Complete for mapped city components
+Las Vegas,2024,"Las Vegas Metropolitan Police Department, NV",1,1716565,7378,106,886,1113,5273,45021,7922,26856,10243,196,429.81,2622.74,Complete for mapped city components
+Los Angeles,2015,"Los Angeles, CA",1,3962726,25156,282,2209,8952,13713,93503,16160,61191,16152,1131,634.82,2359.56,Complete for mapped city components
+Los Angeles,2016,"Los Angeles, CA",1,4007905,28817,293,2343,10307,15874,99151,15821,64739,18591,1241,719.0,2473.89,Complete for mapped city components
+Los Angeles,2017,"Los Angeles, CA",1,4007147,30507,281,2455,10814,16957,101618,16668,65757,19193,1414,761.31,2535.92,Complete for mapped city components
+Los Angeles,2018,"Los Angeles, CA",1,4029741,30126,258,2528,10327,17013,101267,15988,67963,17316,1654,747.59,2512.99,Complete for mapped city components
+Los Angeles,2019,"Los Angeles, CA",1,4015546,29400,258,2274,9652,17216,95704,13809,66253,15642,1672,732.15,2383.34,Complete for mapped city components
+Los Angeles,2020,"Los Angeles, CA",1,4000587,28882,351,1983,8013,18535,85932,13773,50990,21169,2994,721.94,2147.98,Complete for mapped city components
+Los Angeles,2022,"Los Angeles, CA",1,3809182,31772,387,2083,9124,20178,103171,15013,62665,25493,1881,834.09,2708.48,Complete for mapped city components
+Los Angeles,2023,"Los Angeles, CA",1,3786018,31047,324,1945,8711,20067,107777,15385,66798,25594,179,820.04,2846.71,Complete for mapped city components
+Los Angeles,2024,"Los Angeles, CA",1,3796352,27656,264,1530,7967,17895,56335,14152,32326,9857,407,728.49,1483.92,Complete for mapped city components
+Memphis,2015,"Memphis, TN",1,657936,11449,135,530,3131,7653,37047,10272,24049,2726,302,1740.14,5630.79,Complete for mapped city components
+Memphis,2016,"Memphis, TN",1,656434,11947,196,534,3188,8029,36988,9150,24604,3234,387,1819.98,5634.69,Complete for mapped city components
+Memphis,2017,"Memphis, TN",1,652765,13077,181,590,3457,8849,41110,9532,27576,4002,365,2003.32,6297.83,Complete for mapped city components
+Memphis,2018,"Memphis, TN",1,652226,12674,186,491,3050,8947,41779,8494,28835,4450,288,1943.19,6405.6,Complete for mapped city components
+Memphis,2019,"Memphis, TN",1,650410,12367,190,468,2432,9277,39860,7833,27981,4046,336,1901.42,6128.44,Complete for mapped city components
+Memphis,2020,"Memphis, TN",1,650937,15310,289,411,2131,12479,36197,5831,25924,4442,357,2351.99,5560.75,Complete for mapped city components
+Memphis,2021,"Memphis, TN",1,649444,15785,306,403,2056,13020,34284,5294,24020,4970,367,2430.54,5278.98,Complete for mapped city components
+Memphis,2022,"Memphis, TN",1,624944,15129,269,397,2324,12139,44783,6022,27837,10924,329,2420.86,7165.92,Complete for mapped city components
+Memphis,2023,"Memphis, TN",1,616061,16091,351,452,2779,12509,52999,6844,30446,15709,388,2611.92,8602.88,Complete for mapped city components
+Memphis,2024,"Memphis, TN",1,613207,15338,249,429,2138,12522,42305,5616,26978,9711,343,2501.28,6898.98,Complete for mapped city components
+Miami / Fort Lauderdale,2015,"Fort Lauderdale, FL; Miami, FL",2,616567,5690,85,172,2110,3323,28798,5040,20657,3101,115,922.85,4670.7,Complete for mapped city components
+Miami / Fort Lauderdale,2016,"Fort Lauderdale, FL; Miami, FL",2,630687,5133,73,161,1926,2973,29604,4499,22191,2914,78,813.87,4693.93,Complete for mapped city components
+Miami / Fort Lauderdale,2017,"Fort Lauderdale, FL; Miami, FL",2,643981,4410,67,186,1407,2750,28592,4097,21735,2760,88,684.8,4439.88,Complete for mapped city components
+Miami / Fort Lauderdale,2018,"Fort Lauderdale, FL; Miami, FL",2,655197,3984,66,204,1178,2536,25887,3423,19950,2514,68,608.06,3951.03,Complete for mapped city components
+Miami / Fort Lauderdale,2019,"Fort Lauderdale, FL; Miami, FL",2,665270,3948,64,245,1177,2462,26706,3046,21164,2496,47,593.44,4014.31,Complete for mapped city components
+Miami / Fort Lauderdale,2020,"Fort Lauderdale, FL; Miami, FL",2,660449,3803,98,185,931,2589,20754,2527,15698,2529,66,575.82,3142.41,Complete for mapped city components
+Miami / Fort Lauderdale,2023,"Miami, FL",1,452929,2228,32,128,497,1571,13338,1151,10069,2118,28,491.91,2944.83,"Partial for mapped city components; missing: Fort Lauderdale, FL"
+Miami / Fort Lauderdale,2024,"Miami, FL",1,460392,2179,28,108,439,1604,13789,1355,10545,1889,46,473.29,2995.06,"Partial for mapped city components; missing: Fort Lauderdale, FL"
+Milwaukee,2015,"Milwaukee, WI",1,600400,9583,145,436,3749,5253,25602,5481,12741,7380,223,1596.1,4264.16,Complete for mapped city components
+Milwaukee,2016,"Milwaukee, WI",1,600193,9201,141,477,3283,5300,24392,5862,12356,6174,311,1533.01,4064.03,Complete for mapped city components
+Milwaukee,2017,"Milwaukee, WI",1,595168,9507,118,434,2919,6036,22569,5518,11548,5503,313,1597.36,3792.04,Complete for mapped city components
+Milwaukee,2018,"Milwaukee, WI",1,595619,8416,99,489,2279,5549,17699,4259,8851,4589,251,1412.98,2971.53,Complete for mapped city components
+Milwaukee,2019,"Milwaukee, WI",1,590923,7874,97,427,1911,5439,15097,3594,8053,3450,198,1332.49,2554.82,Complete for mapped city components
+Milwaukee,2020,"Milwaukee, WI",1,589105,9407,191,431,1925,6860,16074,3408,8178,4488,287,1596.83,2728.55,Complete for mapped city components
+Milwaukee,2021,"Milwaukee, WI",1,593337,9413,195,444,1873,6901,24848,2868,9702,12278,240,1586.45,4187.84,Complete for mapped city components
+Milwaukee,2022,"Milwaukee, WI",1,561743,8474,214,425,1577,6258,19702,2232,8027,9443,249,1508.52,3507.3,Complete for mapped city components
+Milwaukee,2023,"Milwaukee, WI",1,558698,8032,173,415,1589,5855,15076,2336,7144,5596,186,1437.63,2698.42,Complete for mapped city components
+Milwaukee,2024,"Milwaukee, WI",1,560416,8019,134,382,1727,5776,15135,2175,7034,5926,183,1430.9,2700.67,Complete for mapped city components
+Minneapolis–St. Paul,2015,"Minneapolis, MN; St. Paul, MN",2,714200,6510,63,611,2610,3226,27211,5680,18066,3465,236,911.51,3810.0,Complete for mapped city components
+Minneapolis–St. Paul,2016,"Minneapolis, MN; St. Paul, MN",2,720671,6592,54,639,2544,3355,27405,5702,17842,3861,194,914.7,3802.71,Complete for mapped city components
+Minneapolis–St. Paul,2017,"Minneapolis, MN; St. Paul, MN",2,725667,6610,64,731,2516,3299,30381,6036,19873,4472,250,910.89,4186.63,Complete for mapped city components
+Minneapolis–St. Paul,2018,"Minneapolis, MN; St. Paul, MN",2,738017,5336,46,709,1744,2837,26832,4998,17348,4486,186,723.02,3635.69,Complete for mapped city components
+Minneapolis–St. Paul,2019,"Minneapolis, MN; St. Paul, MN",2,741279,5742,74,695,1831,3142,30677,5435,19923,5319,193,774.61,4138.39,Complete for mapped city components
+Minneapolis–St. Paul,2020,"Minneapolis, MN; St. Paul, MN",2,744975,7345,109,593,2505,4138,31616,6061,18761,6794,350,985.94,4243.9,Complete for mapped city components
+Minneapolis–St. Paul,2021,"Minneapolis, MN; St. Paul, MN",2,748420,8033,132,630,2734,4537,30855,4231,19799,6825,337,1073.33,4122.69,Complete for mapped city components
+Minneapolis–St. Paul,2022,"Minneapolis, MN; St. Paul, MN",2,699223,7297,113,572,2185,4427,35091,4057,21704,9330,298,1043.59,5018.57,Complete for mapped city components
+Minneapolis–St. Paul,2023,"Minneapolis, MN; St. Paul, MN",2,722709,6653,99,568,1816,4170,31466,3863,17748,9855,312,920.56,4353.9,Complete for mapped city components
+Minneapolis–St. Paul,2024,"Minneapolis, MN; St. Paul, MN",2,727333,6789,102,577,1936,4174,30386,4043,18330,8013,278,933.41,4177.73,Complete for mapped city components
+Nashville,2018,"Metropolitan Nashville Police Department, TN",1,686492,7641,91,480,2116,4954,27537,3627,20828,3082,63,1113.05,4011.26,Complete for mapped city components
+Nashville,2019,"Metropolitan Nashville Police Department, TN",1,687361,7376,83,438,1978,4877,27777,3374,21655,2748,60,1073.09,4041.11,Complete for mapped city components
+Nashville,2020,"Metropolitan Nashville Police Department, TN",1,688013,7951,113,385,1742,5711,28023,3745,21238,3040,103,1155.65,4073.03,Complete for mapped city components
+Nashville,2021,"Metropolitan Nashville Police Department, TN",1,690553,8057,99,404,1591,5963,24943,3429,18657,2857,76,1166.75,3612.03,Complete for mapped city components
+Nashville,2022,"Metropolitan Nashville Police Department, TN",1,679562,7491,83,385,1224,5799,25991,3470,19534,2987,88,1102.33,3824.67,Complete for mapped city components
+Nashville,2023,"Metropolitan Nashville Police Department, TN",1,690495,7795,100,408,1128,6159,30414,2774,22322,5318,64,1128.9,4404.67,Complete for mapped city components
+Nashville,2024,"Metropolitan Nashville Police Department, TN",1,698987,7857,102,503,1083,6169,31521,3093,23377,5051,54,1124.06,4509.53,Complete for mapped city components
+New Orleans,2015,"New Orleans, LA",1,393447,3736,164,409,1497,1666,15243,2898,9828,2517,36,949.56,3874.22,Complete for mapped city components
+New Orleans,2016,"New Orleans, LA",1,397208,4249,174,537,1445,2093,15571,2561,10583,2427,69,1069.72,3920.11,Complete for mapped city components
+New Orleans,2017,"New Orleans, LA",1,397447,4457,157,575,1308,2417,16867,2229,12107,2531,41,1121.41,4243.84,Complete for mapped city components
+New Orleans,2018,"New Orleans, LA",1,396374,4611,147,681,1219,2564,18063,2027,13042,2994,,1163.3,4557.06,Complete for mapped city components
+New Orleans,2019,"New Orleans, LA",1,394498,4516,121,774,1013,2608,20879,2143,15785,2951,,1144.75,5292.55,Complete for mapped city components
+New Orleans,2020,"New Orleans, LA",1,393779,5215,201,712,1106,3196,17876,1994,12358,3524,0,1324.35,4539.6,Complete for mapped city components
+New Orleans,2022,"New Orleans, LA",1,370128,5345,266,442,1039,3598,17177,1837,11138,4202,,1444.1,4640.83,Complete for mapped city components
+New Orleans,2023,"New Orleans, LA",1,364197,4957,193,681,656,3427,18536,1742,10091,6703,,1361.08,5089.55,Complete for mapped city components
+New York / New Jersey,2015,"Jersey City, NJ; New York, NY",2,8816020,51471,379,2341,17495,31256,134089,15074,111024,7991,62,583.83,1520.97,"Partial for mapped city components; missing: Newark, NJ"
+New York / New Jersey,2016,"Jersey City, NJ; New York, NY; Newark, NJ",3,9114546,53037,459,2557,17425,32596,136069,14132,112895,9042,81,581.89,1492.88,Complete for mapped city components
+New York / New Jersey,2017,"Jersey City, NJ; New York, NY; Newark, NJ",3,9167912,50341,390,2614,15599,31738,136450,13425,114407,8618,110,549.1,1488.34,Complete for mapped city components
+New York / New Jersey,2018,"Jersey City, NJ; New York, NY; Newark, NJ",3,9075604,49415,387,3053,14109,31866,138506,12657,117697,8152,58,544.48,1526.14,Complete for mapped city components
+New York / New Jersey,2019,"Jersey City, NJ; New York, NY; Newark, NJ",3,8926973,50956,389,2971,14463,33133,131991,11457,112801,7733,39,570.81,1478.56,Complete for mapped city components
+New York / New Jersey,2020,"Jersey City, NJ; New York, NY; Newark, NJ",3,8845892,50618,541,2428,13889,33760,137868,14942,111525,11401,38,572.22,1558.55,Complete for mapped city components
+New York / New Jersey,2021,"Newark, NJ",1,295039,1446,60,55,375,956,4298,435,2006,1857,24,490.1,1456.76,"Partial for mapped city components; missing: Jersey City, NJ; New York, NY"
+New York / New Jersey,2022,"Jersey City, NJ; New York, NY; Newark, NJ",3,8817178,63484,503,2744,17991,42246,185725,15151,153825,16749,32,720.0,2106.4,Complete for mapped city components
+New York / New Jersey,2023,"Jersey City, NJ; New York, NY; Newark, NJ",3,8772988,56989,409,2199,16905,37476,207105,14256,170141,22708,929,649.6,2360.71,Complete for mapped city components
+New York / New Jersey,2024,"Jersey City, NJ; New York, NY; Newark, NJ",3,8906901,59163,371,2157,16516,40119,208656,13927,174661,20068,844,664.24,2342.63,Complete for mapped city components
+Oklahoma City,2015,"Oklahoma City, OK",1,630621,4828,73,480,1192,3083,24948,5823,16228,2897,93,765.59,3956.1,Complete for mapped city components
+Oklahoma City,2016,"Oklahoma City, OK",1,641681,5027,70,445,1144,3368,25032,5545,16582,2905,93,783.41,3901.0,Complete for mapped city components
+Oklahoma City,2017,"Oklahoma City, OK",1,648260,5104,81,474,1120,3429,24326,6105,15421,2800,82,787.34,3752.51,Complete for mapped city components
+Oklahoma City,2018,"Oklahoma City, OK",1,652936,5663,52,542,1082,3987,26298,6000,16668,3630,66,867.31,4027.65,Complete for mapped city components
+Oklahoma City,2019,"Oklahoma City, OK",1,657890,4751,75,539,888,3249,26918,6206,16922,3790,96,722.16,4091.57,Complete for mapped city components
+Oklahoma City,2020,"Oklahoma City, OK",1,663661,4818,63,559,817,3379,25853,5849,16222,3782,121,725.97,3895.51,Complete for mapped city components
+Oklahoma City,2021,"Oklahoma City, OK",1,670872,4313,82,545,645,3041,25557,6370,15691,3496,112,642.89,3809.52,Complete for mapped city components
+Oklahoma City,2022,"Oklahoma City, OK",1,692726,4448,65,506,642,3235,21191,3831,14398,2962,130,642.1,3059.07,Complete for mapped city components
+Oklahoma City,2023,"Oklahoma City, OK",1,700764,4468,63,483,617,3305,20562,3967,13773,2822,121,637.59,2934.23,Complete for mapped city components
+Oklahoma City,2024,"Oklahoma City, OK",1,709456,4796,73,517,707,3499,20528,4133,13840,2555,120,676.01,2893.48,Complete for mapped city components
+Orlando,2015,"Orlando, FL",1,268438,2525,32,182,522,1789,16148,3401,11567,1180,39,940.63,6015.54,Complete for mapped city components
+Orlando,2016,"Orlando, FL",1,277719,2328,84,211,504,1529,14498,3637,9621,1240,15,838.26,5220.38,Complete for mapped city components
+Orlando,2017,"Orlando, FL",1,283982,2113,23,183,605,1302,15490,2388,11715,1387,22,744.06,5454.57,Complete for mapped city components
+Orlando,2018,"Orlando, FL",1,286679,2282,39,200,628,1415,13803,1619,10965,1219,13,796.01,4814.79,Complete for mapped city components
+Orlando,2019,"Orlando, FL",1,292120,2157,25,204,536,1392,14100,1464,11362,1274,15,738.4,4826.78,Complete for mapped city components
+Orlando,2020,"Orlando, FL",1,293363,2524,31,169,507,1817,11158,1198,8812,1148,34,860.37,3803.48,Complete for mapped city components
+Orlando,2022,"Orlando, FL",1,310713,2597,32,226,426,1913,12517,1398,9861,1258,22,835.82,4028.48,Complete for mapped city components
+Philadelphia,2015,"Philadelphia, PA",1,1567810,16132,280,1322,6765,7765,49345,8083,36228,5034,330,1028.95,3147.38,Complete for mapped city components
+Philadelphia,2016,"Philadelphia, PA",1,1570826,15534,273,1259,6199,7803,49334,6985,36856,5493,416,988.91,3140.64,Complete for mapped city components
+Philadelphia,2017,"Philadelphia, PA",1,1575595,14930,316,1182,6026,7406,48268,6590,36195,5483,413,947.58,3063.48,Complete for mapped city components
+Philadelphia,2018,"Philadelphia, PA",1,1586916,14420,351,1095,5262,7712,49145,6497,36968,5680,430,908.68,3096.89,Complete for mapped city components
+Philadelphia,2022,"Philadelphia, PA",1,1555812,16202,514,785,5763,9140,67233,6485,48067,12681,528,1041.39,4321.41,Complete for mapped city components
+Philadelphia,2023,"Philadelphia, PA",1,1550843,15246,403,723,5212,8908,78420,5643,49035,23742,694,983.08,5056.6,Complete for mapped city components
+Philadelphia,2024,"Philadelphia, PA",1,1549259,14078,262,714,4233,8869,70463,4942,49942,15579,723,908.69,4548.17,Complete for mapped city components
+Phoenix,2015,"Phoenix, AZ",1,1559744,9261,112,1016,3020,5113,54456,12798,34288,7370,,593.75,3491.34,Complete for mapped city components
+Phoenix,2016,"Phoenix, AZ",1,1586611,10700,146,1019,3272,6263,58552,13024,37568,7960,216,674.39,3690.38,Complete for mapped city components
+Phoenix,2017,"Phoenix, AZ",1,1644177,12511,157,1142,3293,7919,60353,12801,39899,7653,190,760.93,3670.71,Complete for mapped city components
+Phoenix,2018,"Phoenix, AZ",1,1653080,12110,132,1086,3112,7780,57732,10479,39438,7815,242,732.57,3492.39,Complete for mapped city components
+Phoenix,2019,"Phoenix, AZ",1,1688722,11803,131,1139,3197,7336,55974,9471,39427,7076,201,698.93,3314.58,Complete for mapped city components
+Phoenix,2020,"Phoenix, AZ",1,1708960,13646,187,1068,3278,9113,51089,7406,36254,7429,297,798.5,2989.48,Complete for mapped city components
+Phoenix,2022,"Phoenix, AZ",1,1637902,13515,217,1105,3207,8986,47530,6266,33631,7633,257,825.14,2901.88,Complete for mapped city components
+Phoenix,2023,"Phoenix, AZ",1,1660686,13033,191,1089,2803,8950,41249,5690,26195,9364,183,784.8,2483.85,Complete for mapped city components
+Phoenix,2024,"Phoenix, AZ",1,1662809,13296,139,1069,3020,9068,38666,5274,26308,7084,226,799.61,2325.34,Complete for mapped city components
+Pittsburgh,2015,"Pittsburgh, PA",1,306870,2167,57,82,858,1170,9895,2197,7097,601,172,706.16,3224.49,Complete for mapped city components
+Pittsburgh,2016,"Pittsburgh, PA",1,302443,2366,57,100,1000,1209,9868,1828,7222,818,153,782.3,3262.76,Complete for mapped city components
+Pittsburgh,2017,"Pittsburgh, PA",1,305932,2008,55,90,802,1061,9528,1610,7238,680,136,656.36,3114.42,Complete for mapped city components
+Pittsburgh,2018,"Pittsburgh, PA",1,302544,1751,57,121,696,877,9125,1341,7055,729,102,578.76,3016.09,Complete for mapped city components
+Pittsburgh,2024,"Pittsburgh, PA",1,317177,1355,36,164,394,761,7232,738,5406,1088,72,427.21,2280.11,Complete for mapped city components
+Portland,2016,"Portland, OR",1,642129,3163,14,389,986,1774,33087,4064,24099,4924,234,492.58,5152.7,Complete for mapped city components
+Portland,2017,"Portland, OR",1,649408,3349,24,438,1045,1842,36867,4735,24837,7295,307,515.7,5677.02,Complete for mapped city components
+Portland,2018,"Portland, OR",1,657260,3418,25,438,1056,1899,35884,4444,24508,6932,,520.04,5459.64,Complete for mapped city components
+Portland,2019,"Portland, OR",1,662114,3606,29,368,979,2230,34452,4200,23820,6432,252,544.62,5203.33,Complete for mapped city components
+Portland,2020,"Portland, OR",1,662941,3465,53,262,807,2343,31416,3759,21287,6370,295,522.67,4738.88,Complete for mapped city components
+Portland,2021,"Portland, OR",1,664350,4785,83,326,1111,3265,37049,4430,23612,9007,310,720.25,5576.73,Complete for mapped city components
+Portland,2022,"Portland, OR",1,630129,4733,94,354,1279,3006,39852,4790,24206,10856,252,751.12,6324.42,Complete for mapped city components
+Portland,2023,"Portland, OR",1,626146,4478,74,320,1209,2875,36696,4964,23522,8210,287,715.17,5860.61,Complete for mapped city components
+Portland,2024,"Portland, OR",1,623066,4487,67,317,1105,2998,34432,4532,24432,5468,260,720.15,5526.22,Complete for mapped city components
+Raleigh,2019,"Raleigh, NC",1,477828,1222,5,164,322,731,8520,1200,6572,748,36,255.74,1783.07,Complete for mapped city components
+Raleigh,2020,"Raleigh, NC",1,482264,1891,21,165,468,1237,9745,1302,7081,1362,50,392.11,2020.68,Complete for mapped city components
+Raleigh,2021,"Raleigh, NC",1,481823,2236,26,165,489,1556,10295,1332,7896,1067,41,464.07,2136.68,Complete for mapped city components
+Raleigh,2022,"Raleigh, NC",1,470829,2353,44,174,439,1696,10992,1207,8584,1201,44,499.76,2334.61,Complete for mapped city components
+Raleigh,2023,"Raleigh, NC",1,482842,2550,26,155,421,1948,12503,1479,9132,1892,52,528.12,2589.46,Complete for mapped city components
+Raleigh,2024,"Raleigh, NC",1,488085,2386,25,176,423,1762,13760,1362,10049,2349,36,488.85,2819.18,Complete for mapped city components
+Sacramento,2015,"Sacramento, CA",1,489717,3611,43,105,1174,2289,16501,3713,9865,2923,140,737.36,3369.5,Complete for mapped city components
+Sacramento,2016,"Sacramento, CA",1,495471,3549,41,88,1136,2284,15283,3070,9389,2824,173,716.29,3084.54,Complete for mapped city components
+Sacramento,2017,"Sacramento, CA",1,499997,3378,39,99,1100,2140,14683,2888,9077,2718,209,675.6,2936.62,Complete for mapped city components
+Sacramento,2018,"Sacramento, CA",1,507037,3329,36,102,1052,2139,15417,2751,9783,2883,146,656.56,3040.61,Complete for mapped city components
+Sacramento,2019,"Sacramento, CA",1,513934,3223,34,127,1039,2023,16354,2993,10644,2717,179,627.12,3182.12,Complete for mapped city components
+Sacramento,2020,"Sacramento, CA",1,519050,3547,42,125,879,2501,14248,2834,8903,2511,260,683.36,2745.01,Complete for mapped city components
+Sacramento,2022,"Sacramento, CA",1,526671,4749,54,186,1243,3266,16681,2769,10328,3584,204,901.7,3167.25,Complete for mapped city components
+Sacramento,2023,"Sacramento, CA",1,529172,4237,41,170,1192,2834,15305,2752,8850,3703,137,800.68,2892.25,Complete for mapped city components
+Sacramento,2024,"Sacramento, CA",1,526670,3976,45,182,1012,2737,13416,2326,8406,2684,155,754.93,2547.33,Complete for mapped city components
+Salt Lake City,2015,"Salt Lake City, UT",1,191992,1642,8,291,469,874,17914,2036,13679,2199,36,855.24,9330.6,Complete for mapped city components
+Salt Lake City,2016,"Salt Lake City, UT",1,193918,1815,13,264,506,1032,16551,1807,12814,1930,45,935.96,8535.05,Complete for mapped city components
+Salt Lake City,2017,"Salt Lake City, UT",1,194968,1713,10,334,508,861,15694,1884,11924,1886,27,878.61,8049.53,Complete for mapped city components
+Salt Lake City,2018,"Salt Lake City, UT",1,202633,1480,10,245,414,811,12516,1601,9422,1493,32,730.38,6176.68,Complete for mapped city components
+Salt Lake City,2019,"Salt Lake City, UT",1,202426,1442,13,234,403,792,11452,1290,8902,1260,30,712.36,5657.38,Complete for mapped city components
+Salt Lake City,2020,"Salt Lake City, UT",1,202187,1865,17,277,487,1084,14865,1545,11128,2192,67,922.41,7352.1,Complete for mapped city components
+Salt Lake City,2021,"Salt Lake City, UT",1,205929,1996,16,319,439,1222,14087,1636,10329,2122,64,969.27,6840.71,Complete for mapped city components
+Salt Lake City,2022,"Salt Lake City, UT",1,201373,1970,13,380,413,1164,12934,1316,9887,1731,65,978.28,6422.91,Complete for mapped city components
+Salt Lake City,2023,"Salt Lake City, UT",1,206692,1794,16,330,363,1085,11671,1148,9311,1212,67,867.96,5646.57,Complete for mapped city components
+Salt Lake City,2024,"Salt Lake City, UT",1,212675,1838,11,337,390,1100,11059,1172,8900,987,46,864.23,5199.95,Complete for mapped city components
+San Antonio,2015,"San Antonio, TX",1,1463586,8594,94,1049,1986,5465,73611,11632,55803,6176,261,587.19,5029.5,Complete for mapped city components
+San Antonio,2016,"San Antonio, TX",1,1498642,10754,149,1190,2232,7183,77786,12235,58318,7233,254,717.58,5190.43,Complete for mapped city components
+San Antonio,2017,"San Antonio, TX",1,1520712,10759,124,1270,2298,7067,73676,11722,55090,6864,207,707.5,4844.84,Complete for mapped city components
+San Antonio,2018,"San Antonio, TX",1,1539328,9647,107,1346,1767,6427,61478,9118,46271,6089,186,626.7,3993.82,Complete for mapped city components
+San Antonio,2019,"San Antonio, TX",1,1559166,11046,105,1630,1965,7346,67422,8172,51469,7781,181,708.46,4324.23,Complete for mapped city components
+San Antonio,2020,"San Antonio, TX",1,1573189,11569,130,1187,2163,8089,57057,7919,42158,6980,236,735.39,3626.84,Complete for mapped city components
+San Antonio,2021,"San Antonio, TX",1,1592693,10881,168,1090,1716,7907,60745,7553,44306,8886,275,683.18,3813.98,Complete for mapped city components
+San Antonio,2022,"San Antonio, TX",1,1465608,12935,230,1555,1700,9450,74288,9338,52586,12364,255,882.57,5068.75,Complete for mapped city components
+San Antonio,2023,"San Antonio, TX",1,1490047,10344,163,1458,1795,6928,80386,8143,53168,19075,232,694.21,5394.86,Complete for mapped city components
+San Antonio,2024,"San Antonio, TX",1,1514458,8998,127,1267,1641,5963,70023,7505,49853,12665,177,594.14,4623.63,Complete for mapped city components
+San Diego,2015,"San Diego, CA",1,1400467,5582,37,566,1378,3601,29158,5129,18933,5096,174,398.58,2082.02,Complete for mapped city components
+San Diego,2016,"San Diego, CA",1,1413414,5332,50,572,1387,3323,28624,4743,18042,5839,239,377.24,2025.17,Complete for mapped city components
+San Diego,2017,"San Diego, CA",1,1424116,5221,35,559,1410,3217,26246,3817,17294,5135,158,366.61,1842.97,Complete for mapped city components
+San Diego,2018,"San Diego, CA",1,1436495,5360,35,605,1439,3281,27416,3752,18482,5182,187,373.13,1908.53,Complete for mapped city components
+San Diego,2019,"San Diego, CA",1,1441737,5215,50,561,1346,3258,27141,3543,18426,5172,122,361.72,1882.52,Complete for mapped city components
+San Diego,2020,"San Diego, CA",1,1437608,5303,56,485,1207,3555,24321,3324,16044,4953,222,368.88,1691.77,Complete for mapped city components
+San Diego,2021,"San Diego, CA",1,1434673,5404,63,444,1040,3857,26348,3286,16601,6461,150,376.67,1836.52,Complete for mapped city components
+San Diego,2022,"San Diego, CA",1,1377838,5932,53,410,1288,4181,25044,3290,15106,6648,174,430.53,1817.63,Complete for mapped city components
+San Diego,2023,"San Diego, CA",1,1378349,5759,40,296,1204,4219,24972,2777,15419,6776,138,417.82,1811.73,Complete for mapped city components
+San Diego,2024,"San Diego, CA",1,1389024,5726,35,297,1075,4319,23197,2603,15100,5494,136,412.23,1670.02,Complete for mapped city components
+San Francisco Bay Area,2015,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2314721,16161,168,1004,8040,6949,102622,13415,68902,20305,544,698.18,4433.45,Complete for mapped city components
+San Francisco Bay Area,2016,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2337997,16136,189,1070,7465,7412,96103,12138,63930,20035,583,690.16,4110.48,Complete for mapped city components
+San Francisco Bay Area,2017,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2343699,16010,157,1338,7272,7243,105101,11483,75221,18397,672,683.11,4484.41,Complete for mapped city components
+San Francisco Bay Area,2018,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2366817,16068,144,1417,7382,7125,98157,12255,68910,16992,654,678.89,4147.22,Complete for mapped city components
+San Francisco Bay Area,2019,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2360051,16012,150,1367,7253,7242,101812,11357,75039,15416,617,678.46,4313.97,Complete for mapped city components
+San Francisco Bay Area,2020,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2348979,14824,190,1126,6052,7456,85206,14034,51429,19743,865,631.08,3627.36,Complete for mapped city components
+San Francisco Bay Area,2022,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2149881,16885,211,1532,6371,8771,100859,12524,67887,20448,711,785.39,4691.38,Complete for mapped city components
+San Francisco Bay Area,2023,"Oakland, CA; San Francisco, CA",2,1208330,21050,170,664,6569,13647,87768,9529,55025,23214,477,1742.07,7263.58,"Partial for mapped city components; missing: San Jose, CA"
+San Francisco Bay Area,2024,"Oakland, CA; San Francisco, CA; San Jose, CA",3,2194738,18971,142,1316,6452,11061,87762,12627,53719,21416,527,864.39,3998.75,Complete for mapped city components
+Seattle,2015,"Seattle, WA",1,683700,4093,23,144,1532,2394,37754,7677,26199,3878,92,598.65,5522.01,Complete for mapped city components
+Seattle,2016,"Seattle, WA",1,700313,4294,19,254,1547,2474,38433,7666,26639,4128,101,613.15,5487.97,Complete for mapped city components
+Seattle,2017,"Seattle, WA",1,721365,4564,27,266,1515,2756,37934,7805,26499,3630,149,632.69,5258.64,Complete for mapped city components
+Seattle,2018,"Seattle, WA",1,742759,5052,32,292,1649,3079,38246,7985,26219,4042,109,680.17,5149.18,Complete for mapped city components
+Seattle,2019,"Seattle, WA",1,763706,4471,28,358,1339,2746,34333,7210,23478,3645,98,585.43,4495.58,Complete for mapped city components
+Seattle,2020,"Seattle, WA",1,771517,4832,52,301,1471,3008,37593,10427,22255,4911,208,626.3,4872.61,Complete for mapped city components
+Seattle,2021,"Seattle, WA",1,787749,5869,41,283,1736,3809,40192,9926,25005,5261,223,745.03,5102.13,Complete for mapped city components
+Seattle,2022,"Seattle, WA",1,729691,6115,54,311,1748,4002,41745,8765,26038,6942,180,838.03,5720.91,Complete for mapped city components
+Seattle,2023,"Seattle, WA",1,753786,5858,68,273,1671,3846,37781,8490,20067,9224,147,777.14,5012.17,Complete for mapped city components
+Seattle,2024,"Seattle, WA",1,760058,5891,52,352,1677,3810,38061,8756,21905,7400,153,775.07,5007.64,Complete for mapped city components
+St. Louis,2015,"St. Louis, MO",1,317095,5762,188,263,1790,3521,20028,4202,12680,3146,223,1817.12,6316.09,Complete for mapped city components
+St. Louis,2016,"St. Louis, MO",1,314507,6017,188,289,1904,3636,18653,3201,12394,3058,269,1913.15,5930.87,Complete for mapped city components
+St. Louis,2017,"St. Louis, MO",1,310284,6461,205,289,1944,4023,18745,3138,12894,2713,201,2082.29,6041.24,Complete for mapped city components
+St. Louis,2018,"St. Louis, MO",1,306875,5525,187,309,1452,3577,18142,2979,12413,2750,188,1800.41,5911.85,Complete for mapped city components
+St. Louis,2019,"St. Louis, MO",1,300521,5792,194,265,1475,3858,18582,3044,12540,2998,169,1927.32,6183.26,Complete for mapped city components
+St. Louis,2020,"St. Louis, MO",1,298422,6017,263,234,1242,4278,17399,2552,11626,3221,220,2016.27,5830.33,Complete for mapped city components
+St. Louis,2021,"St. Louis, MO",1,295536,4387,189,146,808,3244,16146,1835,10802,3509,149,1484.42,5463.29,Complete for mapped city components
+St. Louis,2022,"St. Louis, MO",1,286053,4212,200,151,803,3058,20750,2306,11150,7294,139,1472.45,7253.9,Complete for mapped city components
+St. Louis,2023,"St. Louis, MO",1,280108,4048,158,197,729,2964,17926,2104,9619,6203,103,1445.16,6399.67,Complete for mapped city components
+St. Louis,2024,"St. Louis, MO",1,277294,3791,150,161,692,2788,15825,2273,9462,4090,93,1367.14,5706.94,Complete for mapped city components
+Tampa Bay,2015,"St. Petersburg, FL; Tampa, FL",2,620204,4196,48,213,1244,2691,22750,4152,16479,2119,118,676.55,3668.15,Complete for mapped city components
+Tampa Bay,2016,"St. Petersburg, FL; Tampa, FL",2,635414,3633,49,202,1044,2338,20604,3415,15466,1723,99,571.75,3242.61,Complete for mapped city components
+Tampa Bay,2017,"St. Petersburg, FL; Tampa, FL",2,648072,3627,59,257,905,2406,18075,3007,13523,1545,87,559.66,2789.04,Complete for mapped city components
+Tampa Bay,2018,"St. Petersburg, FL; Tampa, FL",2,658887,3258,48,233,700,2277,15360,2253,11901,1206,68,494.47,2331.2,Complete for mapped city components
+Tampa Bay,2019,"St. Petersburg, FL; Tampa, FL",2,668197,3216,48,245,582,2341,15115,2066,11743,1306,65,481.3,2262.06,Complete for mapped city components
+Tampa Bay,2020,"St. Petersburg, FL; Tampa, FL",2,675040,3891,56,211,600,3024,12402,1812,9308,1282,94,576.41,1837.22,Complete for mapped city components
+Tampa Bay,2022,"St. Petersburg, FL; Tampa, FL",2,647890,3560,59,233,517,2751,13394,1527,10317,1550,54,549.48,2067.33,Complete for mapped city components
+Tampa Bay,2023,"St. Petersburg, FL; Tampa, FL",2,665802,3374,54,294,466,2560,13705,1500,10526,1679,68,506.76,2058.42,Complete for mapped city components
+Tampa Bay,2024,"St. Petersburg, FL; Tampa, FL",2,673645,3459,54,286,457,2662,12504,1239,10097,1168,39,513.48,1856.17,Complete for mapped city components
+"Washington, DC",2015,"Washington, DC",1,672228,8084,162,494,3404,4024,30359,2971,24194,3194,,1202.57,4516.18,Complete for mapped city components
+"Washington, DC",2016,"Washington, DC",1,681170,7711,138,527,3149,3897,31661,2360,26402,2899,,1132.02,4648.03,Complete for mapped city components
+"Washington, DC",2017,"Washington, DC",1,693972,6584,116,443,2351,3674,28843,1808,24490,2545,,948.74,4156.22,Complete for mapped city components
+"Washington, DC",2018,"Washington, DC",1,702455,6613,160,445,2157,3851,29993,1786,25658,2549,,941.41,4269.74,Complete for mapped city components
+"Washington, DC",2019,"Washington, DC",1,705749,6896,166,342,2359,4029,29965,1840,25827,2298,,977.12,4245.84,Complete for mapped city components
+"Washington, DC",2020,"Washington, DC",1,712816,6828,198,307,2208,4115,24459,1963,19126,3370,,957.89,3431.32,Complete for mapped city components
+"Washington, DC",2022,"Washington, DC",1,671803,5003,197,275,2175,2356,23408,1350,18265,3793,0,744.71,3484.35,Complete for mapped city components
+"Washington, DC",2023,"Washington, DC",1,678972,7112,264,261,3789,2798,28229,1664,19724,6841,1,1047.47,4157.61,Complete for mapped city components
+"Washington, DC",2024,"Washington, DC",1,702250,6502,179,239,3080,3004,25197,1671,18220,5306,0,925.88,3588.04,Complete for mapped city components

@@ -1,0 +1,31 @@
+League,Division,Team,Playoff_Appearances_Count,Years
+AL,AL East,Baltimore Orioles,5,2012; 2014; 2016; 2023; 2024
+AL,AL East,Boston Red Sox,12,2003; 2004; 2005; 2007; 2008; 2009; 2013; 2016; 2017; 2018; 2021; 2025
+AL,AL East,New York Yankees,18,2003; 2004; 2005; 2006; 2007; 2009; 2010; 2011; 2012; 2015; 2017; 2018; 2019; 2020; 2021; 2022; 2024; 2025
+AL,AL East,Tampa Bay Rays,9,2008; 2010; 2011; 2013; 2019; 2020; 2021; 2022; 2023
+AL,AL East,Toronto Blue Jays,6,2015; 2016; 2020; 2022; 2023; 2025
+AL,AL Central,Chicago White Sox,4,2005; 2008; 2020; 2021
+AL,AL Central,Cleveland Guardians,9,2007; 2013; 2016; 2017; 2018; 2020; 2022; 2024; 2025
+AL,AL Central,Detroit Tigers,7,2006; 2011; 2012; 2013; 2014; 2024; 2025
+AL,AL Central,Kansas City Royals,3,2014; 2015; 2024
+AL,AL Central,Minnesota Twins,9,2003; 2004; 2006; 2009; 2010; 2017; 2019; 2020; 2023
+AL,AL West,Houston Astros,11,2004; 2005; 2015; 2017; 2018; 2019; 2020; 2021; 2022; 2023; 2024
+AL,AL West,Los Angeles Angels,6,2004; 2005; 2007; 2008; 2009; 2014
+AL,AL West,Oakland Athletics,8,2003; 2006; 2012; 2013; 2014; 2018; 2019; 2020
+AL,AL West,Seattle Mariners,2,2022; 2025
+AL,AL West,Texas Rangers,6,2010; 2011; 2012; 2015; 2016; 2023
+NL,NL East,Atlanta Braves,13,2003; 2004; 2005; 2010; 2012; 2013; 2018; 2019; 2020; 2021; 2022; 2023; 2024
+NL,NL East,Miami Marlins,3,2003; 2020; 2023
+NL,NL East,New York Mets,5,2006; 2015; 2016; 2022; 2024
+NL,NL East,Philadelphia Phillies,9,2007; 2008; 2009; 2010; 2011; 2022; 2023; 2024; 2025
+NL,NL East,Washington Nationals,5,2012; 2014; 2016; 2017; 2019
+NL,NL Central,Chicago Cubs,9,2003; 2007; 2008; 2015; 2016; 2017; 2018; 2020; 2025
+NL,NL Central,Cincinnati Reds,5,2010; 2012; 2013; 2020; 2025
+NL,NL Central,Milwaukee Brewers,9,2008; 2011; 2018; 2019; 2020; 2021; 2023; 2024; 2025
+NL,NL Central,Pittsburgh Pirates,3,2013; 2014; 2015
+NL,NL Central,St. Louis Cardinals,13,2004; 2005; 2006; 2009; 2011; 2012; 2013; 2014; 2015; 2019; 2020; 2021; 2022
+NL,NL West,Arizona Diamondbacks,4,2007; 2011; 2017; 2023
+NL,NL West,Colorado Rockies,4,2007; 2009; 2017; 2018
+NL,NL West,Los Angeles Dodgers,17,2004; 2006; 2008; 2009; 2013; 2014; 2015; 2016; 2017; 2018; 2019; 2020; 2021; 2022; 2023; 2024; 2025
+NL,NL West,San Diego Padres,6,2005; 2006; 2020; 2022; 2024; 2025
+NL,NL West,San Francisco Giants,6,2003; 2010; 2012; 2014; 2016; 2021
