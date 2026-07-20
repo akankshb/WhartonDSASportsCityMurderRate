@@ -1,0 +1,269 @@
+---
+title: "Random Forest & XGBoost: Team Performance and City Murder Rates"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(randomForest)   # Breiman's random forest (as covered in class)
+  library(xgboost)
+})
+set.seed(123)
+options(scipen = 999, digits = 4)
+```
+
+## Approach
+
+Uses the prepared **`final_model_data.csv`**: one row per **city-year**, with each
+city's teams combined into a single win-percentage measure two ways -- an
+**arithmetic mean (`win_amean`)** and a **harmonic mean (`win_hmean`)** -- plus the
+share of the city's teams that made the playoffs.
+
+The outcome is **`murder_z`**, the murder rate **z-scored *within each city*** (each
+city's rate standardized to mean 0, sd 1 across its own years). This is the key
+choice: it removes each city's baseline level, so the model predicts **how a city's
+murder rate deviates from its own typical level over time** -- the within-city
+question. Because the within-city standardization already absorbs city identity, no
+city fixed effects are needed; only **year fixed effects** are included.
+
+We compare the two win-% aggregations across a **random forest** (out-of-bag error)
+and **XGBoost** (5-fold cross-validation).
+
+```{r data, message=FALSE, warning=FALSE}
+dat <- read_csv("data/final_model_data.csv", show_col_types = FALSE) %>%
+  mutate(year = factor(year))
+
+controls <- c("log_income", "unemployment_rate", "poverty_rate", "log_home_value",
+              "log_pop", "race_black_nonhispanic_rate", "hispanic_or_latino_rate",
+              "bachelors_plus_rate", "pop_18_to_64_rate")
+
+y <- dat$murder_z    # murder rate, z-scored within each city (the outcome)
+
+cat("city-years:", nrow(dat), " metros:", n_distinct(dat$GEOID),
+    " years:", paste(range(as.integer(as.character(dat$year))), collapse = "-"), "\n")
+```
+
+```{r model-helper, message=FALSE, warning=FALSE}
+# Fit RF (OOB) and XGBoost (5-fold CV) using a given win-aggregation column, plus
+# the playoff share, census controls, and year fixed effects (one-hot).
+folds <- function(n, k = 5, seed = 1) { set.seed(seed); sample(rep_len(1:k, n)) }
+fold_id <- folds(nrow(dat))
+xgb_params <- list(objective = "reg:squarederror", max_depth = 4, eta = 0.05,
+                   subsample = 0.8, colsample_bytree = 0.7, seed = 1, nthread = 2)
+
+fit_models <- function(win_col) {
+  feat <- c(win_col, "playoff_share", controls, "year")
+  X <- model.matrix(~ . - 1, data = dat[, feat])
+
+  set.seed(1)
+  rf <- randomForest(x = X, y = y, mtry = floor(ncol(X) / 3), ntree = 1000, importance = TRUE)
+  rf_pred <- rf$predicted                                 # out-of-bag predictions
+
+  xgb_pred <- numeric(nrow(X))                            # 5-fold out-of-fold predictions
+  for (f in 1:5) {
+    te <- fold_id == f; tr <- !te
+    m <- xgb.train(xgb_params, xgb.DMatrix(X[tr, ], label = y[tr]), nrounds = 400,
+                   evals = list(v = xgb.DMatrix(X[te, ], label = y[te])),
+                   early_stopping_rounds = 30, verbose = 0)
+    xgb_pred[te] <- predict(m, xgb.DMatrix(X[te, ]))
+  }
+
+  list(rf_mse = mean((y - rf_pred)^2), xgb_mse = mean((y - xgb_pred)^2),
+       rf_pred = rf_pred, xgb_pred = xgb_pred, rf = rf)
+}
+```
+
+```{r fit, cache=TRUE, message=FALSE, warning=FALSE}
+res_amean <- fit_models("win_amean")   # arithmetic mean win %
+res_hmean <- fit_models("win_hmean")   # harmonic mean win %
+```
+
+## Summary table (MSE and accuracy)
+
+The outcome is z-scored (within city), so MSE is on the standardized scale.
+"Accuracy" is the share of city-years predicted **within 0.5 SD** of the actual
+(within-city) murder level.
+
+```{r summary-table, message=FALSE, warning=FALSE}
+tol <- 0.5
+acc <- function(pred) round(100 * mean(abs(pred - y) <= tol), 1)
+
+summary_table <- tibble(
+  Model                    = c("Random Forest", "XGBoost"),
+  Evaluation               = c("OOB", "5-fold CV"),
+  `MSE (arith)`            = round(c(res_amean$rf_mse, res_amean$xgb_mse), 3),
+  `MSE (harmonic)`         = round(c(res_hmean$rf_mse, res_hmean$xgb_mse), 3),
+  `Accuracy % (arith)`     = c(acc(res_amean$rf_pred), acc(res_amean$xgb_pred))
+)
+summary_table
+```
+
+## Feature importance
+
+Node-purity importance (`IncNodePurity`) from the random forest (arithmetic-mean
+model), grouped: sports (win % + playoff share) versus census versus year.
+
+```{r importance, message=FALSE, warning=FALSE}
+group_of <- function(v) {
+  case_when(
+    str_detect(v, "win_amean|win_hmean|playoff_share") ~ "sports",
+    str_detect(v, "^year") ~ "year",
+    TRUE ~ "census"
+  )
+}
+rf_vi <- importance(res_amean$rf)[, "IncNodePurity"]
+imp_grouped <- tibble(var = names(rf_vi), imp = rf_vi) %>%
+  mutate(group = group_of(var)) %>%
+  group_by(group) %>%
+  summarise(importance_pct = round(100 * sum(imp) / sum(rf_vi), 1), .groups = "drop") %>%
+  arrange(desc(importance_pct))
+imp_grouped
+```
+
+```{r importance-plot, message=FALSE, warning=FALSE, fig.width=7, fig.height=3}
+imp_grouped %>%
+  mutate(group = str_to_title(group), sports = group == "Sports") %>%
+  ggplot(aes(x = importance_pct, y = reorder(group, importance_pct), fill = sports)) +
+  geom_col(width = 0.62) +
+  geom_text(aes(label = paste0(importance_pct, "%")),
+            hjust = -0.15, size = 4.4, colour = "grey25") +
+  scale_fill_manual(values = c(`FALSE` = "#9AA3AF", `TRUE` = "#D55E00"), guide = "none") +
+  scale_x_continuous(limits = c(0, max(imp_grouped$importance_pct) * 1.15), expand = c(0, 0)) +
+  labs(title = "What predicts a city's murder rate?",
+       subtitle = "Random forest importance — team performance is a sliver",
+       x = "Share of importance (%)", y = NULL) +
+  theme_minimal(base_size = 13) +
+  theme(panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+        plot.title = element_text(face = "bold"), axis.ticks = element_blank())
+```
+
+## Does adding sports actually help? (with vs. without)
+
+Fit both models **with** the sports variables (win % + playoff share) -- under each
+aggregation -- and **without** them (census + year only). If the rows are
+essentially equal, sports adds nothing.
+
+```{r with-without, cache=TRUE, message=FALSE, warning=FALSE}
+fit_features <- function(feat) {
+  X <- model.matrix(~ . - 1, data = dat[, feat])
+  set.seed(1)
+  rf <- randomForest(x = X, y = y, mtry = floor(ncol(X) / 3), ntree = 1000)
+  rf_pred <- rf$predicted
+  xgb_pred <- numeric(nrow(X))
+  for (f in 1:5) {
+    te <- fold_id == f; tr <- !te
+    m <- xgb.train(xgb_params, xgb.DMatrix(X[tr, ], label = y[tr]), nrounds = 400,
+                   evals = list(v = xgb.DMatrix(X[te, ], label = y[te])),
+                   early_stopping_rounds = 30, verbose = 0)
+    xgb_pred[te] <- predict(m, xgb.DMatrix(X[te, ]))
+  }
+  tibble(`RF MSE`   = round(mean((y - rf_pred)^2), 3),
+         `RF Acc %` = round(100 * mean(abs(rf_pred - y) <= tol), 1),
+         `XGB MSE`  = round(mean((y - xgb_pred)^2), 3),
+         `XGB Acc %`= round(100 * mean(abs(xgb_pred - y) <= tol), 1))
+}
+
+bind_rows(
+  mutate(fit_features(c("win_amean", "playoff_share", controls, "year")),
+         Scenario = "WITH sports (arith)",    .before = 1),
+  mutate(fit_features(c("win_hmean", "playoff_share", controls, "year")),
+         Scenario = "WITH sports (harmonic)", .before = 1),
+  mutate(fit_features(c(controls, "year")),
+         Scenario = "WITHOUT sports",         .before = 1)
+)
+```
+
+## Takeaway
+
+The outcome is each city's murder rate **relative to its own average over time**
+(within-city z-score). The models predict this within-city variation well (low MSE
+on the standardized scale), but the importance table shows it comes almost entirely
+from **year (~58%) and the census profile (~40%)** -- i.e. national murder trends
+(the 2020 spike hit every city) plus demographic change. The **sports variables
+contribute ~1.5%**, and adding them barely changes the MSE (the with-vs-without rows
+are essentially equal). So a team's win percentage does **not** meaningfully explain
+how its city's murder rate moves from year to year. Team performance does not
+predict city murder rates.
+
+## Appendix: predictions on the raw murder-rate scale (un-z-scored)
+
+The models were fit on the within-city z-scored outcome. To read the results in real
+units (murders per 100k), we **un-z-score** each prediction using that city's own
+mean and standard deviation: `pred_rate = pred_z * city_sd + city_mean`. This
+reverses the within-city standardization and puts predictions back on the original
+scale.
+
+```{r un-zscore, message=FALSE, warning=FALSE}
+# each city's mean / sd of the raw murder rate (the constants used to build murder_z)
+city_stats <- dat %>% group_by(GEOID) %>%
+  summarise(city_mean = mean(murder_rate), city_sd = sd(murder_rate), .groups = "drop")
+cs <- dat %>% select(GEOID) %>% left_join(city_stats, by = "GEOID")
+
+unz <- function(pred_z) pred_z * cs$city_sd + cs$city_mean   # back to murders per 100k
+
+actual   <- dat$murder_rate               # raw murder rate (un-z-scored)
+rf_rate  <- unz(res_amean$rf_pred)        # RF held-out predictions, un-z-scored
+xgb_rate <- unz(res_amean$xgb_pred)       # XGBoost held-out predictions, un-z-scored
+
+tibble(
+  Model                    = c("Random Forest", "XGBoost"),
+  `MSE (per 100k^2)`       = round(c(mean((actual - rf_rate)^2),
+                                     mean((actual - xgb_rate)^2)), 2),
+  `Accuracy % (+/-2/100k)` = round(100 * c(mean(abs(actual - rf_rate) <= 2),
+                                           mean(abs(actual - xgb_rate) <= 2)), 1)
+)
+```
+
+On the original scale the predictions land within a couple of murders per 100k of
+the actual rate -- but that comes from the city baseline and national trends baked
+into the standardization and the year effects, not from team performance.
+
+```{r pred-vs-actual, message=FALSE, warning=FALSE, fig.width=5, fig.height=5}
+tibble(actual = actual, predicted = xgb_rate) %>%
+  ggplot(aes(actual, predicted)) +
+  geom_abline(slope = 1, intercept = 0, colour = "#D55E00", linewidth = 1) +
+  geom_point(alpha = 0.35, colour = "#0072B2", size = 1.8) +
+  coord_equal() +
+  labs(title = "Predicted vs. actual murder rate",
+       subtitle = "XGBoost, murders per 100k (un-z-scored); orange line = perfect prediction",
+       x = "Actual murder rate", y = "Predicted murder rate") +
+  theme_minimal(base_size = 13) +
+  theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
+```
+
+### With vs. without sports (raw-scale)
+
+The with/without comparison on the raw murder-rate scale (un-z-scored), for both
+aggregations.
+
+```{r un-zscore-withwithout, cache=TRUE, message=FALSE, warning=FALSE}
+raw_perf <- function(feat) {
+  X <- model.matrix(~ . - 1, data = dat[, feat])
+  set.seed(1)
+  rf <- randomForest(x = X, y = y, mtry = floor(ncol(X) / 3), ntree = 1000)
+  rf_z <- rf$predicted
+  xgb_z <- numeric(nrow(X))
+  for (f in 1:5) {
+    te <- fold_id == f; tr <- !te
+    m <- xgb.train(xgb_params, xgb.DMatrix(X[tr, ], label = y[tr]), nrounds = 400,
+                   evals = list(v = xgb.DMatrix(X[te, ], label = y[te])),
+                   early_stopping_rounds = 30, verbose = 0)
+    xgb_z[te] <- predict(m, xgb.DMatrix(X[te, ]))
+  }
+  rf_r <- unz(rf_z); xgb_r <- unz(xgb_z)   # un-z-score to murders per 100k
+  tibble(`RF MSE`   = round(mean((actual - rf_r)^2), 2),
+         `RF Acc %` = round(100 * mean(abs(actual - rf_r) <= 2), 1),
+         `XGB MSE`  = round(mean((actual - xgb_r)^2), 2),
+         `XGB Acc %`= round(100 * mean(abs(actual - xgb_r) <= 2), 1))
+}
+
+bind_rows(
+  mutate(raw_perf(c("win_amean", "playoff_share", controls, "year")),
+         Scenario = "WITH sports (arith)",    .before = 1),
+  mutate(raw_perf(c("win_hmean", "playoff_share", controls, "year")),
+         Scenario = "WITH sports (harmonic)", .before = 1),
+  mutate(raw_perf(c(controls, "year")),
+         Scenario = "WITHOUT sports",         .before = 1)
+)
+```

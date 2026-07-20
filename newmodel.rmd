@@ -1,0 +1,401 @@
+---
+title: "Year-to-Year Murder Rate vs. Team Performance (within-city z-scores)"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(sandwich)   # cluster-robust covariance
+  library(lmtest)     # coeftest() with a supplied vcov
+  library(broom)
+})
+
+set.seed(123)
+options(scipen = 999, digits = 4)
+```
+
+## Approach
+
+The question here is narrower than "do teams affect crime": we want to explain a
+city's **year-to-year** movement in its murder rate.
+
+- **Outcome:** each metro-year's murder rate, **z-scored within that city**. Every
+  city is centered on its own mean and divided by its own SD, so the outcome reads
+  as *"how unusual was this year for this city, in that city's own SD units."*
+  Because the within-city centering already removes each city's level, **no metro
+  fixed effects are used** -- they would be redundant (each city already averages 0).
+- **Year fixed effects** are kept, so a season's performance is tested against
+  year-to-year movement *beyond* the nationwide crime trend (the 2020 spike, etc.).
+- **`win_pct` is combined two ways** -- arithmetic mean and harmonic mean of the
+  metro's teams -- and nothing else changes between the two models, so their fit is
+  directly comparable. No presence (`has_*`) flags.
+
+Two data issues are handled before any mean is taken:
+
+- **`win_pct` is not on one scale.** MLB's column is a win *count* (19--108, with the
+  denominator changing in the 2020 short season) while NFL/NHL/CFB/NBA are 0--1
+  fractions. Each league's `win_pct` is therefore **min--max scaled within league**
+  onto a common [0, 1] (`wp_s`) before it is combined.
+- **A harmonic mean needs strictly positive inputs**, so the scaled values are
+  floored at 0.001 (only the single worst team in each league sits at 0).
+
+```{r load-data, message=FALSE, warning=FALSE}
+raw <- read_csv("data/metro_acs_model_ready_2010_2023.csv", show_col_types = FALSE) %>%
+  mutate(across(c(year, GEOID), as.integer)) %>%
+  # The panel is supposed to be one row per (GEOID, year), but 24 metro-years
+  # arrive twice -- metros fielding two teams in one league, each row carrying
+  # that league's own numbers. Collapse to a single metro-year.
+  group_by(GEOID, year) %>%
+  summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+            across(!where(is.numeric), first), .groups = "drop")
+
+# --- NBA as a full league ---------------------------------------------------
+# The model-ready panel shipped only a `has_NBA` flag, not NBA performance, so
+# NBA is built here from its raw files and joined in like the other leagues.
+nba_cols <- local({
+  cb  <- read_csv("data/metro_acs_2022_cbsa.csv", show_col_types = FALSE) %>%
+    dplyr::select(GEOID, NAME) %>% mutate(GEOID = as.integer(GEOID))
+  stats <- read_csv("data/NBA/nba_team_stats_2003_2023.csv", show_col_types = FALSE)
+  mur   <- read_csv("data/NBA/nba_cities_murder_rates_2003_2026.csv", show_col_types = FALSE)
+  apps  <- read_csv("data/NBA/nba_playoff_appearances_since_2003.csv", show_col_types = FALSE)
+
+  panel <- raw %>% distinct(GEOID) %>% left_join(cb, by = "GEOID") %>%
+    mutate(city = NAME %>% str_remove(",.*$") %>% str_remove("-.*$"))
+  norm  <- function(x) x %>% str_replace("New York City", "New York") %>%
+    str_replace("Washington D.C.", "Washington")
+  xwalk <- mur %>% distinct(City) %>% mutate(city = norm(City)) %>%
+    inner_join(panel, by = "city") %>% dplyr::select(City, city, GEOID)
+
+  team2geo <- mur %>% distinct(`NBA Team`, City) %>% inner_join(xwalk, by = "City") %>%
+    dplyr::select(team = `NBA Team`, GEOID)
+  city_lut <- xwalk %>% distinct(city, GEOID)
+  resolve  <- function(teams) {
+    g <- team2geo$GEOID[match(teams, team2geo$team)]
+    fb <- map_int(teams, function(t) {
+      hit <- str_starts(t, fixed(city_lut$city))
+      if (any(hit)) city_lut$GEOID[hit][which.max(nchar(city_lut$city[hit]))] else NA_integer_
+    })
+    ifelse(is.na(g), fb, g)
+  }
+
+  win <- stats %>% mutate(GEOID = resolve(team)) %>% filter(!is.na(GEOID)) %>%
+    group_by(GEOID, year) %>% summarise(nba_win_pct = mean(win_loss_perc), .groups = "drop")
+  po  <- apps %>% separate_rows(Years, sep = "; ") %>%
+    mutate(year = as.integer(Years), GEOID = resolve(Team)) %>% filter(!is.na(GEOID)) %>%
+    distinct(GEOID, year) %>% mutate(nba_make_playoffs = 1L)
+  mrd <- mur %>% inner_join(xwalk, by = "City") %>% group_by(GEOID, Year) %>%
+    summarise(nba_murder_rate = mean(`Murder Rate (per 100k)`), .groups = "drop") %>%
+    rename(year = Year)
+
+  win %>%
+    full_join(po,  by = c("GEOID", "year")) %>%
+    full_join(mrd, by = c("GEOID", "year")) %>%
+    mutate(nba_make_playoffs = replace_na(nba_make_playoffs, 0L)) %>%
+    arrange(GEOID, year) %>% group_by(GEOID) %>%
+    mutate(nba_make_playoffs_prev = lag(nba_make_playoffs)) %>% ungroup()
+})
+
+raw <- raw %>% left_join(nba_cols, by = c("GEOID", "year"))
+# ---------------------------------------------------------------------------
+
+controls <- c("log_income", "unemployment_rate", "poverty_rate",
+              "log_home_value", "log_pop",
+              "race_black_nonhispanic_rate", "hispanic_or_latino_rate",
+              "bachelors_plus_rate", "pop_18_to_64_rate")
+
+# NOTE: the murder rate is deliberately NOT logged here. It is z-scored within
+# city further down, which is the transformation this analysis relies on.
+base <- raw %>%
+  mutate(
+    log_income     = log(median_household_income),
+    log_home_value = log(median_home_value),
+    log_pop        = log(total_population)
+  )
+```
+
+```{r stack-panel, message=FALSE, warning=FALSE}
+leagues <- c("nfl", "mlb", "nhl", "cfb", "nba")
+
+# one row per (metro, year, team), each league carrying its own murder rate and
+# win_pct; then min-max scale win_pct WITHIN league onto a common [0, 1] so the
+# leagues can be averaged together (MLB's win count would otherwise swamp them),
+# floored at 0.001 so the harmonic mean is defined.
+team_long <- map_dfr(leagues, function(lg) {
+  base %>%
+    transmute(
+      GEOID, year, league = toupper(lg),
+      murder_rate        = .data[[paste0(lg, "_murder_rate")]],
+      win_pct            = .data[[paste0(lg, "_win_pct")]],
+      make_playoffs      = .data[[paste0(lg, "_make_playoffs")]],
+      make_playoffs_prev = .data[[paste0(lg, "_make_playoffs_prev")]],
+      across(all_of(controls))
+    ) %>%
+    filter(!is.na(murder_rate), !is.na(win_pct))
+}) %>%
+  group_by(league) %>%
+  mutate(wp_s = pmax((win_pct - min(win_pct)) / (max(win_pct) - min(win_pct)), 0.001)) %>%
+  ungroup() %>%
+  drop_na(all_of(c("wp_s", "make_playoffs", "make_playoffs_prev",
+                   "murder_rate", controls)))
+```
+
+```{r metro-panel, message=FALSE, warning=FALSE}
+# Collapse to one row per (metro, year). The metro's teams are combined two ways
+# -- arithmetic and harmonic mean of the scaled win_pct -- on identical rows, so
+# the only thing separating the two models below is the combination rule.
+metro <- team_long %>%
+  group_by(GEOID, year) %>%
+  summarise(
+    n_teams            = n(),
+    murder_rate        = mean(murder_rate),          # raw rate, per 100k
+    win_amean          = mean(wp_s),                 # arithmetic mean
+    win_hmean          = n() / sum(1 / wp_s),        # harmonic mean
+    playoff_share      = mean(make_playoffs),
+    playoff_share_prev = mean(make_playoffs_prev),
+    across(all_of(controls), first),
+    .groups = "drop"
+  ) %>%
+  # previous-season performance, held IDENTICAL across the two models (the
+  # arithmetic lag) so only the contemporaneous encoding differs
+  arrange(GEOID, year) %>%
+  group_by(GEOID) %>%
+  mutate(win_prev = lag(win_amean)) %>%
+  ungroup() %>%
+  drop_na(win_prev)
+
+# z-score the murder rate WITHIN each city: the outcome becomes "how unusual was
+# this year for this city, in that city's own SD units". Cities need at least 3
+# years and non-zero variation for a within-city z-score to be defined.
+metro <- metro %>%
+  group_by(GEOID) %>%
+  filter(n() >= 3, sd(murder_rate) > 0) %>%
+  mutate(murder_z = as.numeric(scale(murder_rate))) %>%
+  ungroup()
+
+tibble(
+  observations      = nrow(metro),
+  metros            = n_distinct(metro$GEOID),
+  years             = n_distinct(metro$year),
+  avg_teams_per_obs = round(mean(metro$n_teams), 2),
+  outcome_mean      = round(mean(metro$murder_z), 6),   # 0 by construction
+  outcome_sd        = round(sd(metro$murder_z), 3)
+)
+```
+
+## Export the analysis dataset
+
+`metro` is exactly the frame the models below are fit on -- one row per (metro, year),
+every variable already transformed. Writing it out means anyone can reproduce these
+regressions from the CSV alone, with no access to the raw league files or the NBA
+crosswalk. A readable `metro_name` is attached purely as an identifier; it is not a
+model variable.
+
+```{r export, message=FALSE, warning=FALSE}
+metro_names <- read_csv("data/metro_acs_2022_cbsa.csv", show_col_types = FALSE) %>%
+  dplyr::select(GEOID, metro_name = NAME) %>%
+  mutate(GEOID = as.integer(GEOID))
+
+final_model_data <- metro %>%
+  left_join(metro_names, by = "GEOID") %>%
+  dplyr::select(
+    # --- identifiers ---
+    GEOID, metro_name, year, n_teams,
+    # --- outcome ---
+    murder_z,            # murder_rate z-scored WITHIN city (the modeled outcome)
+    murder_rate,         # raw murders per 100k, mean of the metro's teams' cities
+    # --- sports predictors ---
+    win_amean,           # arithmetic mean of within-league min-max scaled win_pct
+    win_hmean,           # harmonic mean of the same scaled win_pct
+    win_prev,            # lag(win_amean) within metro; identical across both models
+    playoff_share,       # share of the metro's teams making the playoffs
+    playoff_share_prev,
+    # --- census controls ---
+    all_of(controls)
+  ) %>%
+  arrange(GEOID, year)
+
+write_csv(final_model_data, "final_model_data.csv")
+
+cat("wrote final_model_data.csv:", nrow(final_model_data), "rows x",
+    ncol(final_model_data), "columns\n")
+glimpse(final_model_data)
+```
+
+## The models
+
+`murder_z` is regressed on the combined win measure, the lagged win measure, the
+playoff shares, the census controls, and year fixed effects. **No metro fixed
+effects** (the within-city z-score already removed each city's level) and **no
+presence flags**.
+
+Model 0 carries **no sports variables at all** -- it is the reference the two
+encodings must beat if performance explains year-to-year movement.
+
+```{r fits, message=FALSE, warning=FALSE}
+sports_rhs <- paste(c("win_prev", "playoff_share", "playoff_share_prev"), collapse = " + ")
+ctrl_rhs   <- paste(c(controls, "factor(year)"), collapse = " + ")
+
+# 0) no sports variables: controls + year FE only
+fit_none  <- lm(as.formula(paste("murder_z ~", ctrl_rhs)), data = metro)
+
+# 1) arithmetic mean of the metro's teams' scaled win_pct
+fit_amean <- lm(as.formula(paste("murder_z ~ win_amean +", sports_rhs, "+", ctrl_rhs)),
+                data = metro)
+
+# 2) harmonic mean of the metro's teams' scaled win_pct
+fit_hmean <- lm(as.formula(paste("murder_z ~ win_hmean +", sports_rhs, "+", ctrl_rhs)),
+                data = metro)
+
+# SEs clustered by metro: a metro's years are correlated
+clustered <- function(fit, term) {
+  V <- sandwich::vcovCL(fit, cluster = metro$GEOID, type = "HC1")
+  broom::tidy(lmtest::coeftest(fit, vcov. = V)) %>% filter(term == !!term)
+}
+```
+
+Sanity check that `final_model_data.csv` really is sufficient: refit model 1 from the
+CSV alone and confirm it reproduces `fit_amean` exactly.
+
+```{r export-reproduce, message=FALSE, warning=FALSE}
+check <- read_csv("final_model_data.csv", show_col_types = FALSE)
+
+refit <- lm(as.formula(paste("murder_z ~ win_amean +", sports_rhs, "+", ctrl_rhs)),
+            data = check)
+
+tibble(
+  n_match            = nrow(check) == nrow(metro),
+  coefficients_match = isTRUE(all.equal(coef(refit), coef(fit_amean))),
+  r_squared_match    = isTRUE(all.equal(summary(refit)$r.squared,
+                                        summary(fit_amean)$r.squared))
+)
+```
+
+## First: the year dummies already explain almost everything
+
+A raw R^2 from these models is badly misleading, and it is worth seeing why before
+reading any of them. Once each city is standardized against **its own** mean and SD,
+every city's murder trajectory collapses onto essentially the *same national curve*
+(flat through the 2010s, the 2020 spike, the 2021--22 aftermath). So `factor(year)`
+on its own accounts for the overwhelming majority of the within-city variance, and
+only a small idiosyncratic remainder is left for anything else to explain.
+
+```{r year-dominates, message=FALSE, warning=FALSE}
+r2 <- function(f) summary(f)$r.squared
+tibble(
+  specification = c("murder_z ~ factor(year) only",
+                    "murder_z ~ controls only",
+                    "murder_z ~ controls + factor(year)  (model 0)"),
+  r_squared = c(r2(lm(murder_z ~ factor(year), data = metro)),
+                r2(lm(as.formula(paste("murder_z ~", paste(controls, collapse = " + "))),
+                      data = metro)),
+                r2(fit_none))
+) %>% mutate(r_squared = round(r_squared, 4))
+```
+
+## How much year-to-year variance is explained?
+
+Because the outcome is a within-city z-score, `r_squared` is the share of a city's
+year-to-year variance explained. Given the table above, the *level* of R^2 is
+uninformative -- what matters is the **gain over model 0** (`r2_gain`), i.e. what the
+sports terms add once the national year pattern and the census controls are already in.
+
+```{r variance-table, message=FALSE, warning=FALSE}
+mse <- function(f) mean(residuals(f)^2)
+
+tibble(
+  model = c("0. no sports variables (controls + year FE)",
+            "1. arithmetic mean of win_pct",
+            "2. harmonic mean of win_pct"),
+  n            = nrow(metro),
+  n_predictors = c(sum(!is.na(coef(fit_none))),
+                   sum(!is.na(coef(fit_amean))),
+                   sum(!is.na(coef(fit_hmean)))),
+  r_squared    = c(summary(fit_none)$r.squared,
+                   summary(fit_amean)$r.squared,
+                   summary(fit_hmean)$r.squared),
+  # what the sports block actually buys over the no-sports baseline
+  r2_gain      = c(0,
+                   summary(fit_amean)$r.squared - summary(fit_none)$r.squared,
+                   summary(fit_hmean)$r.squared - summary(fit_none)$r.squared),
+  adj_r_squared = c(summary(fit_none)$adj.r.squared,
+                    summary(fit_amean)$adj.r.squared,
+                    summary(fit_hmean)$adj.r.squared),
+  MSE          = c(mse(fit_none), mse(fit_amean), mse(fit_hmean))
+) %>%
+  mutate(across(where(is.numeric), ~round(.x, 5)))
+```
+
+A formal test of the whole sports block (the win measure, its lag, and both playoff
+shares) against the no-sports baseline:
+
+```{r sports-block-ftest, message=FALSE, warning=FALSE}
+bind_rows(
+  broom::tidy(anova(fit_none, fit_amean))[2, ] %>% mutate(model = "arithmetic mean"),
+  broom::tidy(anova(fit_none, fit_hmean))[2, ] %>% mutate(model = "harmonic mean")
+) %>%
+  dplyr::select(model, df, sumsq, statistic, p.value) %>%
+  mutate(across(where(is.numeric), ~round(.x, 4)))
+```
+
+## The win coefficients (metro-clustered SEs)
+
+Each coefficient is the effect of the combined win measure on the city's
+**within-city z-scored** murder rate: a coefficient of `b` means a 1-unit move in
+the [0, 1] combined win measure shifts that city's murder rate by `b` of its own
+standard deviations.
+
+```{r win-coefs, message=FALSE, warning=FALSE}
+bind_rows(
+  clustered(fit_amean, "win_amean") %>% mutate(model = "arithmetic mean"),
+  clustered(fit_hmean, "win_hmean") %>% mutate(model = "harmonic mean")
+) %>%
+  dplyr::select(model, term, estimate, std.error, statistic, p.value) %>%
+  mutate(across(where(is.numeric), ~round(.x, 4)))
+```
+
+## Model summaries
+
+Year dummies are suppressed so the win, playoff, and census coefficients are
+readable. Both models still contain `factor(year)`.
+
+```{r summary-helper, message=FALSE, warning=FALSE}
+summary_hide_fe <- function(fit) {
+  s <- summary(fit)
+  s$coefficients <- s$coefficients[!grepl("^factor\\(", rownames(s$coefficients)), ,
+                                   drop = FALSE]
+  if (!is.null(s$aliased)) s$aliased <- s$aliased[!grepl("^factor\\(", names(s$aliased))]
+  s
+}
+```
+
+```{r summary-none}
+# 0. no sports variables
+summary_hide_fe(fit_none)
+```
+
+```{r summary-amean}
+# 1. arithmetic mean of win_pct
+summary_hide_fe(fit_amean)
+```
+
+```{r summary-hmean}
+# 2. harmonic mean of win_pct
+summary_hide_fe(fit_hmean)
+```
+
+## Reading the results
+
+- The outcome is each city's murder rate expressed in **its own** standard
+  deviations, so a coefficient is a within-city effect by construction -- stable
+  differences between cities (big cities have teams *and* more crime) cannot drive
+  it, which is why no metro fixed effects are needed.
+- **Do not read the raw R^2.** `factor(year)` alone explains ~91% of the within-city
+  variance, because standardizing each city against its own mean and SD makes every
+  city trace the same national curve. The number that carries information is
+  `r2_gain`: what the sports block adds *on top of* the year pattern and the controls.
+  The block F-test above is the formal version of the same question.
+- The arithmetic and harmonic means are computed on **identical rows** from the same
+  scaled `wp_s`, so any difference between models 1 and 2 is attributable purely to
+  the combination rule (the harmonic mean punishes a metro with one very bad team
+  much harder than the arithmetic mean does).

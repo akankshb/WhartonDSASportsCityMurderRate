@@ -1,0 +1,406 @@
+---
+title: "Does a Sports Team's Performance Affect Its City's Murder Rate?"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(glmnet)     # LASSO variable selection
+  library(sandwich)   # cluster-robust covariance
+  library(lmtest)     # coeftest() with a supplied vcov
+  library(broom)
+})
+
+set.seed(123)
+options(scipen = 999, digits = 4)
+```
+
+## Approach
+
+The question is whether a team **performing better** moves its city's murder rate --
+a within-team, over-time question. Rather than four separate league models, this
+fits **one pooled model** on a *stacked* panel: one row per
+**(city, year, team)**, with every league's team stacked together. That keeps all
+the data in a single regression while avoiding the traps of the original design
+(forcing every league onto one metro-year row and median-imputing the missing
+sports values).
+
+Key pieces:
+
+- **Outcome:** each team's own city murder rate, paired with its own performance --
+  never averaged across leagues, never imputed.
+- **`win_pct` standardized within league** (z-score), so one pooled coefficient
+  means "effect of a 1-SD-better season" and is comparable across sports whose win
+  percentages have very different spreads (an NFL season swings far more than a
+  162-game MLB season).
+- **Team fixed effects** (`factor(team_id)`, one intercept per city-league team):
+  the win-% effect is identified purely from a team's year-to-year swings, so
+  stable differences between teams/cities (big cities have teams *and* more crime)
+  cannot drive it.
+- **Year fixed effects** for nationwide crime trends, and **SEs clustered by
+  metro** since a metro's rows (across years and leagues) are correlated.
+
+A pooled model *without* team fixed effects (league intercepts only) is shown
+alongside, so the confounding the fixed effects remove is visible.
+
+```{r load-data, message=FALSE, warning=FALSE}
+raw <- read_csv("data/metro_acs_model_ready_2010_2023.csv", show_col_types = FALSE) %>%
+  mutate(across(c(year, GEOID), as.integer))
+
+# Time-varying census controls (metro-level). Fixed effects absorb everything
+# time-invariant, and each concept appears once (rates, not the raw counts they
+# are built from) to avoid the rank-deficiency the earlier all-columns model hit.
+controls <- c("log_income", "unemployment_rate", "poverty_rate",
+              "log_home_value", "log_pop",
+              "race_black_nonhispanic_rate", "hispanic_or_latino_rate",
+              "bachelors_plus_rate", "pop_18_to_64_rate")
+
+base <- raw %>%
+  mutate(
+    log_income     = log(median_household_income),
+    log_home_value = log(median_home_value),
+    log_pop        = log(total_population)
+  )
+```
+
+```{r}
+
+raw
+
+```
+
+
+```{r stack-panel, message=FALSE, warning=FALSE}
+leagues <- c("nfl", "mlb", "nhl", "cfb")
+
+# Stack every league into one long panel: one row per (metro, year, team) that
+# actually exists. Each league contributes its own murder rate + performance.
+long <- map_dfr(leagues, function(lg) {
+  base %>%
+    transmute(
+      GEOID, year, league = toupper(lg),
+      murder_rate        = .data[[paste0(lg, "_murder_rate")]],
+      win_pct            = .data[[paste0(lg, "_win_pct")]],
+      make_playoffs      = .data[[paste0(lg, "_make_playoffs")]],
+      make_playoffs_prev = .data[[paste0(lg, "_make_playoffs_prev")]],
+      across(all_of(controls))
+    ) %>%
+    filter(!is.na(murder_rate), !is.na(win_pct))
+}) %>%
+  # standardize win % WITHIN league so a pooled coefficient = effect of a
+  # 1-SD-better season, comparable across sports
+  group_by(league) %>%
+  mutate(win_pct_z = as.numeric(scale(win_pct))) %>%
+  ungroup() %>%
+  # lagged (previous-season) standardized win %, within each team
+  mutate(team_id = paste(GEOID, league, sep = "_")) %>%
+  group_by(team_id) %>%
+  arrange(year, .by_group = TRUE) %>%
+  mutate(win_pct_prev_z = lag(win_pct_z)) %>%
+  ungroup() %>%
+  # drop NA on every model variable so the fitted rows match the cluster vector
+  drop_na(all_of(c("win_pct_z", "win_pct_prev_z", "make_playoffs",
+                   "make_playoffs_prev", "murder_rate", controls)))
+
+tibble(
+  observations = nrow(long),
+  teams = n_distinct(long$team_id),
+  metros = n_distinct(long$GEOID),
+  years = n_distinct(long$year)
+)
+count(long, league)
+```
+
+```{r}
+head(long)
+```
+
+
+```{r fit, message=FALSE, warning=FALSE}
+sports_terms <- c("win_pct_z", "win_pct_prev_z", "make_playoffs", "make_playoffs_prev")
+
+rhs <- paste(c("win_pct_z", "win_pct_prev_z", "make_playoffs",
+               "make_playoffs_prev", controls, "factor(year)"),
+             collapse = " + ")
+
+# pooled, league intercepts only (no team fixed effects)
+fit_naive <- lm(as.formula(paste("murder_rate ~", rhs, "+ factor(league)")), data = long)
+# one big model WITH team fixed effects
+fit_fe    <- lm(as.formula(paste("murder_rate ~", rhs, "+ factor(team_id)")), data = long)
+
+# metro-clustered coefficients for the sports terms
+clustered <- function(fit) {
+  V <- sandwich::vcovCL(fit, cluster = long$GEOID, type = "HC1")
+  broom::tidy(lmtest::coeftest(fit, vcov. = V)) %>%
+    filter(term %in% sports_terms)
+}
+```
+
+## Variable selection: LASSO (fixed effects forced in)
+
+Before trusting the regression, LASSO is run over **every** predictor -- the sports
+terms and the census controls -- to see which survive penalization. The team and
+year fixed effects are included in the same design matrix but **forced in
+unpenalized** (`penalty.factor = 0`), so LASSO can never drop a fixed effect; it
+only chooses among the substantive variables *on top of* the fixed effects. If the
+sports terms carry real signal, they should survive; if they are noise, LASSO
+should shrink them away.
+
+```{r lasso, message=FALSE, warning=FALSE}
+lasso_form <- as.formula(
+  paste("~", paste(c(sports_terms, controls, "factor(year)", "factor(team_id)"),
+                   collapse = " + ")))
+X <- model.matrix(lasso_form, data = long)[, -1]
+y <- long$murder_rate
+
+# 0 = forced in (the fixed-effect dummies), 1 = penalized/selectable (everything else)
+is_fe <- grepl("^factor\\(year\\)|^factor\\(team_id\\)", colnames(X))
+penalty <- ifelse(is_fe, 0, 1)
+cat(ncol(X), "columns |", sum(is_fe), "fixed-effect dummies forced in |",
+    sum(!is_fe), "penalized (sports + census)\n")
+
+set.seed(123)
+cv_lasso <- cv.glmnet(X, y, alpha = 1, penalty.factor = penalty, nfolds = 10)
+plot(cv_lasso)
+
+# substantive (non-fixed-effect) variables LASSO keeps at each lambda
+kept <- function(s) {
+  co <- coef(cv_lasso, s = s)[, 1]
+  co <- co[co != 0 & !grepl("^factor\\(|Intercept", names(co))]
+  tibble(variable = names(co), coefficient = round(co, 4))
+}
+```
+
+```{r lasso-selected, message=FALSE, warning=FALSE}
+cat("--- kept at lambda.min (looser) ---\n"); print(kept("lambda.min"))
+cat("\n--- kept at lambda.1se (parsimonious) ---\n")
+k1 <- kept("lambda.1se")
+if (nrow(k1) == 0) cat("(none -- only the fixed effects survive)\n") else print(k1)
+```
+
+At the parsimonious `lambda.1se`, **no** sports or census variable survives -- the
+team and year fixed effects alone explain the murder rate, and nothing else earns
+its place. At the looser `lambda.min` a few variables enter, but the sports
+coefficients are tiny. Either way LASSO is telling the same story the regression
+does: performance adds essentially nothing beyond who the team is and what year it
+is.
+
+## Post-LASSO regression
+
+The regression is then refit on the LASSO-selected variables (`lambda.min`) plus
+the forced-in fixed effects, and the sports terms among the survivors are reported
+with metro-clustered SEs -- so any performance effect that cleared selection still
+faces honest inference.
+
+```{r post-lasso, message=FALSE, warning=FALSE}
+selected <- kept("lambda.min")$variable
+selected_sports <- intersect(selected, sports_terms)
+selected_ctrls  <- intersect(selected, controls)
+
+post_rhs <- paste(c(selected_sports, selected_ctrls,
+                    "factor(year)", "factor(team_id)"), collapse = " + ")
+post_fit <- lm(as.formula(paste("murder_rate ~", post_rhs)), data = long)
+
+V <- sandwich::vcovCL(post_fit, cluster = long$GEOID, type = "HC1")
+broom::tidy(lmtest::coeftest(post_fit, vcov. = V)) %>%
+  filter(term %in% sports_terms) %>%
+  mutate(across(where(is.numeric), ~round(.x, 4)))
+```
+
+## The one big model: sports effects (naive vs. team fixed effects)
+
+`win_pct_z` is the effect of a **1-SD-better season** on murders per 100k; the
+playoff terms are indicators. The naive column pools with league intercepts only;
+the FE column adds a fixed effect for every team, with SEs clustered by metro.
+
+```{r results-table, message=FALSE, warning=FALSE}
+nv <- clustered(fit_naive) %>% select(term, naive_coef = estimate, naive_p = p.value)
+fe <- clustered(fit_fe) %>%
+  select(term, fe_coef = estimate, fe_cluster_se = std.error, fe_p = p.value)
+
+left_join(nv, fe, by = "term") %>%
+  mutate(term = factor(term, levels = sports_terms)) %>%
+  arrange(term) %>%
+  mutate(across(where(is.numeric), ~round(.x, 4)))
+```
+
+## Model fit
+
+```{r fit-stats, message=FALSE, warning=FALSE}
+tibble(
+  model = c("naive (league intercepts)", "team fixed effects"),
+  n = nrow(long),
+  # R^2 is dominated by the team dummies in the FE model (each team has its own
+  # intercept), so a high value mostly reflects that murder rates differ across
+  # cities, not covariate predictive power.
+  r_squared = c(summary(fit_naive)$r.squared, summary(fit_fe)$r.squared),
+  adj_r_squared = c(summary(fit_naive)$adj.r.squared, summary(fit_fe)$adj.r.squared)
+)
+```
+
+## Model without the sports factors
+
+Three specifications side by side: the **sports factors alone** (no controls, no
+fixed effects), the **controls + fixed effects with no sports**, and the **full
+model**. If the performance variables carry real signal, the sports-only model
+explains a meaningful share of the variance on its own, and adding sports to the
+controls-plus-FE model lowers the MSE noticeably. If they are noise, the sports-only
+MSE is barely below the raw variance of the outcome, and the no-sports and full
+models are essentially tied.
+
+```{r no-sports, message=FALSE, warning=FALSE}
+no_sports_rhs   <- paste(c(controls, "factor(year)", "factor(team_id)"), collapse = " + ")
+sports_only_rhs <- paste(sports_terms, collapse = " + ")
+
+fit_no_sports   <- lm(as.formula(paste("murder_rate ~", no_sports_rhs)),   data = long)
+fit_sports_only <- lm(as.formula(paste("murder_rate ~", sports_only_rhs)), data = long)
+
+mse <- function(fit) mean(residuals(fit)^2)
+
+tibble(
+  model = c("sports factors only (no controls, no FE)",
+            "no sports factors (controls + FE only)",
+            "full model (sports + controls + FE)"),
+  mse   = c(mse(fit_sports_only), mse(fit_no_sports), mse(fit_fe))
+) %>%
+  mutate(mse = round(mse, 4))
+```
+
+## Reading the results
+
+- The **FE column is the credible one.** If `win_pct_z` there is small relative to
+  its clustered SE (|coef| under ~2 SE), the honest conclusion is **no detectable
+  within-team effect** of performance on murder -- a legitimate, defensible finding.
+- Compare **naive vs. FE**: where the naive coefficient is larger or "significant"
+  and the FE one is not, that gap is the confounding the team fixed effects strip
+  out (team-having cities differ in ways unrelated to how the team plays). This is
+  exactly why the original pooled all-columns model could not answer the question.
+- **Caveats:** clusters are a few dozen metros, so clustered SEs are approximate --
+  a wild-cluster bootstrap would be the rigorous next step. Fixed effects also
+  absorb slow-moving controls, so the census coefficients are not the focus; the
+  sports terms are. Four performance measures are tested, so treat any single
+  borderline p-value with multiple-comparisons skepticism.
+
+## Three ways to encode performance: separate vs. harmonic mean vs. average
+
+The models above stack one row per (city, year, team). Here we instead go **wide** --
+one row per **(metro, year)** -- and ask a narrower question: given a metro's teams in
+a year, how should their `win_pct` values enter the model? Three encodings are compared
+on **identical rows** so their MSE is directly comparable:
+
+1. **Separate** -- each sport's `win_pct` and playoff result enter as their own
+   predictors (`nfl_wp_s`, `mlb_wp_s`, ... + a playoff term per sport).
+2. **Harmonic mean** -- the sports' win percentages are collapsed into a single
+   harmonic mean that is plugged into the model.
+3. **Arithmetic mean** -- the same, using the ordinary (arithmetic) average.
+
+Two data issues are handled first:
+
+- **`win_pct` is not on one scale.** MLB's column is a win *count* (19--108, and the
+  denominator even changes with the 2020 short season), while NFL/NHL/CFB are 0--1
+  fractions. Averaging those raw would let MLB swamp everything, so each sport's
+  `win_pct` is **min--max scaled within sport** to a common [0, 1] (`_wp_s`) before it
+  is combined. (The harmonic mean also needs strictly positive inputs, so the single
+  scaled 0 is floored at 0.001.)
+- **One outcome per metro-year.** The per-sport murder rates differ within a metro-year
+  (teams sit in different cities of the metro), so the outcome is a single
+  `city_murder_rate` = the mean of whichever sports' rates are present.
+
+`year` enters every model as a **categorical** variable via `factor(year)`, alongside
+the same census controls used above.
+
+```{r wide-panel, message=FALSE, warning=FALSE}
+leagues <- c("nfl", "mlb", "nhl", "cfb")
+wps <- paste0(leagues, "_wp_s")             # within-sport scaled win_pct
+mr  <- paste0(leagues, "_murder_rate")
+
+wide <- base
+# min-max scale each sport's win_pct within sport, onto a common [0, 1]
+for (lg in leagues) {
+  v <- wide[[paste0(lg, "_win_pct")]]
+  wide[[paste0(lg, "_wp_s")]] <- (v - min(v, na.rm = TRUE)) /
+                                 (max(v, na.rm = TRUE) - min(v, na.rm = TRUE))
+}
+
+wide <- wide %>%
+  rowwise() %>%
+  mutate(
+    n_sports         = sum(!is.na(c_across(all_of(wps)))),
+    city_murder_rate = mean(c_across(all_of(mr)), na.rm = TRUE),
+    win_amean        = mean(c_across(all_of(wps)), na.rm = TRUE),
+    win_hmean        = { x <- c_across(all_of(wps)); x <- x[!is.na(x)]
+                         x <- pmax(x, 0.001); length(x) / sum(1 / x) },
+    # fraction of the metro's present teams that made the playoffs (aggregated
+    # to match the aggregated win_pct: a present team with no playoff row -> 0)
+    playoff_share    = { present <- !is.na(c_across(all_of(wps)))
+                         po <- c_across(all_of(paste0(leagues, "_make_playoffs")))
+                         po <- ifelse(is.na(po), 0, po)
+                         sum(po[present]) / sum(present) }
+  ) %>%
+  ungroup() %>%
+  filter(n_sports >= 1, !is.na(city_murder_rate)) %>%   # metro-years with >=1 team
+  drop_na(all_of(controls))
+
+# for the "separate" model: presence flag per sport, and absent win_pct / playoff -> 0
+# (the flag absorbs the level so the win_pct slope is identified only among teams that exist)
+for (lg in leagues) {
+  wide[[paste0("has_", lg)]] <- as.integer(!is.na(wide[[paste0(lg, "_wp_s")]]))
+  wide[[paste0(lg, "_wp_s")]][is.na(wide[[paste0(lg, "_wp_s")]])] <- 0
+  po <- wide[[paste0(lg, "_make_playoffs")]]; po[is.na(po)] <- 0
+  wide[[paste0(lg, "_po")]] <- po
+}
+
+tibble(observations = nrow(wide),
+       metros = n_distinct(wide$GEOID),
+       years  = n_distinct(wide$year))
+```
+
+```{r three-models, message=FALSE, warning=FALSE}
+base_rhs <- paste(c(controls, "factor(year)"), collapse = " + ")   # year categorical
+
+# 1) separate: each sport's scaled win_pct + playoff (+ presence flag)
+sep_terms <- as.vector(rbind(paste0("has_", leagues), wps, paste0(leagues, "_po")))
+fit_separate <- lm(as.formula(paste("city_murder_rate ~",
+                     paste(sep_terms, collapse = " + "), "+", base_rhs)), data = wide)
+
+# 2) harmonic mean of win_pct + aggregated playoff appearances
+fit_harmonic <- lm(as.formula(paste("city_murder_rate ~ n_sports + win_hmean + playoff_share +",
+                     base_rhs)), data = wide)
+
+# 3) arithmetic mean of win_pct + aggregated playoff appearances
+fit_average  <- lm(as.formula(paste("city_murder_rate ~ n_sports + win_amean + playoff_share +",
+                     base_rhs)), data = wide)
+```
+
+```{r fit average coeffecients}
+summary(fit_average)
+summary(fit_harmonic)
+summary(fit_separate)
+```
+
+```{r three-models-mse, message=FALSE, warning=FALSE}
+mse <- function(fit) mean(residuals(fit)^2)
+
+tibble(
+  model = c("1. separate win_pct + playoffs per sport",
+            "2. harmonic mean of win_pct + playoff share",
+            "3. arithmetic mean of win_pct + playoff share"),
+  n            = nrow(wide),
+  n_predictors = c(length(coef(fit_separate)),
+                   length(coef(fit_harmonic)),
+                   length(coef(fit_average))),
+  MSE          = round(c(mse(fit_separate), mse(fit_harmonic), mse(fit_average)), 4)
+)
+```
+
+All three models are fit on the **same 838 metro-years** with the **same outcome**, so
+the MSE is comparable. Each model now also carries the playoff signal: model 1 keeps a
+separate playoff indicator per sport, while models 2 and 3 use `playoff_share` -- the
+fraction of the metro's present teams that made the playoffs -- alongside the combined
+win_pct. The separate model has the lowest MSE, but almost entirely because it spends
+many more parameters (a scaled win_pct, a playoff indicator, and a presence flag for
+each of the four sports) rather than single combined numbers -- the harmonic-mean and
+arithmetic-mean encodings land on essentially the same MSE as each other, so collapsing
+the win percentages and playoff appearances loses little once the extra degrees of
+freedom are accounted for.

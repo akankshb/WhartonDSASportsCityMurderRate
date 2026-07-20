@@ -1,0 +1,384 @@
+---
+title: "ACS data aggregation"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(tidycensus)
+})
+
+options(scipen = 0, digits = 3)
+
+# Replace this placeholder with your Census API key before knitting.
+census_api_key_value <- "7c021914c63b3bbf8ac70b7e38e2fa44e98f64d9"
+if (nzchar(census_api_key_value) && !identical(census_api_key_value, "7c021914c63b3bbf8ac70b7e38e2fa44e98f64d9")) {
+  census_api_key(census_api_key_value, install = FALSE, overwrite = FALSE)
+}
+```
+
+```{r census-panel, message=FALSE, warning=FALSE}
+# ACS panel years available in this workflow.
+# NOTE: ACS-based metro data do not go back to 2003. For these variables,
+# the practical panel starts with the 2010 ACS 5-year vintage.
+acs_years <- 2010:2023
+target_geography <- "cbsa"
+
+# Keep the pro-sports markets from the lookup table.
+sports_teams <- read_csv("data/sports_teams_lookup.csv", show_col_types = FALSE) %>%
+  mutate(GEOID = as.character(GEOID))
+
+sports_metros <- sports_teams %>%
+  filter(has_team == 1) %>%
+  transmute(
+    GEOID = as.character(GEOID),
+    sports_name = NAME,
+    sports_team_count = team_count,
+    has_NFL = as.integer(has_NFL),
+    has_NBA = as.integer(has_NBA),
+    has_MLB = as.integer(has_MLB),
+    has_NHL = as.integer(has_NHL),
+    has_pro_team = as.integer(has_team)
+  )
+
+# Power 4 school cities are pulled from the CFB reference file and mapped to
+# the ACS CBSA names used in tidycensus output.
+power4_city_map <- tribble(
+  ~city, ~state, ~metro_name,
+  "Auburn", "AL", "Auburn-Opelika, AL Metro Area",
+  "Tuscaloosa", "AL", "Tuscaloosa, AL Metro Area",
+  "Fayetteville", "AR", "Fayetteville-Springdale-Rogers, AR Metro Area",
+  "Tempe", "AZ", "Phoenix-Mesa-Chandler, AZ Metro Area",
+  "Tucson", "AZ", "Tucson, AZ Metro Area",
+  "Berkeley", "CA", "San Francisco-Oakland-Berkeley, CA Metro Area",
+  "Stanford", "CA", "San Jose-Sunnyvale-Santa Clara, CA Metro Area",
+  "Boulder", "CO", "Boulder, CO Metro Area",
+  "Coral Gables", "FL", "Miami-Fort Lauderdale-West Palm Beach, FL Metro Area",
+  "Gainesville", "FL", "Gainesville, FL Metro Area",
+  "Orlando", "FL", "Orlando-Kissimmee-Sanford, FL Metro Area",
+  "Tallahassee", "FL", "Tallahassee, FL Metro Area",
+  "Athens", "GA", "Athens-Clarke County, GA Metro Area",
+  "Atlanta", "GA", "Atlanta-Sandy Springs-Roswell, GA Metro Area",
+  "Ames", "IA", "Ames, IA Metro Area",
+  "Iowa City", "IA", "Iowa City, IA Metro Area",
+  "Champaign", "IL", "Champaign-Urbana, IL Metro Area",
+  "Evanston", "IL", "Chicago-Naperville-Elgin, IL-IN Metro Area",
+  "Bloomington", "IN", "Bloomington, IN Metro Area",
+  "West Lafayette", "IN", "Lafayette-West Lafayette, IN Metro Area",
+  "Lawrence", "KS", "Lawrence, KS Metro Area",
+  "Manhattan", "KS", "Manhattan, KS Metro Area",
+  "Lexington", "KY", "Lexington-Fayette, KY Metro Area",
+  "Louisville", "KY", "Louisville/Jefferson County, KY-IN Metro Area",
+  "Baton Rouge", "LA", "Baton Rouge, LA Metro Area",
+  "Chestnut Hill", "MA", "Boston-Cambridge-Newton, MA-NH Metro Area",
+  "College Park", "MD", "Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area",
+  "Ann Arbor", "MI", "Ann Arbor, MI Metro Area",
+  "East Lansing", "MI", "Lansing-East Lansing, MI Metro Area",
+  "Minneapolis", "MN", "Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",
+  "Columbia", "MO", "Columbia, MO Metro Area",
+  "Oxford", "MS", "Oxford, MS Micro Area",
+  "Starkville", "MS", "Starkville, MS Micro Area",
+  "Chapel Hill", "NC", "Durham-Chapel Hill, NC Metro Area",
+  "Durham", "NC", "Durham-Chapel Hill, NC Metro Area",
+  "Raleigh", "NC", "Raleigh, NC Metro Area",
+  "Winston-Salem", "NC", "Winston-Salem, NC Metro Area",
+  "Lincoln", "NE", "Lincoln, NE Metro Area",
+  "Piscataway", "NJ", "New York-Newark-Jersey City, NY-NJ Metro Area",
+  "Syracuse", "NY", "Syracuse, NY Metro Area",
+  "Cincinnati", "OH", "Cincinnati, OH-KY-IN Metro Area",
+  "Columbus", "OH", "Columbus, OH Metro Area",
+  "Norman", "OK", "Oklahoma City, OK Metro Area",
+  "Stillwater", "OK", "Stillwater, OK Micro Area",
+  "Eugene", "OR", "Eugene-Springfield, OR Metro Area",
+  "Pittsburgh", "PA", "Pittsburgh, PA Metro Area",
+  "University Park", "PA", "State College, PA Metro Area",
+  "Clemson", "SC", "Greenville-Anderson-Greer, SC Metro Area",
+  "Columbia", "SC", "Columbia, SC Metro Area",
+  "Knoxville", "TN", "Knoxville, TN Metro Area",
+  "Nashville", "TN", "Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area",
+  "Austin", "TX", "Austin-Round Rock-San Marcos, TX Metro Area",
+  "College Station", "TX", "College Station-Bryan, TX Metro Area",
+  "Dallas", "TX", "Dallas-Fort Worth-Arlington, TX Metro Area",
+  "Fort Worth", "TX", "Dallas-Fort Worth-Arlington, TX Metro Area",
+  "Houston", "TX", "Houston-Pasadena-The Woodlands, TX Metro Area",
+  "Lubbock", "TX", "Lubbock, TX Metro Area",
+  "Waco", "TX", "Waco, TX Metro Area",
+  "Provo", "UT", "Provo-Orem-Lehi, UT Metro Area",
+  "Salt Lake City", "UT", "Salt Lake City-Murray, UT Metro Area",
+  "Blacksburg", "VA", "Blacksburg-Christiansburg-Radford, VA Metro Area",
+  "Charlottesville", "VA", "Charlottesville, VA Metro Area",
+  "Seattle", "WA", "Seattle-Tacoma-Bellevue, WA Metro Area",
+  "Madison", "WI", "Madison, WI Metro Area",
+  "Morgantown", "WV", "Morgantown, WV Metro Area"
+)
+
+# Drop the smallest college-town markets so the modeling table is cleaner.
+power4_city_map <- power4_city_map %>%
+  filter(!city %in% c("Ames", "Clemson", "Oxford", "Starkville", "Stillwater", "University Park"))
+
+power4_metros <- read_csv("data/CFB/cfb_power4_2010_2025_long.csv", show_col_types = FALSE) %>%
+  distinct(school, city, state) %>%
+  left_join(power4_city_map, by = c("city", "state")) %>%
+  filter(!is.na(metro_name)) %>%
+  group_by(metro_name) %>%
+  summarise(
+    power4_school_count = n_distinct(school),
+    power4_school_list = paste(sort(unique(school)), collapse = "; "),
+    has_power4_school = 1L,
+    .groups = "drop"
+  )
+
+# Core ACS variables requested by the project.
+acs_vars <- c(
+  median_household_income = "B19013_001",
+  labor_force             = "B23025_002",
+  unemployed              = "B23025_005",
+  median_home_value       = "B25077_001",
+  median_gross_rent       = "B25064_001",
+  housing_units           = "B25003_001",
+  owner_occupied          = "B25003_002",
+  poverty_universe        = "B17001_001",
+  below_poverty           = "B17001_002",
+  edu_universe_25plus     = "B15003_001",
+  edu_bachelors           = "B15003_022",
+  edu_masters             = "B15003_023",
+  edu_professional        = "B15003_024",
+  edu_doctorate           = "B15003_025",
+  total_population        = "B03002_001",
+  white_nonhispanic       = "B03002_003",
+  black_nonhispanic       = "B03002_004",
+  aian_nonhispanic        = "B03002_005",
+  asian_nonhispanic       = "B03002_006",
+  nhpi_nonhispanic        = "B03002_007",
+  other_nonhispanic       = "B03002_008",
+  two_plus_nonhispanic    = "B03002_009",
+  hispanic_or_latino      = "B03002_012",
+  pop_under_18_male       = "B01001_003",
+  pop_under_18_male_2     = "B01001_004",
+  pop_under_18_male_3     = "B01001_005",
+  pop_under_18_male_4     = "B01001_006",
+  pop_under_18_female     = "B01001_027",
+  pop_under_18_female_2   = "B01001_028",
+  pop_under_18_female_3   = "B01001_029",
+  pop_under_18_female_4   = "B01001_030",
+  pop_18_to_64_male_1     = "B01001_007",
+  pop_18_to_64_male_2     = "B01001_008",
+  pop_18_to_64_male_3     = "B01001_009",
+  pop_18_to_64_male_4     = "B01001_010",
+  pop_18_to_64_male_5     = "B01001_011",
+  pop_18_to_64_male_6     = "B01001_012",
+  pop_18_to_64_male_7     = "B01001_013",
+  pop_18_to_64_male_8     = "B01001_014",
+  pop_18_to_64_male_9     = "B01001_015",
+  pop_18_to_64_male_10    = "B01001_016",
+  pop_18_to_64_male_11    = "B01001_017",
+  pop_18_to_64_male_12    = "B01001_018",
+  pop_18_to_64_male_13    = "B01001_019",
+  pop_18_to_64_female_1   = "B01001_031",
+  pop_18_to_64_female_2   = "B01001_032",
+  pop_18_to_64_female_3   = "B01001_033",
+  pop_18_to_64_female_4   = "B01001_034",
+  pop_18_to_64_female_5   = "B01001_035",
+  pop_18_to_64_female_6   = "B01001_036",
+  pop_18_to_64_female_7   = "B01001_037",
+  pop_18_to_64_female_8   = "B01001_038",
+  pop_18_to_64_female_9   = "B01001_039",
+  pop_18_to_64_female_10  = "B01001_040",
+  pop_18_to_64_female_11  = "B01001_041",
+  pop_18_to_64_female_12  = "B01001_042",
+  pop_18_to_64_female_13  = "B01001_043",
+  pop_65plus_male_1       = "B01001_020",
+  pop_65plus_male_2       = "B01001_021",
+  pop_65plus_male_3       = "B01001_022",
+  pop_65plus_male_4       = "B01001_023",
+  pop_65plus_male_5       = "B01001_024",
+  pop_65plus_male_6       = "B01001_025",
+  pop_65plus_female_1     = "B01001_044",
+  pop_65plus_female_2     = "B01001_045",
+  pop_65plus_female_3     = "B01001_046",
+  pop_65plus_female_4     = "B01001_047",
+  pop_65plus_female_5     = "B01001_048",
+  pop_65plus_female_6     = "B01001_049"
+)
+
+metro_acs_panel_raw <- map_dfr(acs_years, function(yr) {
+  message("Getting ACS data for ", yr)
+
+  tryCatch(
+    {
+      get_acs(
+        geography = target_geography,
+        variables = acs_vars,
+        year      = yr,
+        survey    = "acs5",
+        output    = "wide"
+      ) %>%
+        mutate(year = yr)
+    },
+    error = function(e) {
+      message("Skipping year ", yr, ": ", conditionMessage(e))
+      NULL
+    }
+  )
+})
+
+metro_acs_panel <- metro_acs_panel_raw %>%
+  mutate(GEOID = as.character(GEOID)) %>%
+  filter(GEOID %in% sports_metros$GEOID | NAME %in% power4_metros$metro_name) %>%
+  left_join(sports_metros, by = "GEOID") %>%
+  left_join(power4_metros, by = c("NAME" = "metro_name")) %>%
+  mutate(
+    across(
+      c(
+        sports_team_count, has_NFL, has_NBA, has_MLB, has_NHL, has_pro_team,
+        power4_school_count, has_power4_school
+      ),
+      ~ replace_na(as.integer(.x), 0L)
+    )
+  ) %>%
+  mutate(
+    age_under_18 = rowSums(across(
+      c(
+        pop_under_18_maleE, pop_under_18_male_2E, pop_under_18_male_3E,
+        pop_under_18_male_4E, pop_under_18_femaleE, pop_under_18_female_2E,
+        pop_under_18_female_3E, pop_under_18_female_4E
+      )
+    ), na.rm = TRUE),
+    age_18_to_64 = rowSums(across(
+      c(
+        pop_18_to_64_male_1E, pop_18_to_64_male_2E, pop_18_to_64_male_3E,
+        pop_18_to_64_male_4E, pop_18_to_64_male_5E, pop_18_to_64_male_6E,
+        pop_18_to_64_male_7E, pop_18_to_64_male_8E, pop_18_to_64_male_9E,
+        pop_18_to_64_male_10E, pop_18_to_64_male_11E, pop_18_to_64_male_12E,
+        pop_18_to_64_male_13E, pop_18_to_64_female_1E, pop_18_to_64_female_2E,
+        pop_18_to_64_female_3E, pop_18_to_64_female_4E, pop_18_to_64_female_5E,
+        pop_18_to_64_female_6E, pop_18_to_64_female_7E, pop_18_to_64_female_8E,
+        pop_18_to_64_female_9E, pop_18_to_64_female_10E, pop_18_to_64_female_11E,
+        pop_18_to_64_female_12E, pop_18_to_64_female_13E
+      )
+    ), na.rm = TRUE),
+    age_65plus = rowSums(across(
+      c(
+        pop_65plus_male_1E, pop_65plus_male_2E, pop_65plus_male_3E,
+        pop_65plus_male_4E, pop_65plus_male_5E, pop_65plus_male_6E,
+        pop_65plus_female_1E, pop_65plus_female_2E, pop_65plus_female_3E,
+        pop_65plus_female_4E, pop_65plus_female_5E, pop_65plus_female_6E
+      )
+    ), na.rm = TRUE),
+    unemployment_rate  = unemployedE / labor_forceE * 100,
+    homeownership_rate  = owner_occupiedE / housing_unitsE * 100,
+    poverty_rate        = below_povertyE / poverty_universeE * 100,
+    bachelors_plus_rate = (
+      edu_bachelorsE + edu_mastersE + edu_professionalE + edu_doctorateE
+    ) / edu_universe_25plusE * 100,
+    race_white_nonhispanic_rate    = white_nonhispanicE / total_populationE * 100,
+    race_black_nonhispanic_rate    = black_nonhispanicE / total_populationE * 100,
+    race_aian_nonhispanic_rate     = aian_nonhispanicE / total_populationE * 100,
+    race_asian_nonhispanic_rate    = asian_nonhispanicE / total_populationE * 100,
+    race_nhpi_nonhispanic_rate     = nhpi_nonhispanicE / total_populationE * 100,
+    race_other_nonhispanic_rate    = other_nonhispanicE / total_populationE * 100,
+    race_two_plus_nonhispanic_rate = two_plus_nonhispanicE / total_populationE * 100,
+    hispanic_or_latino_rate        = hispanic_or_latinoE / total_populationE * 100,
+    pop_under_18_rate              = age_under_18 / total_populationE * 100,
+    pop_18_to_64_rate              = age_18_to_64 / total_populationE * 100,
+    pop_65plus_rate                = age_65plus / total_populationE * 100
+  ) %>%
+  mutate(
+    year = as.integer(year),
+    GEOID = as.integer(GEOID)
+  ) %>%
+  select(
+    year,
+    GEOID,
+    NAME,
+    sports_name,
+    sports_team_count,
+    has_NFL, has_NBA, has_MLB, has_NHL, has_pro_team,
+    power4_school_count, has_power4_school, power4_school_list,
+    median_household_income = median_household_incomeE,
+    labor_force = labor_forceE,
+    unemployed = unemployedE,
+    unemployment_rate,
+    median_home_value = median_home_valueE,
+    median_gross_rent = median_gross_rentE,
+    housing_units = housing_unitsE,
+    owner_occupied = owner_occupiedE,
+    homeownership_rate,
+    poverty_universe = poverty_universeE,
+    below_poverty = below_povertyE,
+    poverty_rate,
+    edu_universe_25plus = edu_universe_25plusE,
+    bachelors_plus_rate,
+    total_population = total_populationE,
+    race_white_nonhispanic_rate,
+    race_black_nonhispanic_rate,
+    race_aian_nonhispanic_rate,
+    race_asian_nonhispanic_rate,
+    race_nhpi_nonhispanic_rate,
+    race_other_nonhispanic_rate,
+    race_two_plus_nonhispanic_rate,
+    hispanic_or_latino_rate,
+    pop_under_18_rate,
+    pop_18_to_64_rate,
+    pop_65plus_rate
+  ) %>%
+  arrange(year, GEOID)
+
+metro_lookup <- metro_acs_panel %>%
+  distinct(
+    GEOID, NAME, sports_name,
+    sports_team_count, has_NFL, has_NBA, has_MLB, has_NHL, has_pro_team,
+    power4_school_count, has_power4_school, power4_school_list
+  ) %>%
+  arrange(GEOID)
+
+metro_acs_model_ready <- metro_acs_panel %>%
+  select(
+    year,
+    GEOID,
+    sports_team_count,
+    has_NFL, has_NBA, has_MLB, has_NHL, has_pro_team,
+    power4_school_count, has_power4_school,
+    median_household_income,
+    labor_force,
+    unemployed,
+    unemployment_rate,
+    median_home_value,
+    median_gross_rent,
+    housing_units,
+    owner_occupied,
+    homeownership_rate,
+    poverty_universe,
+    below_poverty,
+    poverty_rate,
+    edu_universe_25plus,
+    bachelors_plus_rate,
+    total_population,
+    race_white_nonhispanic_rate,
+    race_black_nonhispanic_rate,
+    race_aian_nonhispanic_rate,
+    race_asian_nonhispanic_rate,
+    race_nhpi_nonhispanic_rate,
+    race_other_nonhispanic_rate,
+    race_two_plus_nonhispanic_rate,
+    hispanic_or_latino_rate,
+    pop_under_18_rate,
+    pop_18_to_64_rate,
+    pop_65plus_rate
+  ) %>%
+  arrange(year, GEOID)
+
+metro_acs_model_ready
+```
+
+```{r sports-features, message=FALSE, warning=FALSE}
+source("scripts/add_sports_features.R")
+metro_acs_model_ready
+```
+
+```{r export, message=FALSE, warning=FALSE}
+dir.create("data", showWarnings = FALSE, recursive = TRUE)
+write_csv(metro_lookup, "data/metro_lookup_2010_2023.csv")
+write_csv(metro_acs_model_ready, "data/metro_acs_model_ready_2010_2023.csv")
+```
